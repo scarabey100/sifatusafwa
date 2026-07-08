@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy-staging:
+  stage: deploy
+  only:
+    - staging
+  script:
+    - sudo /usr/local/bin/deploy-staging.sh
+  tags:
+    - staging
