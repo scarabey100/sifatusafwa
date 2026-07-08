@@ -1,0 +1,2 @@
+{l s='This is the repurchase rate for the selected period.' mod='opartstat'}<br />
+{l s='It\'s the number of repurchase divided by the total number of order within the selected period' mod='opartstat'}

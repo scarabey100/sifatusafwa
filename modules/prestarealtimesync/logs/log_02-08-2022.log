@@ -1,0 +1,6 @@
+*WARN*	2022/02/08 - 14:07:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/08 - 14:07:32: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 4 Export response: <br/> Product Mountain fox notebook Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00053 <br/> Error in Delivering Order: Nothing to check the availability for. <br/>
+*INFO*	2022/02/08 - 14:07:35: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 

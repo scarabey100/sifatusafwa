@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300px"
+   height="191px"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="10.svg"
+   inkscape:export-filename="/home/rdevera/workspacephpnew/catbibips15/prestashop/modules/giftcard/logo.png"
+   inkscape:export-xdpi="15.423112"
+   inkscape:export-ydpi="15.423112">
+  <defs
+     id="defs3">
+    <filter
+       id="filter8109"
+       inkscape:label="Fancy blur"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Smooth colorized contour which allows desaturation and hue rotation"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8111"
+         stdDeviation="5"
+         result="result1" />
+      <feComposite
+         k4="0"
+         k3="0"
+         k1="0"
+         id="feComposite8113"
+         in2="result1"
+         operator="arithmetic"
+         k2="2"
+         in="result1" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.4"
+     inkscape:cx="164.29064"
+     inkscape:cy="110.75306"
+     inkscape:document-units="mm"
+     inkscape:current-layer="var_color1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid6082" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2989">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="var_color1"
+       style="fill:#996600">
+      <path
+         id="rect8525"
+         d="m 11.8125,0.09375 c -6.0437779,0 -10.90625,4.9057472 -10.90625,11 l 0,168.28125 c 0,6.09424 4.8624721,11 10.90625,11 l 277.75,0 c 6.04376,0 10.90625,-4.90576 10.90625,-11 l 0,-168.28125 c 0,-6.0942528 -4.86249,-11 -10.90625,-11 l -277.75,0 z m 261.75,1.875 C 211.46887,5.6535618 159.97044,50.221016 145.09375,104.6875 c -3.27887,12.00457 -6.92519,22.52743 -10.96875,31.71875 l 160.625,0 c 2.30833,0 4.15625,1.87917 4.15625,4.1875 l 0,10 c 0,2.30833 -1.84792,4.15625 -4.15625,4.15625 l -170.375,0 C 110.12045,176.73082 91.750587,186.75482 67.8125,187.4375 46.87833,188.03451 12.75,187.03125 12.75,187.03125 6.7532399,186.98645 3.21875,184.22857 3.21875,178.25 l 0,-165.09375 C 3.21875,7.1776718 8.0343179,2.3846279 14.03125,2.375 L 273.5625,1.96875 z"
+         style="fill-opacity:1;"
+         inkscape:connector-curvature="0" />
+      <text
+         transform="scale(0.99879147,1.00121)"
+         sodipodi:linespacing="125%"
+         id="text8572"
+         y="18.174103"
+         x="9.0486469"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold;"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold;"
+           y="18.174103"
+           x="9.0486469"
+           id="var_text2"
+           sodipodi:role="line">CARTE CADEAU</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id=""
+         y="149.75211"
+         x="14.108969"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill-opacity:1;stroke:none;font-family:Comix Loud;-inkscape-font-specification:Comix Loud;"
+         xml:space="preserve"><tspan
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill-opacity:1;font-family:Serif;-inkscape-font-specification:Serif;"
+           y="149.75211"
+           x="14.108969"
+           id="giftcard_code"
+           sodipodi:role="line">###########################</tspan></text>
+      <path
+         id="var_none"
+         d="M 71.032361,51.557506 70.147892,49.03294 c -0.350868,-1.005219 -0.833313,-1.987366 -1.436354,-2.913478 -1.991885,-3.051893 -4.312706,-4.376806 -5.208141,-4.455903 -0.332599,0.642681 -0.281427,3.104629 1.783548,6.271881 1.966316,3.018943 4.257896,4.343839 5.17891,4.452596 0,0 0.566506,-0.83053 0.566506,-0.83053 z m 8.983587,-3.622066 c 2.061334,-3.167252 2.112501,-5.6292 1.78357,-6.271881 -0.895434,0.07584 -3.223565,1.39741 -5.215448,4.455903 -0.606719,0.929419 -1.08549,1.911559 -1.436353,2.913478 l -0.895441,2.557522 0.595734,0.830543 c 0.847928,-0.102175 3.172411,-1.423776 5.167943,-4.485565 z m -8.588868,6.08402 h 7.382785 v 9.287521 h 17.93795 V 54.121628 H 79.90266 c 1.359596,-0.899756 2.741125,-2.300464 3.877783,-4.037346 2.448736,-3.763775 2.806908,-7.672584 0.793093,-8.737127 -0.347201,-0.181255 -0.738277,-0.270241 -1.162232,-0.270241 -2.050368,0 -4.879208,2.033501 -6.918616,5.148017 -0.679793,1.051349 -1.184158,2.105992 -1.535026,3.114501 -0.350861,-1.008509 -0.847923,-2.063152 -1.535031,-3.114501 -2.028437,-3.114516 -4.86826,-5.148017 -6.922268,-5.148017 -0.412996,0 -0.807726,0.08899 -1.158585,0.270241 -2.002854,1.064543 -1.644681,4.973352 0.800404,8.737127 1.13666,1.736882 2.525497,3.13759 3.881456,4.037346 H 53.174814 v 9.185353 H 71.42708 c 0,0 0,-9.287521 0,-9.287521 z m 5.822173,-4.027452 c 0.317964,-0.916229 0.760197,-1.812683 1.312078,-2.669582 1.820106,-2.798124 3.954531,-4.007683 4.784179,-4.076891 0.292383,0.583351 0.248526,2.840971 -1.633711,5.737958 -1.834726,2.808015 -3.961837,4.014267 -4.733011,4.106554 L 76.43056,52.332013 c 0,0 0.818693,-2.340005 0.818693,-2.340005 z m -9.034767,-1.008515 c -1.885905,-2.896987 -1.937075,-5.154607 -1.630061,-5.737958 0.818683,0.06925 2.949456,1.282061 4.773223,4.076891 0.555533,0.847003 0.990453,1.743464 1.319395,2.669582 l 0.804066,2.310349 -0.518987,0.758016 c -0.847928,-0.09552 -2.942152,-1.311705 -4.747636,-4.07688 z m 11.205733,17.260028 v 10.368538 c 1.330356,0.606424 1.699495,1.700624 1.699495,1.700624 0,0 0.263148,-0.112053 0.263148,4.874471 0,4.989808 -1.184158,5.167787 -1.962643,5.325986 v 2.715733 c 0,0 8.998209,-2.623447 14.356215,-8.733834 1.944365,-2.218076 3.004273,-1.66438 3.004273,-1.66438 l -0.0366,-14.587138 c 0,0 -17.323942,0 -17.323942,0 z m -7.993139,0 H 53.171157 v 8.476752 c 4.4187,0 12.528796,0 18.252273,0 v -8.476752 h 0.0043 z M 29.933684,74.90484 h 10.434565 v 31.84718 H 29.933684 V 74.90484 z m 65.882148,10.266369 c -0.413,-0.145011 -0.840618,-0.201039 -1.275546,-0.135126 -3.278396,0.543799 -8.241664,11.538556 -21.157858,8.364707 0,0 -3.779106,-1.100797 -5.20815,-1.891788 -1.264576,-0.629485 -3.94723,-2.069752 -6.140128,-3.572624 h 6.140128 6.903995 c 0,0 0.533606,0.02964 1.151279,-0.09553 0.844266,-0.174677 1.856657,-0.639381 1.856657,-1.89837 0,-2.175214 0,-5.428148 0,-5.428148 0,0 -0.402042,-1.806094 -1.856657,-2.468554 -0.332592,-0.151598 -0.709035,-0.247179 -1.151279,-0.247179 -0.679805,0 -3.377074,0 -6.903995,0 -6.253431,0 -15.105461,0 -19.929836,0 -2.123474,0 -3.468454,0 -3.468454,0 v 23.156183 c 0,0 20.474418,5.794 27.696386,5.794 0,0 18.051245,0.72508 30.093936,-11.943937 0.004,0.0029 -3.135849,-8.367987 -6.750478,-9.633582 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:64.34695435px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Courier"
+       x="228.43822"
+       y="119.08449"
+       id="text8983"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99879147,1.00121)"><tspan
+         sodipodi:role="line"
+         id="giftcard_price"
+         x="228.43822"
+         y="119.08449"
+         style="font-size:64.34695435px;font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;-inkscape-font-specification:Sans Bold">50</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Courier"
+       x="120.35281"
+       y="184.73833"
+       id="text8637"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99879147,1.00121)"><tspan
+         sodipodi:role="line"
+         id="var_text1"
+         x="120.35281"
+         y="184.73833"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Utopia;-inkscape-font-specification:Utopia">MYSHOP</tspan></text>
+  </g>
+</svg>

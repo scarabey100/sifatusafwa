@@ -1,0 +1,16 @@
+{
+  "name": "incomingRevenues",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "incomingRevenues"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

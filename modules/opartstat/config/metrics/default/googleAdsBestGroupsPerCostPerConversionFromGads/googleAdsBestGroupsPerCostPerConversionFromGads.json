@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsBestGroupsPerCostPerConversionFromGads",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsBestGroupsPerCostPerConversionFromGads"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

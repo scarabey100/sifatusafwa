@@ -1,0 +1,251 @@
+.hide{
+    display: none;
+}
+.list-group a.list-group-item{
+    display: block;
+}
+.tabs a.list-group-item{
+    display: inline-block;
+}
+a.list-group-item{
+    background-color: #EBEDF4;
+    font-weight: 700;
+    border:1px solid #CCCED7;
+    border-bottom: none;
+    border-radius: 0 !important;
+    color: #555;
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+a.list-group-item.active{
+    background-color: #49B2FF;
+    z-index: 2;
+    color: #fff;
+    border: 1px solid #CCCED7;
+    border-bottom: none;
+}
+
+@media (min-width: 992px){
+    .hi-faq-modal .modal-lg{
+        width: 992px;
+    }
+}
+
+.module-hifaq .extra-faq-block .form-group > .form-control-label{
+    float: left;
+}
+.module-hifaq .extra-faq-block .form-group > .translatable-field > div{
+    float: left;
+}
+.module-hifaq .extra-faq-block .form-group > .translatable-field > div .dropdown-toggle{
+    border: 1px solid;
+}
+
+#modal_container .modal .modal-dialog {
+    width: 850px;
+}
+
+.mce-container * {
+    white-space: normal;
+}
+
+.bootstrap .hipresta-modules-ad .module-sorting-menu {
+    margin-bottom: 30px;
+}
+.bootstrap .hipresta-modules-ad .module-item-wrapper-grid {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    min-height: 415px;
+    padding: .625rem;
+    position: relative;
+    display: block;
+    margin-bottom: .625rem;
+    background-color: #fff;
+}
+.bootstrap .hipresta-modules-ad .module-item-heading-grid {
+    position: relative;
+    text-align: center;
+}
+.bootstrap .hipresta-modules-ad .module-logo-thumb-grid {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0;
+}
+.bootstrap .hipresta-modules-ad .module-logo-thumb-grid img {
+    max-width: 55px;
+    max-height: 55px;
+}
+#content.bootstrap .hipresta-modules-ad h3.module-name-grid {
+    border: none;
+    font-size: 1.2em;
+    padding: 0 0 0 5px;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem 0 .5rem;
+    min-height: 24px;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    color: #363a41;
+    text-transform: none;
+    border-bottom: none;
+    height: inherit;
+}
+.bootstrap .hipresta-modules-ad .module-quick-description-grid {
+    margin: 15px 0;
+    text-align: center;
+    min-height: 100px;
+}
+.bootstrap .hipresta-modules-ad .module-read-more-grid {
+    display: inline-block;
+}
+.bootstrap .hipresta-modules-ad .module-price {
+    right: auto;
+    bottom: auto;
+    position: relative;
+    margin-right: 5px;
+    float: right;
+    font-size: 14px;
+}
+.bootstrap .hipresta-modules-ad hr {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    border: 0;
+    border-top: 1px solid #bbcdd2;
+}
+.bootstrap .hipresta-modules-ad .form-action-button-container {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+}
+.bootstrap .hipresta-modules-ad .btn {
+    height: 32px;
+    font-size: .625rem;
+    padding: .5rem;
+    float: none;
+    margin: 0 auto;
+    color: #25b9d7;
+    background-color: transparent;
+    background-image: none;
+    border-color: #25b9d7;
+    border-width: 1px;
+    font-weight: 600;
+    border-radius: .063rem;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    text-transform: none;
+    border-left: 1px solid #25b9d7;
+}
+.bootstrap .hipresta-modules-ad .btn:hover {
+    color: #fff;
+    background-color: #19a9c6;
+    border-color: #19a9c6;
+    box-shadow: none;
+}
+.bootstrap .hipresta-modules-ad .badges-container {
+    min-height: 30px;
+    font-size: 14px;
+    line-height: 50%;
+    text-align: center;
+}
+.bootstrap .hipresta-modules-ad .badges-container img {
+    width: 22px;
+}
+.bootstrap .hipresta-modules-ad .module-quick-action-grid {
+    color: #363a41;
+}
+
+#submitFilterButtonhifaq,
+button[name="submitResethifaq"],
+#hifaq-empty-filters-alert {
+    display: none !important;
+}
+
+.CodeMirror {
+    border: 1px solid #eee;
+}
+
+.hi-faq-sad-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/sad-white.svg) no-repeat;
+    background-size: 100%;
+}
+.hi-faq-good-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/happy-white.svg) no-repeat;
+    background-size: 100%;
+}
+.hi-module-menu-tab-counter-new {
+    color: red;
+}
+
+.hifaq-related-products-form label,
+.hifaq-related-features-form label {
+    display: flex;
+}
+.hifaq-related-products-form label .hi-module-whats-this,
+.hifaq-related-features-form label .hi-module-whats-this {
+    padding-left: 10px;
+}
+.bootstrap .btn.hifaq-view-product-btn {
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 8px;
+    width: 100%;
+}
+.bootstrap .btn.delete-related-product {
+    padding: 4px 8px;
+}
+.bootstrap .btn.delete-related-product i {
+    color: #fff;
+}
+.media-product-pack-title-custom {
+    display: inline-block;
+    width: 100%;
+    padding: 0 5px;
+    overflow: hidden;
+    height: 50px;
+}
+.hifaq-related-products-modal {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.hifaq-related-products-sections {
+    width: 450px;
+}
+.hifaq-related-features-sections {
+    width: calc(100% - 500px);
+}
+
+.hi-faq-features-list {
+    padding: 0;
+    list-style: none;
+}
+.hi-faq-features-list li {
+    border: 1px solid #bbcdd2;
+    padding: .3125rem;
+    margin-top: .3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

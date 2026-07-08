@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsCpm",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "googleAdsCpm"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

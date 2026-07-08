@@ -1,0 +1,62 @@
+*WARN*	2022/01/27 - 12:17:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/01/27 - 12:17:27: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 301 Moved Permanently
+Date: Thu, 27 Jan 2022 12:17:20 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Set-Cookie: session-1=i6tehl5n9vo32e7skft993u0c8; path=/shopware5; HttpOnly
+Location: http://192.168.5.210/shopware5
+pragma: no-cache
+expires: -1
+Cache-Control: no-cache, private
+Set-Cookie: session-1=deleted; expires=Wed, 27-Jan-2021 12:17:26 GMT; Max-Age=0; path=/shopware5; httponly
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+*WARN*	2022/01/27 - 12:17:57: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/01/27 - 12:17:57: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 301 Moved Permanently
+Date: Thu, 27 Jan 2022 12:17:57 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Set-Cookie: session-1=kb9jf4hf8n0gg2j6h9ck59jdaq; path=/shopware5; HttpOnly
+Location: http://192.168.5.210/shopware5
+pragma: no-cache
+expires: -1
+Cache-Control: no-cache, private
+Set-Cookie: session-1=deleted; expires=Wed, 27-Jan-2021 12:17:56 GMT; Max-Age=0; path=/shopware5; httponly
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+*WARN*	2022/01/27 - 12:18:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:19:49: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:26:15: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:26:21: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:32:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:33:11: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:34:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:35:52: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:36:03: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:36:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:36:54: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:36:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:37:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/27 - 12:37:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.

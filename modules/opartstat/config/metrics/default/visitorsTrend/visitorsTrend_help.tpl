@@ -1,0 +1,3 @@
+{l s='This is the visitors trend for the selected period.' mod='opartstat'}<br />
+{l s='A visitor is a unique person who visited your site during the selected period. Even if this person returns to your site several times during the selected period, she will still be considered as a single visitor. For this reason, the total number of visitors may not equal the sum of the visitors shown on your chart.' mod='opartstat'}<br />
+{l s='Those data are limited. The oldest date available is %1$s' sprintf=[$humanLastStatDate] mod='opartstat'}

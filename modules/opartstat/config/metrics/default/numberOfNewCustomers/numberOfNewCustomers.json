@@ -1,0 +1,16 @@
+{
+  "name": "numberOfNewCustomers",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "numberOfNewCustomers"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

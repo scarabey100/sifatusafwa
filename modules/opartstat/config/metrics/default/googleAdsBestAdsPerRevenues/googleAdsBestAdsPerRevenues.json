@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsBestAdsPerRevenues",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsBestAdsPerRevenues"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

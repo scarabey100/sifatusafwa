@@ -1,0 +1,1 @@
+{l s='Here is the list of customers groups sorted by quantity sold on the selected period.' mod='opartstat'}

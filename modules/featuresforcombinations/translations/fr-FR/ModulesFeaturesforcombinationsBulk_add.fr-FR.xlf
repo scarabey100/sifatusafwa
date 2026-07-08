@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin861j1beuhvmifpeox8f" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="753b7c8bf627bd0e0da557f1997eb357">
+        <source>Bulk import</source>
+        <target>Import de masse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0e010c6b3fb88bf4277c880d1657787a">
+        <source>Attribute group</source>
+        <target>Groupe d'attribut</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="38210477f6eed8c3484e4de966935d70">
+        <source>Select an attribute group</source>
+        <target>Selectionner un groupe d'attributs</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="72d6d7a1885885bb55a565fd1070581a">
+        <source>Import</source>
+        <target>Import</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

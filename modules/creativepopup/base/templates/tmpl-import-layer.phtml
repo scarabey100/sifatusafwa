@@ -1,0 +1,46 @@
+<?php
+/**
+ * Creative Popup - https://creativepopup.webshopworks.com
+ *
+ * @author    WebshopWorks <info@webshopworks.com>
+ * @copyright 2018-2024 WebshopWorks
+ * @license   One Domain Licence
+ *
+ * Not allowed to resell or redistribute this software
+ */
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+?>
+<script type="text/html" id="tmpl-import-layer">
+    <div id="tmpl-import-layer-modal-window">
+        <header>
+            <h1><?php cp_e('Import Layer'); ?></h1>
+            <b class="dashicons dashicons-no"></b>
+        </header>
+        <div class="km-ui-modal-scrollable">
+            <div class="columns clearfix">
+                    <div class="third third-1">
+                        <h3><?php cp_e('Select popup'); ?></h3>
+                    </div>
+                    <div class="third third-2">
+                        <h3><?php cp_e('Choose a Page'); ?></h3>
+                    </div>
+                    <div class="third third-3">
+                        <h3><?php cp_e('Click to import'); ?></h3>
+                    </div>
+            </div>
+            <div class="columns clearfix">
+                <div class="third third-1 cp-import-layer-sliders">
+                    <?php cp_e('Loading ...'); ?>
+                </div>
+                <div class="third third-2 cp-import-layer-slides">
+                    <?php cp_e('Select a popup first.'); ?>
+                </div>
+                <div class="third third-3 cp-import-layer-layers">
+                    <?php cp_e('Select a page first.'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

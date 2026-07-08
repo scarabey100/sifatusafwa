@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+SAV - Discussion transférée
+
+{employee} souhaiterait vous transférer cette discussion.
+
+Historique de la discussion : {messages}
+
+{employee} a ajouté {comment}

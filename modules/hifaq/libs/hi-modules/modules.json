@@ -1,0 +1,132 @@
+[
+    {
+        "key": "A_BLG",
+        "name": "hiblog",
+        "display_name": "Business Blog Pro",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/blog-forum-new/43592-blog.html",
+        "image_link": "https://hipresta.com/images/addons/blog/logo.png",
+        "addons": true,
+        "desc_short": "This is the only Blog module you'll ever need. It has all necessary tools to create professional looking simple or advanced Blog page for your PrestaShop website."
+    },
+    {
+        "key": "A_BLL",
+        "name": "hiblacklist",
+        "display_name": "Ban IP Addresses / Countries / Bots",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/website-security-access/29748-ban-ip-block-visitors-view-location-address.html",
+        "image_link": "https://hipresta.com/images/addons/banip/logo.png",
+        "addons": true,
+        "desc_short": "Ban IP module will help you block access to your store for unwanted IP addresses, countries and bots or redirect them to another website. With Block IP module you can see location on the map and the address of visitors and block them in real time."
+    },
+    {
+        "key": "A_PRV",
+        "name": "hiproductvideos",
+        "display_name": "Product Videos - Youtube / Vimeo",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/videos-music/48141-product-videos-youtube-vimeo.html",
+        "image_link": "https://hipresta.com/images/addons/productvideos/logo.png",
+        "addons": true,
+        "desc_short": "Make pages of your products more interesting and colorful for customers and increase the conversion rate of your products by at least 30%."
+    },
+    {
+        "key": "A_EUL",
+        "name": "hicookielaw",
+        "display_name": "Cookie Banner - EU Law GDPR Compliance",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/legal/48223-cookie-banner-eu-law-gdpr-compliance.html",
+        "image_link": "https://hipresta.com/images/addons/cookie/logo.png",
+        "addons": true,
+        "desc_short": "An easy way to comply with complex and important EU law on data protection rules (GDPR) regarding cookies."
+    },
+    {
+        "key": "A_HGR",
+        "name": "hirecaptcha",
+        "display_name": "Google reCAPTCHA and Security Tools",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/website-security-access/45673-google-recaptcha.html",
+        "image_link": "https://hipresta.com/images/addons/recaptcha/logo.png",
+        "addons": true,
+        "desc_short": "Improve the security of your website and protect yourself from spam emails and fake registrations."
+    },
+    {
+        "key": "A_FAQ",
+        "name": "hifaq",
+        "display_name": "Frequently Asked Questions",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/faq-frequently-asked-questions/43454-frequently-asked-questions-faq.html",
+        "image_link": "https://hipresta.com/images/addons/faq/logo.png",
+        "addons": true,
+        "desc_short": "The presence of a FAQs page is an important criterion for a search engine in the page ranking process because Search Engines take into account that your website want to help people to make a more informed decision."
+    },
+    {
+        "key": "A_PGL",
+        "name": "higallery",
+        "display_name": "Professional Gallery",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/sliders-galleries/30632-professional-gallery.html",
+        "image_link": "https://hipresta.com/images/addons/gallery/logo.png",
+        "addons": true,
+        "desc_short": "Do you have new and original products that you need to present to your customers in the most colorful and informative way? Our Gallery Module will perfectly cope with this task."
+    },
+    {
+        "key": "A_AGW",
+        "name": "hiadvancedgiftwrapping",
+        "display_name": "Advanced Gift Wrapping",
+        "price": "97.99€",
+        "link": "https://addons.prestashop.com/en/registration-ordering-process/31464-advanced-gift-wrapping.html",
+        "image_link": "https://hipresta.com/images/addons/gift/logo.png",
+        "addons": true,
+        "desc_short": "Increase your earnings with Advanced gift wrapping options."
+    },
+    {
+        "key": "A_CPA",
+        "name": "hicarouselspack",
+        "display_name": "Carousels Pack (16 in 1)",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/sliders-galleries/20410-carousels-pack-16-in-1.html",
+        "image_link": "https://hipresta.com/images/addons/carousel/logo.png",
+        "addons": true,
+        "desc_short": "Do you have products that you would like to highlight and present in the most beneficial way? Carousels Pack is the easiest way to highlight and show your best products to customers."
+    },
+    {
+        "key": "A_OOS",
+        "name": "hioutofstocknotification",
+        "display_name": "Out of Stock Notification",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/emails-notifications/20091-out-of-stock-notification.html",
+        "image_link": "https://hipresta.com/images/addons/oosn/logo.png",
+        "addons": true,
+        "desc_short": "Allow your customers to subscribe for out of stock products and get notified when product is back in stock."
+    },
+    {
+        "key": "A_UPL",
+        "name": "hiupsell",
+        "display_name": "Cross Selling PRO",
+        "price": "97.99€",
+        "link": "https://addons.prestashop.com/en/cross-selling-product-bundles/29380-upsell-push-on-cart.html",
+        "image_link": "https://hipresta.com/images/addons/upsell/logo.png",
+        "addons": true,
+        "desc_short": "UpSell Module will help you offer and sell more products to customers who have already passed the stages of Attention, Interest, Desire and are already at the stage of Action."
+    },
+    {
+        "key": "A_CMB",
+        "name": "hicallmeback",
+        "display_name": "Advanced Call Back Requests",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/support-online-chat/19905-advanced-call-back-requests.html",
+        "image_link": "https://hipresta.com/images/addons/callmeback/logo.png",
+        "addons": true,
+        "desc_short": "The Advanced Call Back Requests PrestaShop module is a powerful tool that allows customers to request a call back from merchants directly from the merchant's website."
+    },
+    {
+        "key": "A_ODL",
+        "name": "hideleteorders",
+        "display_name": "Easy Order Delete",
+        "price": "69.99€",
+        "link": "https://addons.prestashop.com/en/order-management/48572-easy-order-delete.html",
+        "image_link": "https://hipresta.com/images/addons/orderdelete/logo.png",
+        "addons": true,
+        "desc_short": "Delete all unnecessary orders and related data. An indispensable tool for testing payment transactions."
+    }
+]

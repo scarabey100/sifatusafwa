@@ -1,0 +1,8 @@
+Ciao {firstname} {lastname},
+Il tuo buono regalo da {giftcard_price} è stato inviato oggi a {giftcard_to_mail}, insieme al tuo messaggio personalizzato.
+
+Troverete in allegato a questa e-mail un file PDF riassuntivo.
+
+Grazie per la vostra fiducia.
+
+Buon shopping su {shop_name}!

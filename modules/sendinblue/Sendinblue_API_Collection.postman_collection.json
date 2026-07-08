@@ -1,0 +1,619 @@
+{
+	"info": {
+		"_postman_id": "sendinblue-prestashop-api",
+		"name": "Sendinblue PrestaShop API",
+		"description": "Postman collection for Sendinblue PrestaShop webservice endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://prestashop-prod.brevo.com",
+			"type": "string"
+		},
+		{
+			"key": "ws_key",
+			"value": "YOUR_WEBSERVICE_KEY",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Test Connection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluetest?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluetest"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Test connection and get plugin/shop version information"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Configuration",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueconfigs?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueconfigs"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get Sendinblue configuration settings"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Configuration",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userConnectionId\": \"\",\n  \"isAutoSyncEnabled\": true,\n  \"isContactStateSyncEnabled\": false,\n  \"subscriptionMailing\": \"\",\n  \"isPageTrackingEnabled\": false,\n  \"isAbandonedCartTrackingEnabled\": false,\n  \"marketingAutomationKey\": \"\",\n  \"mappedGroups\": \"\",\n  \"isCustomerSyncEnabled\": false,\n  \"isSmtpEnabled\": false,\n  \"smtpSender\": \"\",\n  \"smtpUser\": \"\",\n  \"smtpPassword\": \"\",\n  \"smtpHost\": \"\",\n  \"smtpPort\": \"\",\n  \"listId\": \"\",\n  \"isCategoryAutoSyncEnabled\": false,\n  \"isProductsAutoSyncEnabled\": false,\n  \"isOrderAutoSyncEnabled\": false,\n  \"isEcommerceEnabled\": false,\n  \"isBackInStockSyncEnabled\": false,\n  \"isUnifiedEnabled\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueconfig?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueconfig"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Update Sendinblue configuration settings"
+			},
+			"response": []
+		},
+		{
+			"name": "Disconnect",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluedisconnect?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluedisconnect"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Disconnect Sendinblue configuration"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Plugin Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueinfo?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueinfo"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get Sendinblue plugin version information"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Test Mail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"sendTestEmail\": \"test@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluesendtestmail?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluesendtestmail"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Send a test email"
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribe Recipient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"user@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluesubscribe?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluesubscribe"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Subscribe a recipient to Sendinblue"
+			},
+			"response": []
+		},
+		{
+			"name": "Unsubscribe Recipient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"user@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueunsubscribe?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueunsubscribe"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Unsubscribe a recipient from Sendinblue"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueproducts?output_format=JSON&ws_key={{ws_key}}&term=&page=1&limit=100",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueproducts"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						},
+						{
+							"key": "term",
+							"value": "",
+							"description": "Search term (optional)"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Page number"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"description": "Items per page"
+						}
+					]
+				},
+				"description": "Get products with pagination and optional search term"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products Full Sync",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueproductsfullsync?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueproductsfullsync"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get products for full synchronization"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueproductcount?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueproductcount"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get total product count"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluecustomers?output_format=JSON&ws_key={{ws_key}}&filter=&limit=1000&offset=0",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluecustomers"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						},
+						{
+							"key": "filter",
+							"value": "",
+							"description": "Filter criteria (optional)"
+						},
+						{
+							"key": "limit",
+							"value": "1000",
+							"description": "Items per page (default: 1000)"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "Offset for pagination (default: 0)"
+						}
+					]
+				},
+				"description": "Get customers with pagination and optional filter"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluecustomercount?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluecustomercount"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get total customer count"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Newsletter Recipients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluenewsletterrecipients?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluenewsletterrecipients"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get newsletter recipients"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueorders?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueorders"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order Count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinblueordercount?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinblueordercount"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get total order count"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluecategories?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluecategories"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get categories"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category Count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/sendinbluecategorycount?output_format=JSON&ws_key={{ws_key}}",
+					"host": ["{{base_url}}"],
+					"path": ["api", "sendinbluecategorycount"],
+					"query": [
+						{
+							"key": "output_format",
+							"value": "JSON"
+						},
+						{
+							"key": "ws_key",
+							"value": "{{ws_key}}"
+						}
+					]
+				},
+				"description": "Get total category count"
+			},
+			"response": []
+		}
+	]
+}

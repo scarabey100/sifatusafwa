@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsImpressions",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "googleAdsImpressions"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

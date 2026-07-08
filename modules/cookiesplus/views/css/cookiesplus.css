@@ -1,0 +1,1943 @@
+/*
+ * ISC License
+ *
+ * Copyright (c) 2025 idnovate.com
+ * idnovate is a Registered Trademark & Property of idnovate.com, innovación y desarrollo SCP
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+ * REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+ * INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+ * LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ *
+ * @author    idnovate
+ * @copyright 2025 idnovate.com
+ * @license   https://www.isc.org/licenses/ https://opensource.org/licenses/ISC ISC License
+ */
+/* Bootstrap backward */
+#cookiesplus-modal,
+#cookiesplus-modal *,
+#cookiesplus-modal:after,
+#cookiesplus-modal:before,
+#cookiesplus-modal :after,
+#cookiesplus-modal :before {
+    box-sizing: border-box;
+}
+
+#cookiesplus-modal ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    -webkit-overflow-scrolling: auto;
+}
+
+#cookiesplus-modal ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+#cookiesplus-modal .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#cookiesplus-modal .row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (min-width: 576px) {
+    #cookiesplus-modal .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width: 768px) {
+    #cookiesplus-modal .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width: 992px) {
+    #cookiesplus-modal .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width: 1200px) {
+    #cookiesplus-modal .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+#cookiesplus-modal-container .col-lg, #cookiesplus-modal-container .col-lg-1, #cookiesplus-modal-container .col-lg-2, #cookiesplus-modal-container .col-lg-3, #cookiesplus-modal-container .col-lg-4, #cookiesplus-modal-container .col-lg-5, #cookiesplus-modal-container .col-lg-6, #cookiesplus-modal-container .col-lg-7, #cookiesplus-modal-container .col-lg-8, #cookiesplus-modal-container .col-lg-9, #cookiesplus-modal-container .col-lg-10, #cookiesplus-modal-container .col-lg-11, #cookiesplus-modal-container .col-lg-12, #cookiesplus-modal-container .col-md, #cookiesplus-modal-container .col-md-1, #cookiesplus-modal-container .col-md-2, #cookiesplus-modal-container .col-md-3, #cookiesplus-modal-container .col-md-4, #cookiesplus-modal-container .col-md-5, #cookiesplus-modal-container .col-md-6, #cookiesplus-modal-container .col-md-7, #cookiesplus-modal-container .col-md-8, #cookiesplus-modal-container .col-md-9, #cookiesplus-modal-container .col-md-10, #cookiesplus-modal-container .col-md-11, #cookiesplus-modal-container .col-md-12, #cookiesplus-modal-container .col-sm, #cookiesplus-modal-container .col-sm-1, #cookiesplus-modal-container .col-sm-2, #cookiesplus-modal-container .col-sm-3, #cookiesplus-modal-container .col-sm-4, #cookiesplus-modal-container .col-sm-5, #cookiesplus-modal-container .col-sm-6, #cookiesplus-modal-container .col-sm-7, #cookiesplus-modal-container .col-sm-8, #cookiesplus-modal-container .col-sm-9, #cookiesplus-modal-container .col-sm-10, #cookiesplus-modal-container .col-sm-11, #cookiesplus-modal-container .col-sm-12, #cookiesplus-modal-container .col-xl, #cookiesplus-modal-container .col-xl-1, #cookiesplus-modal-container .col-xl-2, #cookiesplus-modal-container .col-xl-3, #cookiesplus-modal-container .col-xl-4, #cookiesplus-modal-container .col-xl-5, #cookiesplus-modal-container .col-xl-6, #cookiesplus-modal-container .col-xl-7, #cookiesplus-modal-container .col-xl-8, #cookiesplus-modal-container .col-xl-9, #cookiesplus-modal-container .col-xl-10, #cookiesplus-modal-container .col-xl-11, #cookiesplus-modal-container .col-xl-12, #cookiesplus-modal-container .col-xs, #cookiesplus-modal-container .col-xs-1, #cookiesplus-modal-container .col-xs-2, #cookiesplus-modal-container .col-xs-3, #cookiesplus-modal-container .col-xs-4, #cookiesplus-modal-container .col-xs-5, #cookiesplus-modal-container .col-xs-6, #cookiesplus-modal-container .col-xs-7, #cookiesplus-modal-container .col-xs-8, #cookiesplus-modal-container .col-xs-9, #cookiesplus-modal-container .col-xs-10, #cookiesplus-modal-container .col-xs-11, #cookiesplus-modal-container .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width: 576px) {
+    #cookiesplus-modal-container .col-lg, #cookiesplus-modal-container .col-lg-1, #cookiesplus-modal-container .col-lg-2, #cookiesplus-modal-container .col-lg-3, #cookiesplus-modal-container .col-lg-4, #cookiesplus-modal-container .col-lg-5, #cookiesplus-modal-container .col-lg-6, #cookiesplus-modal-container .col-lg-7, #cookiesplus-modal-container .col-lg-8, #cookiesplus-modal-container .col-lg-9, #cookiesplus-modal-container .col-lg-10, #cookiesplus-modal-container .col-lg-11, #cookiesplus-modal-container .col-lg-12, #cookiesplus-modal-container .col-md, #cookiesplus-modal-container .col-md-1, #cookiesplus-modal-container .col-md-2, #cookiesplus-modal-container .col-md-3, #cookiesplus-modal-container .col-md-4, #cookiesplus-modal-container .col-md-5, #cookiesplus-modal-container .col-md-6, #cookiesplus-modal-container .col-md-7, #cookiesplus-modal-container .col-md-8, #cookiesplus-modal-container .col-md-9, #cookiesplus-modal-container .col-md-10, #cookiesplus-modal-container .col-md-11, #cookiesplus-modal-container .col-md-12, #cookiesplus-modal-container .col-sm, #cookiesplus-modal-container .col-sm-1, #cookiesplus-modal-container .col-sm-2, #cookiesplus-modal-container .col-sm-3, #cookiesplus-modal-container .col-sm-4, #cookiesplus-modal-container .col-sm-5, #cookiesplus-modal-container .col-sm-6, #cookiesplus-modal-container .col-sm-7, #cookiesplus-modal-container .col-sm-8, #cookiesplus-modal-container .col-sm-9, #cookiesplus-modal-container .col-sm-10, #cookiesplus-modal-container .col-sm-11, #cookiesplus-modal-container .col-sm-12, #cookiesplus-modal-container .col-xl, #cookiesplus-modal-container .col-xl-1, #cookiesplus-modal-container .col-xl-2, #cookiesplus-modal-container .col-xl-3, #cookiesplus-modal-container .col-xl-4, #cookiesplus-modal-container .col-xl-5, #cookiesplus-modal-container .col-xl-6, #cookiesplus-modal-container .col-xl-7, #cookiesplus-modal-container .col-xl-8, #cookiesplus-modal-container .col-xl-9, #cookiesplus-modal-container .col-xl-10, #cookiesplus-modal-container .col-xl-11, #cookiesplus-modal-container .col-xl-12, #cookiesplus-modal-container .col-xs, #cookiesplus-modal-container .col-xs-1, #cookiesplus-modal-container .col-xs-2, #cookiesplus-modal-container .col-xs-3, #cookiesplus-modal-container .col-xs-4, #cookiesplus-modal-container .col-xs-5, #cookiesplus-modal-container .col-xs-6, #cookiesplus-modal-container .col-xs-7, #cookiesplus-modal-container .col-xs-8, #cookiesplus-modal-container .col-xs-9, #cookiesplus-modal-container .col-xs-10, #cookiesplus-modal-container .col-xs-11, #cookiesplus-modal-container .col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width: 768px) {
+    #cookiesplus-modal-container .col-lg, #cookiesplus-modal-container .col-lg-1, #cookiesplus-modal-container .col-lg-2, #cookiesplus-modal-container .col-lg-3, #cookiesplus-modal-container .col-lg-4, #cookiesplus-modal-container .col-lg-5, #cookiesplus-modal-container .col-lg-6, #cookiesplus-modal-container .col-lg-7, #cookiesplus-modal-container .col-lg-8, #cookiesplus-modal-container .col-lg-9, #cookiesplus-modal-container .col-lg-10, #cookiesplus-modal-container .col-lg-11, #cookiesplus-modal-container .col-lg-12, #cookiesplus-modal-container .col-md, #cookiesplus-modal-container .col-md-1, #cookiesplus-modal-container .col-md-2, #cookiesplus-modal-container .col-md-3, #cookiesplus-modal-container .col-md-4, #cookiesplus-modal-container .col-md-5, #cookiesplus-modal-container .col-md-6, #cookiesplus-modal-container .col-md-7, #cookiesplus-modal-container .col-md-8, #cookiesplus-modal-container .col-md-9, #cookiesplus-modal-container .col-md-10, #cookiesplus-modal-container .col-md-11, #cookiesplus-modal-container .col-md-12, #cookiesplus-modal-container .col-sm, #cookiesplus-modal-container .col-sm-1, #cookiesplus-modal-container .col-sm-2, #cookiesplus-modal-container .col-sm-3, #cookiesplus-modal-container .col-sm-4, #cookiesplus-modal-container .col-sm-5, #cookiesplus-modal-container .col-sm-6, #cookiesplus-modal-container .col-sm-7, #cookiesplus-modal-container .col-sm-8, #cookiesplus-modal-container .col-sm-9, #cookiesplus-modal-container .col-sm-10, #cookiesplus-modal-container .col-sm-11, #cookiesplus-modal-container .col-sm-12, #cookiesplus-modal-container .col-xl, #cookiesplus-modal-container .col-xl-1, #cookiesplus-modal-container .col-xl-2, #cookiesplus-modal-container .col-xl-3, #cookiesplus-modal-container .col-xl-4, #cookiesplus-modal-container .col-xl-5, #cookiesplus-modal-container .col-xl-6, #cookiesplus-modal-container .col-xl-7, #cookiesplus-modal-container .col-xl-8, #cookiesplus-modal-container .col-xl-9, #cookiesplus-modal-container .col-xl-10, #cookiesplus-modal-container .col-xl-11, #cookiesplus-modal-container .col-xl-12, #cookiesplus-modal-container .col-xs, #cookiesplus-modal-container .col-xs-1, #cookiesplus-modal-container .col-xs-2, #cookiesplus-modal-container .col-xs-3, #cookiesplus-modal-container .col-xs-4, #cookiesplus-modal-container .col-xs-5, #cookiesplus-modal-container .col-xs-6, #cookiesplus-modal-container .col-xs-7, #cookiesplus-modal-container .col-xs-8, #cookiesplus-modal-container .col-xs-9, #cookiesplus-modal-container .col-xs-10, #cookiesplus-modal-container .col-xs-11, #cookiesplus-modal-container .col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width: 992px) {
+    #cookiesplus-modal-container .col-lg, #cookiesplus-modal-container .col-lg-1, #cookiesplus-modal-container .col-lg-2, #cookiesplus-modal-container .col-lg-3, #cookiesplus-modal-container .col-lg-4, #cookiesplus-modal-container .col-lg-5, #cookiesplus-modal-container .col-lg-6, #cookiesplus-modal-container .col-lg-7, #cookiesplus-modal-container .col-lg-8, #cookiesplus-modal-container .col-lg-9, #cookiesplus-modal-container .col-lg-10, #cookiesplus-modal-container .col-lg-11, #cookiesplus-modal-container .col-lg-12, #cookiesplus-modal-container .col-md, #cookiesplus-modal-container .col-md-1, #cookiesplus-modal-container .col-md-2, #cookiesplus-modal-container .col-md-3, #cookiesplus-modal-container .col-md-4, #cookiesplus-modal-container .col-md-5, #cookiesplus-modal-container .col-md-6, #cookiesplus-modal-container .col-md-7, #cookiesplus-modal-container .col-md-8, #cookiesplus-modal-container .col-md-9, #cookiesplus-modal-container .col-md-10, #cookiesplus-modal-container .col-md-11, #cookiesplus-modal-container .col-md-12, #cookiesplus-modal-container .col-sm, #cookiesplus-modal-container .col-sm-1, #cookiesplus-modal-container .col-sm-2, #cookiesplus-modal-container .col-sm-3, #cookiesplus-modal-container .col-sm-4, #cookiesplus-modal-container .col-sm-5, #cookiesplus-modal-container .col-sm-6, #cookiesplus-modal-container .col-sm-7, #cookiesplus-modal-container .col-sm-8, #cookiesplus-modal-container .col-sm-9, #cookiesplus-modal-container .col-sm-10, #cookiesplus-modal-container .col-sm-11, #cookiesplus-modal-container .col-sm-12, #cookiesplus-modal-container .col-xl, #cookiesplus-modal-container .col-xl-1, #cookiesplus-modal-container .col-xl-2, #cookiesplus-modal-container .col-xl-3, #cookiesplus-modal-container .col-xl-4, #cookiesplus-modal-container .col-xl-5, #cookiesplus-modal-container .col-xl-6, #cookiesplus-modal-container .col-xl-7, #cookiesplus-modal-container .col-xl-8, #cookiesplus-modal-container .col-xl-9, #cookiesplus-modal-container .col-xl-10, #cookiesplus-modal-container .col-xl-11, #cookiesplus-modal-container .col-xl-12, #cookiesplus-modal-container .col-xs, #cookiesplus-modal-container .col-xs-1, #cookiesplus-modal-container .col-xs-2, #cookiesplus-modal-container .col-xs-3, #cookiesplus-modal-container .col-xs-4, #cookiesplus-modal-container .col-xs-5, #cookiesplus-modal-container .col-xs-6, #cookiesplus-modal-container .col-xs-7, #cookiesplus-modal-container .col-xs-8, #cookiesplus-modal-container .col-xs-9, #cookiesplus-modal-container .col-xs-10, #cookiesplus-modal-container .col-xs-11, #cookiesplus-modal-container .col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width: 1200px) {
+    #cookiesplus-modal-container .col-lg, #cookiesplus-modal-container .col-lg-1, #cookiesplus-modal-container .col-lg-2, #cookiesplus-modal-container .col-lg-3, #cookiesplus-modal-container .col-lg-4, #cookiesplus-modal-container .col-lg-5, #cookiesplus-modal-container .col-lg-6, #cookiesplus-modal-container .col-lg-7, #cookiesplus-modal-container .col-lg-8, #cookiesplus-modal-container .col-lg-9, #cookiesplus-modal-container .col-lg-10, #cookiesplus-modal-container .col-lg-11, #cookiesplus-modal-container .col-lg-12, #cookiesplus-modal-container .col-md, #cookiesplus-modal-container .col-md-1, #cookiesplus-modal-container .col-md-2, #cookiesplus-modal-container .col-md-3, #cookiesplus-modal-container .col-md-4, #cookiesplus-modal-container .col-md-5, #cookiesplus-modal-container .col-md-6, #cookiesplus-modal-container .col-md-7, #cookiesplus-modal-container .col-md-8, #cookiesplus-modal-container .col-md-9, #cookiesplus-modal-container .col-md-10, #cookiesplus-modal-container .col-md-11, #cookiesplus-modal-container .col-md-12, #cookiesplus-modal-container .col-sm, #cookiesplus-modal-container .col-sm-1, #cookiesplus-modal-container .col-sm-2, #cookiesplus-modal-container .col-sm-3, #cookiesplus-modal-container .col-sm-4, #cookiesplus-modal-container .col-sm-5, #cookiesplus-modal-container .col-sm-6, #cookiesplus-modal-container .col-sm-7, #cookiesplus-modal-container .col-sm-8, #cookiesplus-modal-container .col-sm-9, #cookiesplus-modal-container .col-sm-10, #cookiesplus-modal-container .col-sm-11, #cookiesplus-modal-container .col-sm-12, #cookiesplus-modal-container .col-xl, #cookiesplus-modal-container .col-xl-1, #cookiesplus-modal-container .col-xl-2, #cookiesplus-modal-container .col-xl-3, #cookiesplus-modal-container .col-xl-4, #cookiesplus-modal-container .col-xl-5, #cookiesplus-modal-container .col-xl-6, #cookiesplus-modal-container .col-xl-7, #cookiesplus-modal-container .col-xl-8, #cookiesplus-modal-container .col-xl-9, #cookiesplus-modal-container .col-xl-10, #cookiesplus-modal-container .col-xl-11, #cookiesplus-modal-container .col-xl-12, #cookiesplus-modal-container .col-xs, #cookiesplus-modal-container .col-xs-1, #cookiesplus-modal-container .col-xs-2, #cookiesplus-modal-container .col-xs-3, #cookiesplus-modal-container .col-xs-4, #cookiesplus-modal-container .col-xs-5, #cookiesplus-modal-container .col-xs-6, #cookiesplus-modal-container .col-xs-7, #cookiesplus-modal-container .col-xs-8, #cookiesplus-modal-container .col-xs-9, #cookiesplus-modal-container .col-xs-10, #cookiesplus-modal-container .col-xs-11, #cookiesplus-modal-container .col-xs-12 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+#cookiesplus-modal-container .col-xs-1 {
+    float: left;
+    width: 8.33333%
+}
+
+#cookiesplus-modal-container .col-xs-2 {
+    float: left;
+    width: 16.66667%
+}
+
+#cookiesplus-modal-container .col-xs-3 {
+    float: left;
+    width: 25%
+}
+
+#cookiesplus-modal-container .col-xs-4 {
+    float: left;
+    width: 33.33333%
+}
+
+#cookiesplus-modal-container .col-xs-5 {
+    float: left;
+    width: 41.66667%
+}
+
+#cookiesplus-modal-container .col-xs-6 {
+    float: left;
+    width: 50%
+}
+
+#cookiesplus-modal-container .col-xs-7 {
+    float: left;
+    width: 58.33333%
+}
+
+#cookiesplus-modal-container .col-xs-8 {
+    float: left;
+    width: 66.66667%
+}
+
+#cookiesplus-modal-container .col-xs-9 {
+    float: left;
+    width: 75%
+}
+
+#cookiesplus-modal-container .col-xs-10 {
+    float: left;
+    width: 83.33333%
+}
+
+#cookiesplus-modal-container .col-xs-11 {
+    float: left;
+    width: 91.66667%
+}
+
+#cookiesplus-modal-container .col-xs-12 {
+    float: left;
+    width: 100%
+}
+
+#cookiesplus-modal .pull-xs-0 {
+    right: auto
+}
+
+#cookiesplus-modal .pull-xs-1 {
+    right: 8.33333%
+}
+
+#cookiesplus-modal .pull-xs-2 {
+    right: 16.66667%
+}
+
+#cookiesplus-modal .pull-xs-3 {
+    right: 25%
+}
+
+#cookiesplus-modal .pull-xs-4 {
+    right: 33.33333%
+}
+
+#cookiesplus-modal .pull-xs-5 {
+    right: 41.66667%
+}
+
+#cookiesplus-modal .pull-xs-6 {
+    right: 50%
+}
+
+#cookiesplus-modal .pull-xs-7 {
+    right: 58.33333%
+}
+
+#cookiesplus-modal .pull-xs-8 {
+    right: 66.66667%
+}
+
+#cookiesplus-modal .pull-xs-9 {
+    right: 75%
+}
+
+#cookiesplus-modal .pull-xs-10 {
+    right: 83.33333%
+}
+
+#cookiesplus-modal .pull-xs-11 {
+    right: 91.66667%
+}
+
+#cookiesplus-modal .pull-xs-12 {
+    right: 100%
+}
+
+#cookiesplus-modal .push-xs-0 {
+    left: auto
+}
+
+#cookiesplus-modal .push-xs-1 {
+    left: 8.33333%
+}
+
+#cookiesplus-modal .push-xs-2 {
+    left: 16.66667%
+}
+
+#cookiesplus-modal .push-xs-3 {
+    left: 25%
+}
+
+#cookiesplus-modal .push-xs-4 {
+    left: 33.33333%
+}
+
+#cookiesplus-modal .push-xs-5 {
+    left: 41.66667%
+}
+
+#cookiesplus-modal .push-xs-6 {
+    left: 50%
+}
+
+#cookiesplus-modal .push-xs-7 {
+    left: 58.33333%
+}
+
+#cookiesplus-modal .push-xs-8 {
+    left: 66.66667%
+}
+
+#cookiesplus-modal .push-xs-9 {
+    left: 75%
+}
+
+#cookiesplus-modal .push-xs-10 {
+    left: 83.33333%
+}
+
+#cookiesplus-modal .push-xs-11 {
+    left: 91.66667%
+}
+
+#cookiesplus-modal .push-xs-12 {
+    left: 100%
+}
+
+#cookiesplus-modal .offset-xs-1 {
+    margin-left: 8.33333%
+}
+
+#cookiesplus-modal .offset-xs-2 {
+    margin-left: 16.66667%
+}
+
+#cookiesplus-modal .offset-xs-3 {
+    margin-left: 25%
+}
+
+#cookiesplus-modal .offset-xs-4 {
+    margin-left: 33.33333%
+}
+
+#cookiesplus-modal .offset-xs-5 {
+    margin-left: 41.66667%
+}
+
+#cookiesplus-modal .offset-xs-6 {
+    margin-left: 50%
+}
+
+#cookiesplus-modal .offset-xs-7 {
+    margin-left: 58.33333%
+}
+
+#cookiesplus-modal .offset-xs-8 {
+    margin-left: 66.66667%
+}
+
+#cookiesplus-modal .offset-xs-9 {
+    margin-left: 75%
+}
+
+#cookiesplus-modal .offset-xs-10 {
+    margin-left: 83.33333%
+}
+
+#cookiesplus-modal .offset-xs-11 {
+    margin-left: 91.66667%
+}
+
+@media (min-width: 576px) {
+    #cookiesplus-modal-container .col-sm-1 {
+        float: left;
+        width: 8.33333%
+    }
+
+    #cookiesplus-modal-container .col-sm-2 {
+        float: left;
+        width: 16.66667%
+    }
+
+    #cookiesplus-modal-container .col-sm-3 {
+        float: left;
+        width: 25%
+    }
+
+    #cookiesplus-modal-container .col-sm-4 {
+        float: left;
+        width: 33.33333%
+    }
+
+    #cookiesplus-modal-container .col-sm-5 {
+        float: left;
+        width: 41.66667%
+    }
+
+    #cookiesplus-modal-container .col-sm-6 {
+        float: left;
+        width: 50%
+    }
+
+    #cookiesplus-modal-container .col-sm-7 {
+        float: left;
+        width: 58.33333%
+    }
+
+    #cookiesplus-modal-container .col-sm-8 {
+        float: left;
+        width: 66.66667%
+    }
+
+    #cookiesplus-modal-container .col-sm-9 {
+        float: left;
+        width: 75%
+    }
+
+    #cookiesplus-modal-container .col-sm-10 {
+        float: left;
+        width: 83.33333%
+    }
+
+    #cookiesplus-modal-container .col-sm-11 {
+        float: left;
+        width: 91.66667%
+    }
+
+    #cookiesplus-modal-container .col-sm-12 {
+        float: left;
+        width: 100%
+    }
+
+    #cookiesplus-modal .pull-sm-0 {
+        right: auto
+    }
+
+    #cookiesplus-modal .pull-sm-1 {
+        right: 8.33333%
+    }
+
+    #cookiesplus-modal .pull-sm-2 {
+        right: 16.66667%
+    }
+
+    #cookiesplus-modal .pull-sm-3 {
+        right: 25%
+    }
+
+    #cookiesplus-modal .pull-sm-4 {
+        right: 33.33333%
+    }
+
+    #cookiesplus-modal .pull-sm-5 {
+        right: 41.66667%
+    }
+
+    #cookiesplus-modal .pull-sm-6 {
+        right: 50%
+    }
+
+    #cookiesplus-modal .pull-sm-7 {
+        right: 58.33333%
+    }
+
+    #cookiesplus-modal .pull-sm-8 {
+        right: 66.66667%
+    }
+
+    #cookiesplus-modal .pull-sm-9 {
+        right: 75%
+    }
+
+    #cookiesplus-modal .pull-sm-10 {
+        right: 83.33333%
+    }
+
+    #cookiesplus-modal .pull-sm-11 {
+        right: 91.66667%
+    }
+
+    #cookiesplus-modal .pull-sm-12 {
+        right: 100%
+    }
+
+    #cookiesplus-modal .push-sm-0 {
+        left: auto
+    }
+
+    #cookiesplus-modal .push-sm-1 {
+        left: 8.33333%
+    }
+
+    #cookiesplus-modal .push-sm-2 {
+        left: 16.66667%
+    }
+
+    #cookiesplus-modal .push-sm-3 {
+        left: 25%
+    }
+
+    #cookiesplus-modal .push-sm-4 {
+        left: 33.33333%
+    }
+
+    #cookiesplus-modal .push-sm-5 {
+        left: 41.66667%
+    }
+
+    #cookiesplus-modal .push-sm-6 {
+        left: 50%
+    }
+
+    #cookiesplus-modal .push-sm-7 {
+        left: 58.33333%
+    }
+
+    #cookiesplus-modal .push-sm-8 {
+        left: 66.66667%
+    }
+
+    #cookiesplus-modal .push-sm-9 {
+        left: 75%
+    }
+
+    #cookiesplus-modal .push-sm-10 {
+        left: 83.33333%
+    }
+
+    #cookiesplus-modal .push-sm-11 {
+        left: 91.66667%
+    }
+
+    #cookiesplus-modal .push-sm-12 {
+        left: 100%
+    }
+
+    #cookiesplus-modal .offset-sm-0 {
+        margin-left: 0
+    }
+
+    #cookiesplus-modal .offset-sm-1 {
+        margin-left: 8.33333%
+    }
+
+    #cookiesplus-modal .offset-sm-2 {
+        margin-left: 16.66667%
+    }
+
+    #cookiesplus-modal .offset-sm-3 {
+        margin-left: 25%
+    }
+
+    #cookiesplus-modal .offset-sm-4 {
+        margin-left: 33.33333%
+    }
+
+    #cookiesplus-modal .offset-sm-5 {
+        margin-left: 41.66667%
+    }
+
+    #cookiesplus-modal .offset-sm-6 {
+        margin-left: 50%
+    }
+
+    #cookiesplus-modal .offset-sm-7 {
+        margin-left: 58.33333%
+    }
+
+    #cookiesplus-modal .offset-sm-8 {
+        margin-left: 66.66667%
+    }
+
+    #cookiesplus-modal .offset-sm-9 {
+        margin-left: 75%
+    }
+
+    #cookiesplus-modal .offset-sm-10 {
+        margin-left: 83.33333%
+    }
+
+    #cookiesplus-modal .offset-sm-11 {
+        margin-left: 91.66667%
+    }
+}
+
+@media (min-width: 768px) {
+    #cookiesplus-modal-container .col-md-1 {
+        float: left;
+        width: 8.33333%
+    }
+
+    #cookiesplus-modal-container .col-md-2 {
+        float: left;
+        width: 16.66667%
+    }
+
+    #cookiesplus-modal-container .col-md-3 {
+        float: left;
+        width: 25%
+    }
+
+    #cookiesplus-modal-container .col-md-4 {
+        float: left;
+        width: 33.33333%
+    }
+
+    #cookiesplus-modal-container .col-md-5 {
+        float: left;
+        width: 41.66667%
+    }
+
+    #cookiesplus-modal-container .col-md-6 {
+        float: left;
+        width: 50%
+    }
+
+    #cookiesplus-modal-container .col-md-7 {
+        float: left;
+        width: 58.33333%
+    }
+
+    #cookiesplus-modal-container .col-md-8 {
+        float: left;
+        width: 66.66667%
+    }
+
+    #cookiesplus-modal-container .col-md-9 {
+        float: left;
+        width: 75%
+    }
+
+    #cookiesplus-modal-container .col-md-10 {
+        float: left;
+        width: 83.33333%
+    }
+
+    #cookiesplus-modal-container .col-md-11 {
+        float: left;
+        width: 91.66667%
+    }
+
+    #cookiesplus-modal-container .col-md-12 {
+        float: left;
+        width: 100%
+    }
+
+    #cookiesplus-modal .pull-md-0 {
+        right: auto
+    }
+
+    #cookiesplus-modal .pull-md-1 {
+        right: 8.33333%
+    }
+
+    #cookiesplus-modal .pull-md-2 {
+        right: 16.66667%
+    }
+
+    #cookiesplus-modal .pull-md-3 {
+        right: 25%
+    }
+
+    #cookiesplus-modal .pull-md-4 {
+        right: 33.33333%
+    }
+
+    #cookiesplus-modal .pull-md-5 {
+        right: 41.66667%
+    }
+
+    #cookiesplus-modal .pull-md-6 {
+        right: 50%
+    }
+
+    #cookiesplus-modal .pull-md-7 {
+        right: 58.33333%
+    }
+
+    #cookiesplus-modal .pull-md-8 {
+        right: 66.66667%
+    }
+
+    #cookiesplus-modal .pull-md-9 {
+        right: 75%
+    }
+
+    #cookiesplus-modal .pull-md-10 {
+        right: 83.33333%
+    }
+
+    #cookiesplus-modal .pull-md-11 {
+        right: 91.66667%
+    }
+
+    #cookiesplus-modal .pull-md-12 {
+        right: 100%
+    }
+
+    #cookiesplus-modal .push-md-0 {
+        left: auto
+    }
+
+    #cookiesplus-modal .push-md-1 {
+        left: 8.33333%
+    }
+
+    #cookiesplus-modal .push-md-2 {
+        left: 16.66667%
+    }
+
+    #cookiesplus-modal .push-md-3 {
+        left: 25%
+    }
+
+    #cookiesplus-modal .push-md-4 {
+        left: 33.33333%
+    }
+
+    #cookiesplus-modal .push-md-5 {
+        left: 41.66667%
+    }
+
+    #cookiesplus-modal .push-md-6 {
+        left: 50%
+    }
+
+    #cookiesplus-modal .push-md-7 {
+        left: 58.33333%
+    }
+
+    #cookiesplus-modal .push-md-8 {
+        left: 66.66667%
+    }
+
+    #cookiesplus-modal .push-md-9 {
+        left: 75%
+    }
+
+    #cookiesplus-modal .push-md-10 {
+        left: 83.33333%
+    }
+
+    #cookiesplus-modal .push-md-11 {
+        left: 91.66667%
+    }
+
+    #cookiesplus-modal .push-md-12 {
+        left: 100%
+    }
+
+    #cookiesplus-modal .offset-md-0 {
+        margin-left: 0
+    }
+
+    #cookiesplus-modal .offset-md-1 {
+        margin-left: 8.33333%
+    }
+
+    #cookiesplus-modal .offset-md-2 {
+        margin-left: 16.66667%
+    }
+
+    #cookiesplus-modal .offset-md-3 {
+        margin-left: 25%
+    }
+
+    #cookiesplus-modal .offset-md-4 {
+        margin-left: 33.33333%
+    }
+
+    #cookiesplus-modal .offset-md-5 {
+        margin-left: 41.66667%
+    }
+
+    #cookiesplus-modal .offset-md-6 {
+        margin-left: 50%
+    }
+
+    #cookiesplus-modal .offset-md-7 {
+        margin-left: 58.33333%
+    }
+
+    #cookiesplus-modal .offset-md-8 {
+        margin-left: 66.66667%
+    }
+
+    #cookiesplus-modal .offset-md-9 {
+        margin-left: 75%
+    }
+
+    #cookiesplus-modal .offset-md-10 {
+        margin-left: 83.33333%
+    }
+
+    #cookiesplus-modal .offset-md-11 {
+        margin-left: 91.66667%
+    }
+}
+
+@media (min-width: 992px) {
+    #cookiesplus-modal-container .col-lg-1 {
+        float: left;
+        width: 8.33333%
+    }
+
+    #cookiesplus-modal-container .col-lg-2 {
+        float: left;
+        width: 16.66667%
+    }
+
+    #cookiesplus-modal-container .col-lg-3 {
+        float: left;
+        width: 25%
+    }
+
+    #cookiesplus-modal-container .col-lg-4 {
+        float: left;
+        width: 33.33333%
+    }
+
+    #cookiesplus-modal-container .col-lg-5 {
+        float: left;
+        width: 41.66667%
+    }
+
+    #cookiesplus-modal-container .col-lg-6 {
+        float: left;
+        width: 50%
+    }
+
+    #cookiesplus-modal-container .col-lg-7 {
+        float: left;
+        width: 58.33333%
+    }
+
+    #cookiesplus-modal-container .col-lg-8 {
+        float: left;
+        width: 66.66667%
+    }
+
+    #cookiesplus-modal-container .col-lg-9 {
+        float: left;
+        width: 75%
+    }
+
+    #cookiesplus-modal-container .col-lg-10 {
+        float: left;
+        width: 83.33333%
+    }
+
+    #cookiesplus-modal-container .col-lg-11 {
+        float: left;
+        width: 91.66667%
+    }
+
+    #cookiesplus-modal-container .col-lg-12 {
+        float: left;
+        width: 100%
+    }
+
+    #cookiesplus-modal .pull-lg-0 {
+        right: auto
+    }
+
+    #cookiesplus-modal .pull-lg-1 {
+        right: 8.33333%
+    }
+
+    #cookiesplus-modal .pull-lg-2 {
+        right: 16.66667%
+    }
+
+    #cookiesplus-modal .pull-lg-3 {
+        right: 25%
+    }
+
+    #cookiesplus-modal .pull-lg-4 {
+        right: 33.33333%
+    }
+
+    #cookiesplus-modal .pull-lg-5 {
+        right: 41.66667%
+    }
+
+    #cookiesplus-modal .pull-lg-6 {
+        right: 50%
+    }
+
+    #cookiesplus-modal .pull-lg-7 {
+        right: 58.33333%
+    }
+
+    #cookiesplus-modal .pull-lg-8 {
+        right: 66.66667%
+    }
+
+    #cookiesplus-modal .pull-lg-9 {
+        right: 75%
+    }
+
+    #cookiesplus-modal .pull-lg-10 {
+        right: 83.33333%
+    }
+
+    #cookiesplus-modal .pull-lg-11 {
+        right: 91.66667%
+    }
+
+    #cookiesplus-modal .pull-lg-12 {
+        right: 100%
+    }
+
+    #cookiesplus-modal .push-lg-0 {
+        left: auto
+    }
+
+    #cookiesplus-modal .push-lg-1 {
+        left: 8.33333%
+    }
+
+    #cookiesplus-modal .push-lg-2 {
+        left: 16.66667%
+    }
+
+    #cookiesplus-modal .push-lg-3 {
+        left: 25%
+    }
+
+    #cookiesplus-modal .push-lg-4 {
+        left: 33.33333%
+    }
+
+    #cookiesplus-modal .push-lg-5 {
+        left: 41.66667%
+    }
+
+    #cookiesplus-modal .push-lg-6 {
+        left: 50%
+    }
+
+    #cookiesplus-modal .push-lg-7 {
+        left: 58.33333%
+    }
+
+    #cookiesplus-modal .push-lg-8 {
+        left: 66.66667%
+    }
+
+    #cookiesplus-modal .push-lg-9 {
+        left: 75%
+    }
+
+    #cookiesplus-modal .push-lg-10 {
+        left: 83.33333%
+    }
+
+    #cookiesplus-modal .push-lg-11 {
+        left: 91.66667%
+    }
+
+    #cookiesplus-modal .push-lg-12 {
+        left: 100%
+    }
+
+    #cookiesplus-modal .offset-lg-0 {
+        margin-left: 0
+    }
+
+    #cookiesplus-modal .offset-lg-1 {
+        margin-left: 8.33333%
+    }
+
+    #cookiesplus-modal .offset-lg-2 {
+        margin-left: 16.66667%
+    }
+
+    #cookiesplus-modal .offset-lg-3 {
+        margin-left: 25%
+    }
+
+    #cookiesplus-modal .offset-lg-4 {
+        margin-left: 33.33333%
+    }
+
+    #cookiesplus-modal .offset-lg-5 {
+        margin-left: 41.66667%
+    }
+
+    #cookiesplus-modal .offset-lg-6 {
+        margin-left: 50%
+    }
+
+    #cookiesplus-modal .offset-lg-7 {
+        margin-left: 58.33333%
+    }
+
+    #cookiesplus-modal .offset-lg-8 {
+        margin-left: 66.66667%
+    }
+
+    #cookiesplus-modal .offset-lg-9 {
+        margin-left: 75%
+    }
+
+    #cookiesplus-modal .offset-lg-10 {
+        margin-left: 83.33333%
+    }
+
+    #cookiesplus-modal .offset-lg-11 {
+        margin-left: 91.66667%
+    }
+}
+
+@media (min-width: 1200px) {
+    #cookiesplus-modal-container .col-xl-1 {
+        float: left;
+        width: 8.33333%
+    }
+
+    #cookiesplus-modal-container .col-xl-2 {
+        float: left;
+        width: 16.66667%
+    }
+
+    #cookiesplus-modal-container .col-xl-3 {
+        float: left;
+        width: 25%
+    }
+
+    #cookiesplus-modal-container .col-xl-4 {
+        float: left;
+        width: 33.33333%
+    }
+
+    #cookiesplus-modal-container .col-xl-5 {
+        float: left;
+        width: 41.66667%
+    }
+
+    #cookiesplus-modal-container .col-xl-6 {
+        float: left;
+        width: 50%
+    }
+
+    #cookiesplus-modal-container .col-xl-7 {
+        float: left;
+        width: 58.33333%
+    }
+
+    #cookiesplus-modal-container .col-xl-8 {
+        float: left;
+        width: 66.66667%
+    }
+
+    #cookiesplus-modal-container .col-xl-9 {
+        float: left;
+        width: 75%
+    }
+
+    #cookiesplus-modal-container .col-xl-10 {
+        float: left;
+        width: 83.33333%
+    }
+
+    #cookiesplus-modal-container .col-xl-11 {
+        float: left;
+        width: 91.66667%
+    }
+
+    #cookiesplus-modal-container .col-xl-12 {
+        float: left;
+        width: 100%
+    }
+
+    #cookiesplus-modal .pull-xl-0 {
+        right: auto
+    }
+
+    #cookiesplus-modal .pull-xl-1 {
+        right: 8.33333%
+    }
+
+    #cookiesplus-modal .pull-xl-2 {
+        right: 16.66667%
+    }
+
+    #cookiesplus-modal .pull-xl-3 {
+        right: 25%
+    }
+
+    #cookiesplus-modal .pull-xl-4 {
+        right: 33.33333%
+    }
+
+    #cookiesplus-modal .pull-xl-5 {
+        right: 41.66667%
+    }
+
+    #cookiesplus-modal .pull-xl-6 {
+        right: 50%
+    }
+
+    #cookiesplus-modal .pull-xl-7 {
+        right: 58.33333%
+    }
+
+    #cookiesplus-modal .pull-xl-8 {
+        right: 66.66667%
+    }
+
+    #cookiesplus-modal .pull-xl-9 {
+        right: 75%
+    }
+
+    #cookiesplus-modal .pull-xl-10 {
+        right: 83.33333%
+    }
+
+    #cookiesplus-modal .pull-xl-11 {
+        right: 91.66667%
+    }
+
+    #cookiesplus-modal .pull-xl-12 {
+        right: 100%
+    }
+
+    #cookiesplus-modal .push-xl-0 {
+        left: auto
+    }
+
+    #cookiesplus-modal .push-xl-1 {
+        left: 8.33333%
+    }
+
+    #cookiesplus-modal .push-xl-2 {
+        left: 16.66667%
+    }
+
+    #cookiesplus-modal .push-xl-3 {
+        left: 25%
+    }
+
+    #cookiesplus-modal .push-xl-4 {
+        left: 33.33333%
+    }
+
+    #cookiesplus-modal .push-xl-5 {
+        left: 41.66667%
+    }
+
+    #cookiesplus-modal .push-xl-6 {
+        left: 50%
+    }
+
+    #cookiesplus-modal .push-xl-7 {
+        left: 58.33333%
+    }
+
+    #cookiesplus-modal .push-xl-8 {
+        left: 66.66667%
+    }
+
+    #cookiesplus-modal .push-xl-9 {
+        left: 75%
+    }
+
+    #cookiesplus-modal .push-xl-10 {
+        left: 83.33333%
+    }
+
+    #cookiesplus-modal .push-xl-11 {
+        left: 91.66667%
+    }
+
+    #cookiesplus-modal .push-xl-12 {
+        left: 100%
+    }
+
+    #cookiesplus-modal .offset-xl-0 {
+        margin-left: 0
+    }
+
+    #cookiesplus-modal .offset-xl-1 {
+        margin-left: 8.33333%
+    }
+
+    #cookiesplus-modal .offset-xl-2 {
+        margin-left: 16.66667%
+    }
+
+    #cookiesplus-modal .offset-xl-3 {
+        margin-left: 25%
+    }
+
+    #cookiesplus-modal .offset-xl-4 {
+        margin-left: 33.33333%
+    }
+
+    #cookiesplus-modal .offset-xl-5 {
+        margin-left: 41.66667%
+    }
+
+    #cookiesplus-modal .offset-xl-6 {
+        margin-left: 50%
+    }
+
+    #cookiesplus-modal .offset-xl-7 {
+        margin-left: 58.33333%
+    }
+
+    #cookiesplus-modal .offset-xl-8 {
+        margin-left: 66.66667%
+    }
+
+    #cookiesplus-modal .offset-xl-9 {
+        margin-left: 75%
+    }
+
+    #cookiesplus-modal .offset-xl-10 {
+        margin-left: 83.33333%
+    }
+
+    #cookiesplus-modal .offset-xl-11 {
+        margin-left: 91.66667%
+    }
+}
+
+#cookiesplus-modal .text-xs-right {
+    text-align: right !important
+}
+
+#cookiesplus-modal .text-xs-center {
+    text-align: center !important
+}
+
+@media (min-width: 576px) {
+    #cookiesplus-modal .text-sm-left {
+        text-align: left !important
+    }
+
+    #cookiesplus-modal .text-sm-right {
+        text-align: right !important
+    }
+
+    #cookiesplus-modal .text-sm-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width: 768px) {
+    #cookiesplus-modal .text-md-left {
+        text-align: left !important
+    }
+
+    #cookiesplus-modal .text-md-right {
+        text-align: right !important
+    }
+
+    #cookiesplus-modal .text-md-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width: 992px) {
+    #cookiesplus-modal .text-lg-left {
+        text-align: left !important
+    }
+
+    #cookiesplus-modal .text-lg-right {
+        text-align: right !important
+    }
+
+    #cookiesplus-modal .text-lg-center {
+        text-align: center !important
+    }
+}
+
+@media (min-width: 1200px) {
+    #cookiesplus-modal .text-xl-left {
+        text-align: left !important
+    }
+
+    #cookiesplus-modal .text-xl-right {
+        text-align: right !important
+    }
+
+    #cookiesplus-modal .text-xl-center {
+        text-align: center !important
+    }
+}
+
+#cookiesplus-modal .float-xs-left {
+    float: left !important
+}
+
+#cookiesplus-modal .float-xs-right {
+    float: right !important
+}
+
+#cookiesplus-modal .float-xs-none {
+    float: none !important
+}
+
+@media (min-width: 576px) {
+    #cookiesplus-modal .float-sm-left {
+        float: left !important
+    }
+
+    #cookiesplus-modal .float-sm-right {
+        float: right !important
+    }
+
+    #cookiesplus-modal .float-sm-none {
+        float: none !important
+    }
+}
+
+@media (min-width: 768px) {
+    #cookiesplus-modal .float-md-left {
+        float: left !important
+    }
+
+    #cookiesplus-modal .float-md-right {
+        float: right !important
+    }
+
+    #cookiesplus-modal .float-md-none {
+        float: none !important
+    }
+}
+
+@media (min-width: 992px) {
+    #cookiesplus-modal .float-lg-left {
+        float: left !important
+    }
+
+    #cookiesplus-modal .float-lg-right {
+        float: right !important
+    }
+
+    #cookiesplus-modal .float-lg-none {
+        float: none !important
+    }
+}
+
+@media (min-width: 1200px) {
+    #cookiesplus-modal .float-xl-left {
+        float: left !important
+    }
+
+    #cookiesplus-modal .float-xl-right {
+        float: right !important
+    }
+
+    #cookiesplus-modal .float-xl-none {
+        float: none !important
+    }
+}
+
+/* END Bootstrap backward */
+/* Overlay */
+#cookiesplus-content {
+    padding: 10px 0;
+}
+
+#cookiesplus-overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2147483646; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+/* Modal */
+#cookiesplus-modal-container {
+    position: fixed;
+    width: 0;
+    height: 0;
+    min-height: 0 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2147483647;
+}
+
+#cookiesplus-modal-container p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+#cookiesplus-modal,
+#header #cookiesplus-modal.row,
+#cookiesplus-modal-not-available {
+    display: none;
+    font-size: 14px;
+    position: fixed !important;
+    padding: 14px;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    color: #232323;
+    float: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    max-height: 100%;
+    overflow: auto;
+}
+
+#cookiesplus-modal.cookiesplus-top {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+#cookiesplus-modal.cookiesplus-center,
+#cookiesplus-modal-not-available.cookiesplus-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cookiesplus-modal.cookiesplus-bottom {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+#cookiesplus-modal.cookiesplus-bottom-left {
+    bottom: 0;
+    left: 0;
+    float: left;
+}
+
+#cookiesplus-modal.cookiesplus-bottom-right {
+    bottom: 0;
+    right: 0;
+    float: right;
+}
+
+#cookiesplus-modal .cookiesplus-close,
+#cookiesplus-modal .cookiesplus-close-and-reject,
+#cookiesplus-modal .cookiesplus-close-and-save,
+#cookiesplus-modal-not-available .cookiesplus-close {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    color: black;
+    opacity: 1;
+    font-size: 25px;
+    float: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 4px 4px 0 0;
+}
+
+/* Actions */
+#cookiesplus-modal .cookiesplus-btn {
+    margin: 6px 0;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    /*clear: both;*/
+    width: 100%;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+#cookiesplus-modal .cookiesplus-btn:focus,
+.cookiesplus-finality-switch:focus
+{
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+#cookiesplus-modal .cookiesplus-btn span {
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+#cookiesplus-modal .cookiesplus-btn.float-xs-left {
+    margin-right: 14px;
+}
+
+#cookiesplus-modal .cookiesplus-btn.float-xs-right {
+    margin-left: 14px;
+}
+
+@media (max-width: 575.98px) {
+    #cookiesplus-modal .cookiesplus-btn {
+        width: 100%;
+    }
+}
+
+#cookiesplus-modal .cookiesplus-footer-actions {
+    margin: 12px 0 6px;
+}
+
+#cookiesplus-modal #cookiesplus-back {
+    cursor: pointer;
+}
+
+#cookiesplus-modal .cookiesplus-save {
+    margin-bottom: 6px;
+}
+
+#cookiesplus-modal .cookiesplus-save-disclaimer {
+    font-size: small;
+    font-style: italic;
+}
+
+#cookiesplus-modal .cookiesplus-save:disabled {
+    cursor: not-allowed;
+}
+
+#cookiesplus-modal .coookiesplus-policy {
+    text-align: right;
+    clear: both;
+}
+
+#cookiesplus-modal .cookiesplus-info div {
+    max-height: 25vh;
+    overflow: auto;
+    margin-bottom: 14px;
+}
+
+#cookiesplus-modal .cookiesplus-info ,
+#cookiesplus-modal .cookiesplus-info .cookiesplus-text-encourage {
+    transition: opacity 0.5s linear;
+}
+
+#cookiesplus-modal .cookiesplus-finalities {
+    margin-bottom: 0;
+    display: none;
+}
+
+#cookiesplus-modal .cookiesplus-actions {
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+}
+
+#cookiesplus-modal .cookiesplus-actions .first-layer,
+#cookiesplus-modal .cookiesplus-actions .second-layer{
+    text-align: center ;
+}
+
+#cookiesplus-modal .text-small {
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Switch */
+.cookiesplus-finality-container {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cookiesplus-finality-title {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.cookiesplus-finality-switch-container {
+    display: inline-block;
+    float: right;
+}
+
+.cookiesplus-finality-switch-container label {
+    display: inline-block;
+}
+
+.cookiesplus-finality-switch-container span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cookiesplus-finality-switch-container span.technical {
+    background-color: #56C080;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 24px;
+    height: 24px;
+    cursor: default;
+}
+
+.cookiesplus-finality-switch-container span[disabled="disabled"] {
+    cursor: not-allowed;
+}
+
+.cookiesplus-finality-switch {
+    display: inline-block;
+    border-radius: 24px;
+    height: 24px;
+    width: 50px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+    margin: 0 6px;
+}
+
+.cookiesplus-finality-switch:before,
+.cookiesplus-finality-switch:after {
+    content: "";
+}
+
+.cookiesplus-finality-checkbox.disabled ~ .cookiesplus-finality-switch,
+.cookiesplus-finality-checkbox:disabled ~ .cookiesplus-finality-switch {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.cookiesplus-finality-switch:before {
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transition: left 0.25s;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.cookiesplus-finality-container:hover .cookiesplus-finality-switch:before {
+    background: #fff;
+}
+
+.cookiesplus-finality-checkbox[value="na"] ~ .cookiesplus-finality-switch {
+    color: transparent !important;
+    text-align: center;
+}
+
+.cookiesplus-finality-checkbox[value="na"]:checked ~ .cookiesplus-finality-switch {
+    background: #CCCCCC;
+}
+
+.cookiesplus-finality-checkbox[value="na"]:checked ~ .cookiesplus-finality-switch:before {
+    left: 16px;
+}
+
+.cookiesplus-finality-checkbox[value="off"]:checked ~ .cookiesplus-finality-switch {
+    background: #ff0f0f;
+}
+
+.cookiesplus-finality-checkbox[value="off"]:checked ~ .cookiesplus-finality-switch:before {
+    content: '✘';
+    color: #FF0F0F;
+}
+
+.cookiesplus-finality-checkbox[value="on"]:checked ~ .cookiesplus-finality-switch {
+    background: #56c080;
+}
+
+.cookiesplus-finality-checkbox[value="on"]:checked ~ .cookiesplus-finality-switch:before {
+    left: 27px;
+    content: '✔';
+    color: #56c080;
+}
+
+.cookiesplus-finality-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.cookiesplus-finality-content {
+    display: none;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#cookiesplus-finalities-container {
+    max-height: 40vh;
+    overflow: auto;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 767.98px) {
+    #cookiesplus-finalities-container {
+        max-height: 20vh;
+    }
+}
+
+.cookieplus-finality-container {
+    border-bottom: 1px solid #CCC;
+    margin: 0;
+    padding: 14px 0;
+    overflow: hidden;
+}
+
+.cookieplus-finality-container:first-child {
+    border-top: 1px solid #CCC;
+}
+
+.cookieplus-finality-container:first-child {
+    margin-top: 0;
+}
+
+.cookieplus-finality-container:last-child {
+    margin-bottom: 8px;
+}
+
+#cookiesplus-modal .cookies-detail-list {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+#cookiesplus-modal td,
+#cookiesplus-modal th {
+    border: 1px solid #CCCCCC;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+#cookiesplus-modal th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FAFAFA;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list thead {
+    display: none;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list tr {
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list td {
+    display: flex;
+    padding: 0;
+    border-bottom: 0;
+    word-break: break-word;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list td:last-child {
+    display: flex;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+    border-right: 1px solid #CCCCCC;
+    padding: 4px 8px;
+}
+
+#cookiesplus-modal.col-lg-4 .cookies-detail-list td span {
+    padding: 4px 8px;
+}
+
+/* Responsive tables */
+@media screen and (max-width: 767px) {
+    #cookiesplus-modal .cookies-detail-list thead {
+        display: none;
+    }
+
+    #cookiesplus-modal .cookies-detail-list tr {
+        width: 100%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    #cookiesplus-modal .cookies-detail-list td {
+        display: flex;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    #cookiesplus-modal .cookies-detail-list td:last-child {
+        display: flex;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    #cookiesplus-modal .cookies-detail-list td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 120px;
+        min-width: 120px;
+        border-right: 1px solid #CCCCCC;
+        padding: 4px 8px;
+    }
+
+    #cookiesplus-modal .cookies-detail-list td span {
+        padding: 4px 8px;
+    }
+}
+
+#cookiesplus-modal-container .material-icons {
+    vertical-align: middle;
+}
+
+/* Collapse divs */
+.cookiesplus-finality-chevron::before {
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    content: '';
+    display: inline-block;
+    height: 8px;
+    position: relative;
+    width: 8px;
+    margin-top: 6px;
+    margin-right: 4px;
+}
+
+.cookiesplus-finality-chevron.up:before {
+    transform: rotate(-45deg);
+}
+
+.cookiesplus-finality-chevron.bottom:before {
+    vertical-align: top;
+    transform: rotate(135deg);
+}
+
+/* Tab */
+#cookiesplus-tab {
+    position: fixed;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    z-index: 999;
+}
+
+/* Checker */
+#cookiesplus-checker {
+    position: fixed;
+    top: 0;
+    right: -450px;
+    width: 450px;
+    height: 100vh;
+    background-color: #333;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 5004;
+    overflow-y: auto;
+    font-size: 13px;
+    z-index: 2147483648;
+}
+
+#cookiesplus-checker h2 {
+    color: #FFF !important;
+    padding: 10px 0 5px;
+}
+
+#cookiesplus-checker.hide {
+    right: -450px;
+}
+
+#cookiesplus-checker.show {
+    display: block !important;
+    right: 0;
+}
+
+#cookiesplus-checker .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #FFF;
+}
+
+#cookiesplus-checker .alert {
+    display: none;
+    padding: .75rem 1.25rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+}
+
+#cookiesplus-checker .alert-warning {
+    background-color: #ffc107;
+    border-color: #ff9a52;
+    color: #FFF;
+}
+
+#cookiesplus-checker .alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+
+#cookiesplus-checker .alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+
+#consentsResultSuccess {
+    display: none;
+}
+
+#cookiesplus-checker table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#cookiesplus-checker table th {
+    text-align: center;
+}
+
+#cookiesplus-checker table th,
+#cookiesplus-checker table td {
+    padding: 8px;
+}
+
+#cookiesplus-checker table thead tr {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#cookiesplus-checker table td:nth-child(2),
+#cookiesplus-checker table td:nth-child(3) {
+    text-align: center;
+}
+
+#cookiesplus-checker table .granted {
+    background-color: #e0f2f1;
+    color: #00796b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#cookiesplus-checker table .denied {
+    background-color: #feefe3;
+    color: #b31412;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Styles for the spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#cookiesplus-checker .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #fff;
+    width: 18px;
+    height: 18px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+    display: inline-block;
+    color: #FFF;
+}

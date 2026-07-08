@@ -1,0 +1,84 @@
+.productDealFormPopup label {
+    font-size: .875rem;
+    float: left;
+}
+
+.productDealFormPopup .clog {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.productDealFormPopup {
+    /*min-width: 600px;*/
+}
+
+.productDealFormPopup #language_selector {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.productDealFormPopup #language_selector label{
+    font-size: .875rem;
+    float: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.form-group.language {
+    /*margin-bottom: 0rem;*/
+}
+
+.productDealFormPopup .language label {
+    display: block;
+    float: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.productDealFormPopup #language_selector li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    line-height: 0;
+    margin-right: 10px;
+}
+
+.productDealFormPopup #language_selector li.active, .productDealFormPopup #language_selector li:hover{
+    background: silver;
+    border-radius: 4px;
+}
+
+.productDealFormPopup #language_selector li img {
+
+}
+
+.productDealFormPopup .form-group.productName input,
+.productDealFormPopup .form-group.productUrl input {
+    display: none;
+}
+
+.productDealFormPopup .form-group.productUrl input.active,
+.productDealFormPopup .form-group.productName input.active {
+    display: block;
+}

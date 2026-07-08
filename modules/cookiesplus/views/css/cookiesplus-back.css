@@ -1,0 +1,143 @@
+/*
+ * ISC License
+ *
+ * Copyright (c) 2025 idnovate.com
+ * idnovate is a Registered Trademark & Property of idnovate.com, innovación y desarrollo SCP
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+ * REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+ * INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+ * LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ *
+ * @author    idnovate
+ * @copyright 2025 idnovate.com
+ * @license   https://www.isc.org/licenses/ https://opensource.org/licenses/ISC ISC License
+ */
+.bootstrap .fixed-width-xxxl {
+    min-width: 200px !important;
+    width: auto !important;
+}
+
+/* codemirror */
+.CodeMirror {
+    border: 1px solid #C7D6DB;
+    background-color: #F5F8F9;
+}
+
+/* Min height for tinyMCE fields */
+div.mce-edit-area iframe {
+    min-height: 100px;
+}
+
+.mce-container,
+.mce-container *,
+.mce-widget,
+.mce-widget * {
+    white-space: normal;
+}
+
+#cookiesplus_finality_form .table-responsive-row {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.cookiesplus-module-list {
+    max-height: 600px;
+    overflow: auto;
+}
+.cookiesplus-module-list table {
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+}
+
+.cookiesplus-module-list table td {
+    border: 5px solid white;
+    padding: 10px 5px;
+}
+
+.cookiesplus-module-list table label:hover {
+    cursor: pointer;
+}
+
+.cookiesplus-module-list table label {
+    display: inline;
+}
+
+.cookiesplus-module-list table img {
+    vertical-align: middle;
+}
+
+.cookiesplus-module-list table-legend {
+    font-size: 12px;
+}
+
+.cookiesplus-module-list table td {
+    background-color: white;
+}
+
+.cookiesplus-module-list table td.module-blocked {
+    background-color: yellow;
+}
+
+.cookiesplus-module-list table td.module-disabled {
+    background: repeating-linear-gradient(45deg, #fff, #fff 10px, #f4f4f4 10px, #f4f4f4 20px);
+}
+
+/* PS 1.5 */
+#top_container .alert-warning {
+    margin: 15px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+/* PS 1.6, 1.7 */
+#content .alert-warning,
+#content .alert-info {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+/* Bug with some versions that doesn't display +/- buttons if simple_header is enabled */
+#cookiesplus_finality_form .cookiesplus_cookie .filter/*,
+.cookiesplus_finality .filter,
+#cookiesplus_finality_toolbar ~ table.table_grid > tbody > tr:first-child,
+#cookiesplus_cookie_toolbar ~ table.table_grid > tbody > tr:first-child*/ {
+    display: none;
+}
+
+.img-radio .position-img input[type='radio'] {
+    display: none;
+}
+
+.img-radio .position-label {
+    width: 100%; text-align: center;
+}
+
+.img-radio .position-img img {
+    max-width: 100%;
+}
+
+.img-radio .position-img > input + img {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.img-radio .position-img > input:checked + img {
+    border: 3px solid #2eacce;
+}
+
+/*#subtab-COOKIES {
+    display: none;
+}*/

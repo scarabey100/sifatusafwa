@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsCostPerConversionTrendFromGads",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsCostPerConversionTrendFromGads"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

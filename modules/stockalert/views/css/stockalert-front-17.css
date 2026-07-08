@@ -1,0 +1,116 @@
+/*
+ * ISC License
+ *
+ * Copyright (c) 2025 idnovate.com
+ * idnovate is a Registered Trademark & Property of idnovate.com, innovación y desarrollo SCP
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+ * REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+ * INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+ * LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THIS SOFTWARE.
+ *
+ * @author    idnovate
+ * @copyright 2025 idnovate.com
+ * @license   https://www.isc.org/licenses/ https://opensource.org/licenses/ISC ISC License
+ */
+/* Bootstrap compatibility */
+@media (max-width:767px) {
+    .hidden-sm-down {
+        display: none !important
+    }
+}
+
+@media (min-width:768px) {
+    .hidden-md-up {
+        display: none !important
+    }
+}
+
+.stockalert-add input {
+    margin-bottom: 1rem;
+}
+
+.stockalert-add,
+.stockalert-remove {
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+    margin: 0;
+    background: #fff;
+    padding: 1.25rem 1.875rem;
+    height: auto;
+    line-height: 1.3rem;
+    clear: both;
+}
+
+.stockalert-add div,
+.stockalert-remove div,
+.stockalert-list-add div,
+.stockalert-list-remove div {
+    margin-bottom: 0;
+}
+
+.stockalert-add button,
+.stockalert-remove button,
+.stockalert-list-add button,
+.stockalert-list-remove button {
+    text-transform: uppercase;
+    border-color: transparent;
+    color: #232323;
+    background-color: #f6f6f6;
+    margin: 0;
+    white-space: normal;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.stockalert-add .alert,
+.stockalert-remove .alert,
+.stockalert-list-add .alert,
+.stockalert-list-remove .alert {
+    margin-bottom: 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.stockalert-list-add,
+.stockalert-list-remove {
+    margin: 0.7rem 0.7rem 0;
+}
+
+.stockalert-add .stockalert-result:not(:empty) {
+    margin-bottom: 1rem;
+}
+
+.stockalert-remove button {
+    margin: 0;
+}
+
+
+.stockalert-add button:disabled,
+.stockalert-remove button:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.stockalert-add .stockalert-disclaimer {
+    clear: both;
+    display: block;
+    font-style: italic;
+}
+
+.stockalert-remove article {
+    margin-bottom: 0;
+}
+
+.stockalert-list-add-popup {
+    display: none;
+}
+
+.product-prices .stockalert_gdpr {
+    margin: 0;
+}

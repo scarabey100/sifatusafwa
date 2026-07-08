@@ -1,0 +1,17 @@
+{
+  "name": "bestProfitsSources",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "bestProfitsSources"
+  },
+  "template": {
+    "isCustom": false,
+    "useLink" : true,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

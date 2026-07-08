@@ -1,0 +1,6 @@
+Hi {firstname} {lastname},
+Your gift card in the amount of {giftcard_price} was sent today to the email address {giftcard_to_mail}, with your personalized message
+You will find attached to this email a summary PDF file that you can print and offer.
+Thank you for your trust.
+
+Happy shopping on {shop_name}!

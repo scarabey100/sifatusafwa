@@ -1,0 +1,60 @@
+*INFO*	2022/02/04 - 05:38:00: File name: prestarealtimesync.php - Line No: 344
+Message: Order id 4 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Stationery successfully updated<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Mountain fox notebook Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00053 <br/> Error in Delivering Order: Nothing to check the availability for. <br/>
+*INFO*	2022/02/04 - 06:52:46: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 4 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Stationery successfully updated<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Mountain fox notebook Successfully EvaluateValueError("Invalid field 'invoice_street_id' on model 'order.feed'",)
+*INFO*	2022/02/04 - 06:52:57: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Women successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateValueError("Invalid field 'invoice_street_id' on model 'order.feed'",)
+*INFO*	2022/02/04 - 06:53:19: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Women successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateValueError("Invalid field 'invoice_street_id' on model 'order.feed'",)
+*INFO*	2022/02/04 - 06:53:53: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Women successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateValueError("Invalid field 'invoice_street_id' on model 'order.feed'",)
+*INFO*	2022/02/04 - 06:56:43: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Women successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/04 - 07:14:49: File name: prestarealtimesync.php - Line No: 391
+Message: Order id 1 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Women successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/04 - 07:30:54: File name: prestarealtimesync.php - Line No: 385
+Message: Order id 4 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Stationery successfully updated<br/> Category Accessories successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Mountain fox notebook Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00053 <br/> Error in Delivering Order: Nothing to check the availability for. <br/>
+*Connection Error*	2022/02/04 - 07:46:41: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*WARN*	2022/02/04 - 07:46:56: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:01:51: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:04:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:06:36: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:06:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:10:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:12:27: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:17:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:51:07: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:52:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:53:52: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 09:55:11: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:16:04: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:18:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:19:09: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:40:34: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:41:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:42:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:44:09: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:53:05: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/04 - 10:54:43: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.

@@ -1,0 +1,34 @@
+// ========================================= //
+// Breadcrumbs
+// ========================================= //
+
+.breadcrumb {
+    background: transparent;
+    width: 100%;
+    margin: 0;
+    padding: rem(20) 0;
+
+    &[data-depth="1"] {
+        display: none;
+    }
+
+    ol {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        display: inline;
+        &:not(:last-child) {
+            &:after {
+                margin: rem(2);
+                color: currentColor;
+                content: "/";
+            }
+        }
+        &:last-child {
+            margin: 0;
+            color: currentColor;
+        }
+    }
+}

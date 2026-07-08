@@ -1,0 +1,91 @@
+version 1.5.1
+    * Fixed sortable issue for FAQs / Categories and FAQ Blocks.
+    * Added icons to expand and collapse FAQ accordions.
+    * Added compatibility with PrestaShop 9.
+
+version 1.5.0
+    * New Feature: Assign FAQs to Product Features, ensuring they appear for all products associated with the linked Feature. 
+    * Added option to change the icons set used in the module.
+    * Fixed compatibility issue with the latest version of Creative Elements builder.
+
+version 1.4.6
+    * Stability and performance improvements.
+
+version 1.4.5
+    * Added option to disable FAQs for product pages.
+    * Added instructions to display FAQs in category pages.
+    * Fixed double H1 tags issue for FAQ details pages.
+
+version 1.4.4
+    * Fixed: FAQs assigned to categories was not displaying in Product Extra Content hook.
+    * General improvements.
+
+version 1.4.3
+    * Fixed: Removed FAQs tab from Product Extra Content hook if the product doesn't have a FAQ.
+    * Improved stability
+
+version 1.4.2
+    * Fixed feedbacks functionality for PS 1.6 version.
+    * Fixed category page alternate URL for multilanguage configuration.
+    * Improved stability
+
+version 1.4.1
+    * Fixed feedbacks display for small blocks.
+    * Fixed related products display.
+    * Improved stability.
+
+version 1.4.0
+    * Added Feedback option for FAQs.
+    * Stability and performance improvements.
+
+version 1.3.1
+    * Fixed search functionality for PrestaShop 8
+    * Fixed related products display for PrestaShop 8
+    * Minor fixes.
+
+version 1.3.0
+    * New block type (Category FAQs)
+    * Added filters for Backoffice FAQs, Categories, Blocks.
+    * Added Design Configuration in module configuration page.
+    * Stability and performance improvements.
+
+version 1.2.4
+    * Fixed alternate URL for multilanguage configuration.
+
+version 1.2.3
+    * improved FAQs search logic.
+    * improved stability.
+
+version 1.2.2
+    * Fixed admin translation.
+    * improved stability for multilanguage stores
+
+version 1.2.1
+    * Now Google Structured Data will be added in all pages where FAQ exists.
+    * Added FAQ widgets for Creative Elements pagebuider.
+    * Stability improvements
+
+version 1.2.0
+    * Fixed compatibility with multistore configuration.
+
+version 1.1.1
+    * Stability and performance improvements
+
+version 1.1.0
+    * Added Search FAQs functionality.
+    * Added option to assign FAQs to Products and Categories
+    * Now FAQs have their individual pages.
+    * Redesigned FAQs main page.
+    * Redesigned FAQs category page.
+    * Display related products in FAQs pages.
+    * Improved FAQ blocks functionality.
+    * Added Google Structured Data functionality.
+
+version 1.0.2
+    * Fixed JavaScript error (PrestaShop 1.7)
+
+version 1.0.1
+    * Fixed HTML display for FAQs answer.
+
+version 1.0.0
+    * initial release

@@ -1,0 +1,2 @@
+{l s='Here is the list of variations with features sorted by quantity sold on the selected period.' mod='opartstat'}<br />
+{l s='Please note that there is no history of the characteristics, so if you change the characteristics of a product, it will affect all of your statistics (past and future)' mod='opartstat'}

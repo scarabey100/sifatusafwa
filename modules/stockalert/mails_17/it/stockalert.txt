@@ -1,0 +1,11 @@
+{shop_url}
+
+Salve,
+
+{product_name} è ora disponibile.
+
+Buone nuove, questo prodotto è tornato disponibile per l'ordine!
+
+Clicca sul seguente link per visitare la pagina del prodotto e ordinarlo: [{product_name}] ({product_link})
+
+[{shop_name}]({shop_url})

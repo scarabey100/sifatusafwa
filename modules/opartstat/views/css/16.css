@@ -1,0 +1,131 @@
+/* https://fontawesome.com/v4/ */
+.material-icons {
+    font: normal normal normal 14px/1 FontAwesome;    
+    display:inline-block !important;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+.material-icons {
+    font-size:24px;
+    vertical-align:middle;
+}
+.help-box:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content:"";
+    font-size:18px;
+}
+.reloadBtn, .csvExportButton {
+    top: 1px;
+  }
+.csvExportButton.reloadBtn,
+.isLoading.reloadBtn {
+    animation: rotation 2s infinite linear;
+}
+.reloadBtn:after {
+    content:"\f01e";
+    font-size:20px;
+}
+.csvExportButton:after {
+    content:"\f019";
+    font-size:20px;
+} 
+.material-icons span {
+    display:none;
+}
+.material-icons.mi-ordering:before {
+    content:"\f0dc";
+}
+.material-icons.mi-ordering.displaySideBarBtn.openMenuBtn:before {
+    content:"\f00d";
+}
+.material-icons.mi-save:before {
+    content:"\f0c7";
+}
+.material-icons.mi-filter_list:before {
+    content:"\f0b0";
+} 
+.material-icons.mi-assessment:before {
+    content:"\f080";
+}
+.material-icons.mi-exposure:before {
+    content:"\f055";
+}
+.material-icons.mi-help_outline:before {
+    content:"\f059";
+}
+.material-icons.mi-settings:before {
+    content:"\f013";
+}
+.material-icons.mi-android:before {
+    content:"\f17b";
+}
+.material-icons.mi-https:before {
+    content:"\f023";
+}
+.material-icons.mi-extension:before {
+    content:"\f12e";
+}
+.material-icons.mi-link:before {
+    content:"\f0c1";
+}
+.material-icons.osDisplayPieChartBtn:before {
+    content:"\f200";
+}
+.material-icons.osDisplayListBtn:before {
+    content:"\f036";
+}
+.material-icons.osDisplayPieChartBtn,
+.material-icons.osDisplayListBtn {
+    margin-top:5px;
+}
+.material-icons.copyReport:before,
+.material-icons.content_copy:before {
+    content:"\f0c5";
+    font-weight:lighter;
+}
+.useSameFilterBtn .content_copy:before {
+    font-size:18px;
+    vertical-align: top;
+}
+.material-icons.deleteReport:before {
+    content:"\f1f8";
+    font-weight:lighter;
+}
+.material-icons.shareReport:before {
+    content:"\f1e0";
+}
+.material-icons.mi-close:before {
+    content:"\f00d";
+    font-weight:lighter;
+}
+.osListPanel .osListContainer td:first-child {
+    width:90%;
+}
+.trending_up, .trending_down {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size:16px;
+    vertical-align:baseline !important;
+}
+.trending_up:before {    
+    content:"\f148";
+}
+.trending_down:before {
+    content:"\f149";
+}
+.bootstrap .page-head h2.page-title,
+#reportBtnContainer {
+    display:inline-block;
+}
+#reportBtnContainer {
+    margin:33px 0 0 5px;
+}
+.bootstrap .page-head .form-group {
+    margin:20px 0 0 230px;
+}
+.removeSelectedItem:before,
+.removeFilterOption:before {
+    content:"\f057";
+    font-size:19px;
+    vertical-align:top;
+    font-weight:lighter;
+}

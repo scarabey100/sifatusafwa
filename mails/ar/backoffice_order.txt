@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+تم انشاء طلب شراء جديد بالنيابة عنك.
+
+Please go on {order_link} to complete the payment.

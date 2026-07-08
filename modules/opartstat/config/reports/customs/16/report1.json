@@ -1,0 +1,49 @@
+{
+    "title": {
+        "1": "Global",
+        "2": "Global"
+    },
+    "type": "classic",
+    "metrics": [
+        {
+            "name": "globalRevenues",
+            "position": 1
+        },
+        {
+            "name": "averageRevenuesPerOrder",
+            "position": 2
+        },
+        {
+            "name": "numberOfOrders",
+            "position": 3
+        },
+        {
+            "name": "visitors",
+            "position": 4
+        },
+        {
+            "name": "bestRevenuesProducts",
+            "position": 5
+        },
+        {
+            "name": "numberOfNewCustomers",
+            "position": 6
+        },
+        {
+            "name": "customerLifetimeValue",
+            "position": 7
+        },
+        {
+            "name": "bestNumberOrderCountries",
+            "position": 8
+        },
+        {
+            "name": "bestRevenuesCategories",
+            "position": 9
+        },
+        {
+            "name": "bestRevenuesCountries",
+            "position": 10
+        }
+    ]
+}

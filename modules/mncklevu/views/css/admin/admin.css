@@ -1,0 +1,36 @@
+.grid-state-status {
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+.grid-state-status.grid-state-status-yes {
+    background-color: #2eacce;
+    border: 1px solid #279cbb;
+}
+.grid-state-status.grid-state-status-no {
+    background-color: #e08f95;
+    border: 1px solid #ca6f6f;
+}
+.current-status {
+    position: relative;
+    display: inline-block;
+    padding: 7px 30px 5px 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+.current-status .process-image {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.progress-container, .error-container {
+    padding-bottom: 5px;
+}
+.progress-container {
+    color: #959595;
+    font-size: 12px;
+}
+.error-container {
+    color: #d27c82;
+    font-size: 13px;
+}

@@ -1,0 +1,65 @@
+{
+    "title": {
+        "1": "Clients",
+        "2": "Customers"
+    },
+    "type": "classic",
+    "metrics": [
+        {
+            "name": "numberOfNewCustomers",
+            "position": 1
+        },
+        {
+            "name": "numberOfNewSignups",
+            "position": 2
+        },
+        {
+            "name": "customerLifetimeValue",
+            "position": 3
+        },
+        {
+            "name": "averageNumberOfOrdersPerCustomer",
+            "position": 4
+        },
+        {
+            "name": "numberOfNewCustomersTrend",
+            "position": 5
+        },
+        {
+            "name": "numberOfNewSignupsTrend",
+            "position": 6
+        },
+        {
+            "name": "customerLifetime",
+            "position": 7
+        },
+        {
+            "name": "attritionRate",
+            "position": 8
+        },
+        {
+            "name": "numberOfActivCustomers",
+            "position": 9
+        },
+        {
+            "name": "numberOfInactivCustomers",
+            "position": 10
+        },
+        {
+            "name": "bestRevenuesCustomers",
+            "position": 11
+        },
+        {
+            "name": "bestProfitsCustomers",
+            "position": 12
+        },
+        {
+            "name": "bestRevenuesCustomersGroups",
+            "position": 13
+        },
+        {
+            "name": "bestProfitsCustomersGroups",
+            "position": 14
+        }
+    ]
+}

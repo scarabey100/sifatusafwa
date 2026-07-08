@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>cookiesplus</name>
+    <displayName><![CDATA[Cookies - GDPR Cookie law (block before consent)]]></displayName>
+    <version><![CDATA[1.8.0]]></version>
+    <description><![CDATA[Make your store GDPR compliant using this module. This module lets you block the cookies until the customer gives his consent accepting the notice.]]></description>
+    <author><![CDATA[idnovate]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to delete the module and the related data?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

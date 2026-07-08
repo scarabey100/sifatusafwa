@@ -1,0 +1,87 @@
+/**
+ * Copyright 2024 LÍNEA GRÁFICA E.C.E S.L.
+ *
+ * @author    Línea Gráfica E.C.E. S.L.
+ * @copyright Lineagrafica.es - Línea Gráfica E.C.E. S.L. all rights reserved.
+ * @license   https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#banner-lg.panel {
+    border: 1px solid #e6e6e6;
+    border-collapse: separate;
+    border-radius: 3px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1), 0 0 0 3px #fff inset;
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+	background-color:#FFFFFF;
+}
+a{
+	text-decoration:none;
+}
+.enlaceverde{
+	color:#67aa1c;
+}
+.enlacenegro{
+	color:#000000;
+}
+
+
+#logo{
+	width:16%;
+	text-align:center;
+}
+#titulo{
+	width:16%;
+	font-size:10px;
+	color:#67aa1c;
+	font-family:arial;
+	font-weight:bold; 
+	text-align:center;
+}
+.logos{
+	width:5%;
+	height:60px;
+	text-align:center;
+}
+.modulos{
+	width:6%;
+	height:60px;
+	font-size:9px;
+	font-family:arial;
+}
+#boton{
+	width:7%;
+	text-align:center;
+
+}
+#opinion, #video, #guia, #soporte{
+	width:6%;
+	text-align:center;
+}
+
+#iframe{
+	width:100%;
+	height:60px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+@media screen and (max-width: 800px) {
+    #titulo, .logos, .modulos, #boton, #logo {
+        display:none;
+    }
+}

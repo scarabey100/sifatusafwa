@@ -1,0 +1,6 @@
+Hola {firstname} {lastname},
+Tu tarjeta regalo de {giftcard_price} ha sido enviada hoy a {giftcard_to_mail}, junto con tu mensaje personalizado.
+
+Gracias por su confianza.
+
+¡Feliz compra en {shop_name}!

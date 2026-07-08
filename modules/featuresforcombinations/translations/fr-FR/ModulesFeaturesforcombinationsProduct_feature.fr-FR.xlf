@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin861j1beuhvmifpeox8f" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="21021ea0e52be8e9c599f4dff41e5be0">
+        <source>Feature</source>
+        <target>Caractéristique</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5ebd6e1c1cdeac7a7c1896ab842d98da">
+        <source>Choose a feature</source>
+        <target>Choisissez une caractéristique</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce0048fd3dcb32c2082a41180e1a2aef">
+        <source>Predefined value</source>
+        <target>Valeur prédéfinie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fd380496c889dcb05d6e996fd1ecaf0b">
+        <source>Choose a value</source>
+        <target>Choisissez une valeur</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="30b916a82aaec374bd99a832e1139693">
+        <source>OR custom value</source>
+        <target>OU valeur personnalisée</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

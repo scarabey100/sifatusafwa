@@ -1,0 +1,46 @@
+{
+  "reports": [
+    {
+      "name": "live",
+      "title": {
+        "1": "Temps réel",
+        "2": "Live"
+      }
+    },
+    {
+      "name": "report1",
+      "title": {
+        "1": "Global",
+        "2": "Global"
+      }
+    },
+    {
+      "name": "report2",
+      "title": {
+        "1": "Financier",
+        "2": "Financial"
+      }
+    },
+    {
+      "name": "report3",
+      "title": {
+        "1": "Trafic",
+        "2": "Trafic"
+      }
+    },
+    {
+      "name": "report4",
+      "title": {
+        "1": "Catalogue",
+        "2": "catalog"
+      }
+    },
+    {
+      "name": "report5",
+      "title": {
+        "1": "Clients",
+        "2": "Customers"
+      }
+    }
+  ]
+}

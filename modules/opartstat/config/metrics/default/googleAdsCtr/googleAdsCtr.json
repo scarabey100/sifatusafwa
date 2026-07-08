@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsCtr",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "googleAdsCtr"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

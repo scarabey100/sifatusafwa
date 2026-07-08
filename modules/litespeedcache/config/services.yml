@@ -1,0 +1,5 @@
+services:
+    prestashop.module.litespeedcache.warmup:
+        class: LiteSpeed\Cache\Warmup
+        tags:
+            - { name: 'console.command' }

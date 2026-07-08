@@ -1,0 +1,15 @@
+v7.0.2
+
+# Bug Fixed
+-   Latest license update.
+-   Minor bugs fixed.
+
+v7.0.1
+
+Bug Fixed
+
+The Enable / Disable configuration for the "Share Cart" button was not working - this has now been resolved.
+Displaying incorrect attributes in the save for later list - Now Fixed
+Attribute with incorrect images - Now Fixed
+Unable to access "my saved cart" tab in my account section - Now Fixed
+Other minor bug fixed 

@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsBestCampaignsPerRoas",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsBestCampaignsPerRoas"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

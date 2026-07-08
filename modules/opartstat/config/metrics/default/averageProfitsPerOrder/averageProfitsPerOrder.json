@@ -1,0 +1,16 @@
+{
+  "name": "averageProfitsPerOrder",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "averageProfitsPerOrder"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

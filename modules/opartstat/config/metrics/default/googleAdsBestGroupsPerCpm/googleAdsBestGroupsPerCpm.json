@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsBestGroupsPerCpm",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsBestGroupsPerCpm"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

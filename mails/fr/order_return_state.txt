@@ -1,0 +1,11 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Retour de commande #{id_order_return} - Mis à jour
+
+Votre bon de retour #{id_order_return} est passé à l'état : "{state_order_return}".
+
+Follow your order and download your invoice on our store, go to the [Historique et détails de mes commandes]({history_url}) section of your customer account.

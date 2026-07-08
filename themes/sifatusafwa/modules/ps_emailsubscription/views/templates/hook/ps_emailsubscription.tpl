@@ -1,0 +1,80 @@
+{**
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://devdocs.prestashop.com/ for more information.
+ *
+ * @author    PrestaShop SA and Contributors <contact@prestashop.com>
+ * @copyright Since 2007 PrestaShop SA and Contributors
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ *}
+
+<div class="block_newsletter" id="blockEmailSubscription_{$hookName}">
+    <div class="container">
+        <div class="block_newsletter--wrapper">
+            <div class="block_newsletter--inner">
+                <h2>{l s='Subscribe to our newsletter' d='Shop.Theme.Global'}</h2>
+                {if $conditions}
+                    <p>{$conditions}</p>
+                {/if}
+                <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input
+                                    name="email"
+                                    type="email"
+                                    value="{$value}"
+                                    placeholder="{l s='Enter your email' d='Shop.Forms.Labels'}"
+                                    aria-labelledby="block-newsletter-label"
+                                    required
+                            >
+                        </div>
+                        <input
+                                class="btn btn-primary float-xs-right"
+                                name="submitNewsletter"
+                                type="submit"
+                                value="{l s='Subscribe' d='Shop.Theme.Actions'}"
+                        >
+                        <input type="hidden" name="blockHookName" value="{$hookName}" />
+                        <input type="hidden" name="action" value="0">
+                    </div>
+                    {if $msg}
+                        <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">{$msg}</p>
+                    {/if}
+                    {hook h='displayNewsletterRegistration'}
+                    {if isset($id_module)}
+                        {hook h='displayGDPRConsent' id_module=$id_module}
+                    {/if}
+                </form>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="105.514" height="78.663" viewBox="454.486 6309.584 105.514 78.663" class="missile missile__left">
+                <g data-name="Group 4750">
+                    <path d="m454.487 6309.584 20.875 67.799 3.349 10.864 9.536-8.048 24.917-21.028-58.677-49.587Z" fill="#bb6a3f" fill-rule="evenodd" data-name="Path 17543"/>
+                    <path d="m454.486 6309.584 72.527 41.89 32.987-10.93-105.514-30.96Z" fill="#ffab7d" fill-rule="evenodd" data-name="Path 17544"/>
+                    <path d="m454.487 6309.584 58.677 49.587 11.28 22.546 2.57-30.244-72.527-41.889Z" fill="#7a3714" fill-rule="evenodd" data-name="Path 17545"/>
+                </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="69.432" height="51.764" viewBox="1363.068 6397 69.432 51.764" class="missile missile__right">
+                <g data-name="Group 4749">
+                    <path d="m1432.5 6397-13.737 44.614-2.204 7.149-6.275-5.296-16.397-13.837L1432.5 6397Z" fill="#bb6a3f" fill-rule="evenodd" data-name="Path 17543"/>
+                    <path d="m1432.5 6397-47.726 27.564-21.706-7.192L1432.5 6397Z" fill="#ffab7d" fill-rule="evenodd" data-name="Path 17544"/>
+                    <path d="m1432.5 6397-38.613 32.63-7.423 14.836-1.69-19.902L1432.5 6397Z" fill="#7a3714" fill-rule="evenodd" data-name="Path 17545"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<?php
+/**
+ * Creative Popup - https://creativepopup.webshopworks.com
+ *
+ * @author    WebshopWorks <info@webshopworks.com>
+ * @copyright 2018-2024 WebshopWorks
+ * @license   One Domain Licence
+ *
+ * Not allowed to resell or redistribute this software
+ */
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+?>
+<script type="text/html" id="tmpl-cp-add-popup">
+    <form method="post" id="cp-add-slider-template-list" name="addNew" class="cp-pointer cp-box cp-window">
+        <input type="hidden" name="cp-add-new-popup" value="1">
+        <h3 class="header">
+            <?php cp_e('Name your new popup'); ?>
+            <i class="cp-close dashicons dashicons-no-alt"></i>
+        </h3>
+        <div class="inner">
+            <label><?php cp_e('Popup name:'); ?></label><br>
+            <input type="text" name="title" placeholder="<?php cp_e('e.g. Homepage popup'); ?>">
+            <span><?php cp_e("Internal only. This won't be shown to customers."); ?></span>
+        </div>
+        <div class="footer">
+            <button class="button cp-green-button"><?php cp_e('Create Popup'); ?></button>
+        </div>
+    </form>
+</script>
+
+<script type="text/html" id="tmpl-cp-choose-template">
+    <div id="cp-choose-template" class="cp-pointer cp-box cp-window">
+        <h3 class="header">
+            <?php cp_e('Choose a start template'); ?>
+            <i class="cp-close dashicons dashicons-no-alt"></i>
+        </h3>
+    </div>
+</script>

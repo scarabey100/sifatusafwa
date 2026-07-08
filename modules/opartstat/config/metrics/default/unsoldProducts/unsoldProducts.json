@@ -1,0 +1,16 @@
+{
+    "name": "unsoldProducts",
+    "cols": "2",
+    "rows": "2",
+    "ajaxCallBack": {
+        "name": "unsoldProducts"
+    },
+    "template": {
+        "isCustom": false,
+        "name": "list"
+    },
+    "callBackJsfunction": {
+        "isCustom": false,
+        "name": ["displayList","displayPie"]
+    }
+}

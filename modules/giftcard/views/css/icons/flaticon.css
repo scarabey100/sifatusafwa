@@ -1,0 +1,67 @@
+/**
+ * NOTICE OF LICENSE
+ *  _____ _            ___       _   _
+ * |_   _(_)          / _ \     | | (_)
+ *   | |  _ _ __ ___ / /_\ \ ___| |_ ___   _____
+ *   | | | | '_ ` _ \|  _  |/ __| __| \ \ / / _ \
+ *   | | | | | | | | | | | | (__| |_| |\ V /  __/
+ *   \_/ |_|_| |_| |_\_| |_/\___|\__|_| \_/ \___|
+ *
+ * This source file is subject to a commercial license from TimActive Siret 750 571 366 00046
+ * Use, copy, modification or distribution of this source file without written
+ * license agreement from the TimActive EIRL is strictly forbidden.
+ *
+ * @author    TimActive
+ * @copyright Since 2012 TimActive
+ * @license   Commercial license
+*/
+@font-face {
+	font-family: "Flaticon";
+	src: url("../../fonts/flaticon.eot");
+	src: url("../../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../../fonts/flaticon.woff") format("woff"),
+	url("../../fonts/flaticon.ttf") format("truetype"),
+	url("./../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+font-style: normal;
+}.flaticon-addpaper:before {
+	content: "\e000";
+}
+.flaticon-admin:before {
+	content: "\e001";
+}
+.flaticon-caretdown:before {
+	content: "\e002";
+}
+.flaticon-caretup:before {
+	content: "\e003";
+}
+.flaticon-cart:before {
+	content: "\e004";
+}
+.flaticon-card-debit:before {
+	content: "\e005";
+}
+.flaticon-card-credit:before {
+	content: "\e006";
+}
+.flaticon-balance:before {
+	content: "\e007";
+}
+.flaticon-picture:before {
+	content: "\e008";
+}
+.flaticon-profile:before {
+	content: "\e009";
+}
+.flaticon-price:before {
+	content: "\e00a";
+}
+.flaticon-tools:before {
+	content: "\e00b";
+}

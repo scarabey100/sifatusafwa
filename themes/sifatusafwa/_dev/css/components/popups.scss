@@ -1,0 +1,187 @@
+// ========================================= //
+// Popups
+// ========================================= //
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(var(--black-rgb), 0.4);
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--bezier) !important;
+
+    &.in,
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        .popup {
+            &__wrapper {
+                transform: translate(0);
+            }
+        }
+    }
+
+    &__wrapper {
+        background-color: var(--white);
+        max-width: rem(580);
+        width: 100%;
+        height: 100%;
+        //padding: rem(20);
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        flex-flow: column;
+        transform: translate(100%);
+        transition: var(--bezier);
+        overflow: auto;
+        //@include media-breakpoint-up(lg) {
+        //    padding-inline: rem(30);
+        //}
+        [dir="rtl"] & {
+            left: 0;
+            right: auto;
+            transform: translateX(-100%);
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: rem(24);
+        font-weight: 500;
+        letter-spacing: rem(2);
+        line-height: rem(28);
+        text-transform: uppercase;
+        padding: rem(30) rem(20);
+        @include media-breakpoint-up(lg) {
+            font-size: rem(30);
+            line-height: rem(42);
+        }
+        .popup__close {
+            width: rem(32);
+            height: rem(32);
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__body {
+        flex: 1;
+        padding: rem(20);
+        overflow: auto;
+        //@extend %scrollBar;
+    }
+
+    &__footer {
+        padding: rem(30) rem(20);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-underlined {
+            &:after {
+                bottom: 0;
+                width: 0;
+            }
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__close,
+    &__open {
+        cursor: pointer;
+    }
+
+    &__minicart {
+        &--empty {
+            p {
+                font-size: rem(20);
+            }
+        }
+        &--content {
+            ul {
+                display: flex;
+                flex-flow: column;
+                gap: rem(20);
+            }
+        }
+        .popup {
+            &__footer {
+                .btn {
+                    width: 100%;
+                    border-radius: rem(5);
+                }
+            }
+        }
+    }
+
+}
+
+.ets_geo_popup_choose {
+    .btn {
+        width: 100%;
+    }
+    .select2 {
+        margin-bottom: rem(16);
+        .selection {
+            .select2-selection {
+                background-color: var(--white) !important;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: rem(46) !important;
+                border: rem(1) solid var(--gray-4) !important;
+                border-radius: rem(5) !important;
+                margin: 0;
+                padding: rem(6) rem(25) !important;
+                box-shadow: none !important;
+                outline: none !important;
+                transition: var(--bezier);
+                font-size: rem(16);
+                font-weight: 400;
+                color: var(--dark);
+                line-height: normal;
+                .select2-selection__rendered {
+                    background: transparent;
+                    padding: 0;
+                    height: auto;
+                    line-height: normal !important;
+                    font-size: inherit;
+                    color: inherit !important;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        gap: rem(16);
+                    }
+                    img {
+                        height: rem(18);
+                        width: auto;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

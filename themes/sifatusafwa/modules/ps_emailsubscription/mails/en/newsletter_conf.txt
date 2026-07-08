@@ -1,0 +1,7 @@
+ 
+
+{shop_url}
+
+Hi,
+
+Thank you for subscribing to our newsletter.

@@ -1,0 +1,16 @@
+{
+  "name": "bestSellsBrands",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "bestSellsBrands"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

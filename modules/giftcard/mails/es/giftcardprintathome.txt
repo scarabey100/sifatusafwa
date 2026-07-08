@@ -1,0 +1,6 @@
+Hola {firstname} {lastname},
+Nos complace enviarle esta tarjeta regalo de {giftcard_price}.
+Para aprovechar esta oferta
+Copie y pegue este número {giftcard_code} en el carrito de su próxima compra antes de pasar por caja.
+
+¡Feliz compra en {shop_name}!

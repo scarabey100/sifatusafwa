@@ -1,0 +1,105 @@
+{
+    "title": {
+        "1": "Financier",
+        "2": "Financial"
+    },
+    "type": "classic",
+    "metrics": [
+        {
+            "name": "profits",
+            "position": 1
+        },
+        {
+            "name": "averageProfitsPerOrder",
+            "position": 2
+        },
+        {
+            "name": "globalRevenues",
+            "position": 3
+        },
+        {
+            "name": "averageRevenuesPerOrder",
+            "position": 4
+        },
+        {
+            "name": "profitsTrend",
+            "position": 5
+        },
+        {
+            "name": "globalRevenuesTrend",
+            "position": 6
+        },
+        {
+            "name": "averageProfitsPerOrderTrend",
+            "position": 7
+        },
+        {
+            "name": "averageRevenuesPerOrderTrend",
+            "position": 8
+        },
+        {
+            "name": "numberOfOrders",
+            "position": 9
+        },
+        {
+            "name": "conversionRate",
+            "position": 10
+        },
+        {
+            "name": "repurchaseRate",
+            "position": 11
+        },
+        {
+            "name": "incomingRevenues",
+            "position": 12
+        },
+        {
+            "name": "numberOfOrdersTrend",
+            "position": 13
+        },
+        {
+            "name": "conversionRateTrend",
+            "position": 14
+        },
+        {
+            "name": "repurchaseRateTrend",
+            "position": 15
+        },
+        {
+            "name": "refunds",
+            "position": 16
+        },
+        {
+            "name": "numberOfRefunds",
+            "position": 17
+        },
+        {
+            "name": "refundRate",
+            "position": 18
+        },
+        {
+            "name": "refundsTrend",
+            "position": 19
+        },
+        {
+            "name": "refundRateTrend",
+            "position": 20
+        },
+        {
+            "name": "numberOfRefundsTrend",
+            "position": 21
+        },
+        {
+            "name": "revenuesPerVisit",
+            "position": 22
+        },
+        {
+            "name": "shippingRevenues",
+            "position": 23
+        },
+        {
+            "name": "revenuesPerVisitTrend",
+            "position": 24
+        }
+    ]
+}

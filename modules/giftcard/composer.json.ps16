@@ -1,0 +1,36 @@
+{
+    "name": "timactive/giftcard",
+    "description": "Gift Card module for Prestashop",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "TimActive"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "prestashop/php-dev-tools": "3.16.1",
+        "phpstan/phpstan": "0.11.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimActive\\Module\\GiftCard\\": "src/"
+        },
+        "classmap": [
+            "giftcard.php",
+            "controllers",
+            "models"
+        ],
+        "exclude-from-classmap": []
+    },
+    "config": {
+        "preferred-install": "dist",
+        "classmap-authoritative": true,
+        "optimize-autoloader": true,
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module",
+    "author": "PrestaShop"
+}

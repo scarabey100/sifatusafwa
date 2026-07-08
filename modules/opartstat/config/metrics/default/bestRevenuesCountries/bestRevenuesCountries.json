@@ -1,0 +1,16 @@
+{
+    "name": "bestRevenuesCountries",
+    "cols": "2",
+    "rows": "2",
+    "ajaxCallBack": {
+        "name": "bestRevenuesCountries"
+    },
+    "template": {
+        "isCustom": false,
+        "name": "list"
+    },
+    "callBackJsfunction": {
+        "isCustom": false,
+        "name": ["displayList","displayPie"]
+    }
+}

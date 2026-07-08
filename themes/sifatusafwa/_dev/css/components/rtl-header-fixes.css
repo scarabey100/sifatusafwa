@@ -1,0 +1,23 @@
+/* Temporary RTL header fixes loaded without rebuilding theme assets. */
+[dir="rtl"] #header .header__search .search-widgets input,
+[dir="rtl"] #header .header__search .search_widget input {
+    padding-right: 1.562rem !important;
+    padding-left: 4.625rem !important;
+    text-align: right;
+}
+
+[dir="rtl"] #header .header__top--banner .slick-list {
+    direction: ltr;
+}
+
+[dir="rtl"] #header .header__top--banner .slick-prev {
+    left: auto;
+    right: 0;
+    rotate: -90deg;
+}
+
+[dir="rtl"] #header .header__top--banner .slick-next {
+    right: auto;
+    left: 0;
+    rotate: 90deg;
+}

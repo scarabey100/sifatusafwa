@@ -1,0 +1,2 @@
+{l s='Here are the list of traffic sources sorted by generated revenue without taxes.' mod='opartstat'}<br />
+{l s='Those data are limited. The oldest date available is %1$s' sprintf=[$humanLastStatDate] mod='opartstat'}

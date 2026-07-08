@@ -1,0 +1,1 @@
+{l s='Here is the list of countries ranked by delivery costs over the selected period.' mod='opartstat'}

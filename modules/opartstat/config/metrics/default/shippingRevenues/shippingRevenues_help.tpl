@@ -1,0 +1,1 @@
+{l s='This is the total revenues without taxes due to shipping fees on the selected period.' mod='opartstat'}

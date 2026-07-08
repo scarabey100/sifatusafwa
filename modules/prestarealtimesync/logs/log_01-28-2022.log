@@ -1,0 +1,71 @@
+*WARN*	2022/01/28 - 11:45:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/01/28 - 11:45:25: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 301 Moved Permanently
+Date: Fri, 28 Jan 2022 11:45:23 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Set-Cookie: session-1=rh79uhrt1b0o9bos24vakb0es3; path=/shopware5; HttpOnly
+Location: http://192.168.5.210/shopware5
+pragma: no-cache
+expires: -1
+Cache-Control: no-cache, private
+Set-Cookie: session-1=deleted; expires=Thu, 28-Jan-2021 11:45:23 GMT; Max-Age=0; path=/shopware5; httponly
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+*WARN*	2022/01/28 - 11:45:48: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 11:46:51: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/01/28 - 11:46:51: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 301 Moved Permanently
+Date: Fri, 28 Jan 2022 11:46:51 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Set-Cookie: session-1=f20vp8l0rqam168183q4m23o43; path=/shopware5; HttpOnly
+Location: http://192.168.5.210/shopware5
+pragma: no-cache
+expires: -1
+Cache-Control: no-cache, private
+Set-Cookie: session-1=deleted; expires=Thu, 28-Jan-2021 11:46:50 GMT; Max-Age=0; path=/shopware5; httponly
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+*WARN*	2022/01/28 - 11:47:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 11:47:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/01/28 - 11:47:09: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 301 Moved Permanently
+Date: Fri, 28 Jan 2022 11:47:08 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Set-Cookie: session-1=l1ma9nnghsgd3ar43he6ts8e05; path=/shopware5; HttpOnly
+Location: http://192.168.5.210/shopware5
+pragma: no-cache
+expires: -1
+Cache-Control: no-cache, private
+Set-Cookie: session-1=deleted; expires=Thu, 28-Jan-2021 11:47:07 GMT; Max-Age=0; path=/shopware5; httponly
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+*WARN*	2022/01/28 - 11:47:26: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 11:47:35: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 13:05:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 13:06:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 13:06:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/01/28 - 13:06:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/01/28 - 13:24:37: File name: prestarealtimesync.php - Line No: 336
+Message: Order id 42 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Men successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Order  successfully updated<br/>Order S00074 
+*INFO*	2022/01/28 - 13:34:23: File name: prestarealtimesync.php - Line No: 332
+Message: Order id 42 Export response: <br/> Category Home successfully updated<br/>Error while category update.<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Category Men successfully updated<br/> Category Clothes successfully updated<br/> Category Home successfully updated<br/>Error while category update.<br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Order  successfully updated<br/>Order S00074 

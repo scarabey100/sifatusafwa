@@ -1,0 +1,78 @@
+ul.info_message{
+	list-style: none;
+	overflow-y: auto;
+	height: 50px;
+}
+ul.info_message li{
+	border-bottom:1px dashed #CECECE;
+	font-size: 10px;
+}
+ul.info_message li span.info_date{
+	font-weight:bold;
+	font-style: italic;
+	padding-right:3px;
+}
+/*CUSTOM FIELD*/
+td.viewgifcardcustomopen  {
+	border:1px solid #ccc !important;
+}
+div.giftcard_custom_fields{
+	
+	background-color:#F3E2A9;
+}
+div.giftcard_custom_fields table{
+	width:100%;
+	background-color:#FFF;
+}
+td.line_giftcard_customfields{
+	border-top:1px solid #ccc; !important;
+	background-color:#f8f8f8;
+}
+
+div.giftcard_custom_fields table tr td.title_header{
+	font-size: 16px;
+	font-weight: normal;
+	overflow: hidden;
+	line-height: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 5px 10px;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #ECECEC);
+	background: -webkit-gradient(linear, center top ,center bottom, from(#F9F9F9), to(#ECECEC)) repeat scroll 0 0 transparent;
+	border-bottom: 1px solid #ccc;
+}
+div.giftcard_custom_fields table tr td.label{
+	width:150px;
+}
+/*MEANING STATUS*/
+#giftcardstatus{
+	
+}
+#giftcardstatus h3{
+	font-size: 16px;
+	font-weight: normal;
+	overflow: hidden;
+	line-height: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 5px 10px;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #ECECEC);
+	background: -webkit-gradient(linear, center top ,center bottom, from(#F9F9F9), to(#ECECEC)) repeat scroll 0 0 transparent;
+	border-bottom: 1px solid #ccc;
+}
+#giftcardstatus .block{
+	float: right;
+	margin: 0 10px 10px 0;
+	min-height: 178px;
+	width: 45%;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+	min-height: 178px;
+}
+#giftcardstatus table.table td.label{
+	color:white;
+	text-align:center;
+	width:150px;
+	text-transform:uppercase;
+	font-weight:bold;
+}

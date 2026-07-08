@@ -1,0 +1,88 @@
+// ========================================= //
+// Font family
+// ========================================= //
+
+$fontPath: '../fonts';
+
+// Helvetica
+@font-face {
+    font-family: 'Helvetica LT Std - Bold Condensed';
+    src: url('#{$fontPath}/Helvetica/HelveticaLTStd-BoldCond.woff2') format('woff2'),
+    url('#{$fontPath}/Helvetica/HelveticaLTStd-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('#{$fontPath}/Helvetica/HelveticaLTStd-Bold.woff2') format('woff2'),
+    url('#{$fontPath}/Helvetica/HelveticaLTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('#{$fontPath}/Helvetica/HelveticaLTStd-Roman.woff2') format('woff2'),
+    url('#{$fontPath}/Helvetica/HelveticaLTStd-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('#{$fontPath}/Helvetica/HelveticaLTStd-Light.woff2') format('woff2'),
+    url('#{$fontPath}/Helvetica/HelveticaLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Cairo
+@font-face {
+    font-family: 'Cairo';
+    src: url('#{$fontPath}/Cairo/Cairo-Medium.woff2') format('woff2'),
+    url('#{$fontPath}/Cairo/Cairo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('#{$fontPath}/Cairo/Cairo-Regular.woff2') format('woff2'),
+    url('#{$fontPath}/Cairo/Cairo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('#{$fontPath}/Cairo/Cairo-Light.woff2') format('woff2'),
+    url('#{$fontPath}/Cairo/Cairo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('#{$fontPath}/Cairo/Cairo-SemiBold.woff2') format('woff2'),
+    url('#{$fontPath}/Cairo/Cairo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('#{$fontPath}/Cairo/Cairo-Bold.woff2') format('woff2'),
+    url('#{$fontPath}/Cairo/Cairo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

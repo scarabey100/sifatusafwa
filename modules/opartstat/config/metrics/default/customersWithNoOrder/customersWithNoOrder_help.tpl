@@ -1,0 +1,1 @@
+{l s='Here is the list of customers with no order on the selected period.' mod='opartstat'}

@@ -1,0 +1,16 @@
+{
+  "name": "marginRateTrend",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "marginRateTrend"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

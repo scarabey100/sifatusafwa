@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>featuresforcombinations</name>
+    <displayName><![CDATA[Features for the combinations]]></displayName>
+    <version><![CDATA[1.5.2]]></version>
+    <description><![CDATA[Features for the combinations]]></description>
+    <author><![CDATA[Ciren]]></author>
+    <tab><![CDATA[content_management]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall this module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

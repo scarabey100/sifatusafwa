@@ -1,0 +1,11 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+Order return #{id_order_return} - Update
+
+لقد تم تحديث حالة طلب الاستعادة return #{id_order_return}, الحالة الجديدة هي: "{state_order_return}".
+
+Follow your order and download your invoice on our store, go to the [تاريخ الطلبية و التفاصيل]({history_url}) section of your customer account.

@@ -1,0 +1,17 @@
+/* CSS Document */
+.tab_config_dmu_15 {
+	background-color: #ebedf4;
+	border: 1px solid #ccced7;
+	min-height: 404px;
+	padding: 5px 10px 10px;
+	margin-left: 140px;
+}
+.tab_config_dmu_15 h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 .5em 0;
+	line-height: 1.4em;
+}
+.tab_config_dmu_15 fieldset {
+	border:none;	
+}

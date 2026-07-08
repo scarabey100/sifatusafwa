@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Identifiant de commande {order_name} - Commande en cours de traitement
+
+Nous traitons actuellement votre commande ayant pour référence {order_name} de {shop_name}.
+
+Follow your order and download your invoice on our store, go to the [Historique et détails de mes commandes]({history_url}) section of your customer account.
+
+Si vous avez un compte invité, vous pouvez suivre votre commande via la section [Suivi de commande]({guest_tracking_url}) sur notre boutique.

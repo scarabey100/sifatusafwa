@@ -1,0 +1,154 @@
+5.10.3 (2023-08-17)
+    - Improved Prestashop 8.1 compatibility.
+5.10.2 (2023-02-27)
+    - SEO improvements for Magic 360.
+5.10.1 (2022-11-26)
+    - Better handling of Vimeo videos.
+5.10 (2022-10-28)
+    - Prestashop 8 support added.
+5.9.25 (2021-03-11)
+    - Module settings page update.
+5.9.24 (2020-02-26)
+    - Optimized image generation (Magic 360 module).
+5.9.23 (2020-02-04)
+    - Main image size on the product page issue fixed.
+5.9.22 (2020-01-31)
+    - Improved default gallery image detection.
+5.9.21 (2020-01-20)
+    - Wrong cover image issue fixed.
+5.9.19 (2019-10-08)
+    - Added support for new Magic Zoom (Plus) 5.3.0.
+5.9.18 (2019-03-11)
+    - Updated core JS scripts.
+5.9.16 (2018-07-19)
+    - Fixed issue witn non-updating image in 1.7.x.
+5.9.15 (2018-06-07)
+    - Removed 'Caption source' option.
+5.9.14 (2018-05-24)
+    - Fixed an issue with switching product image on page load when '360 as primary image' option is enabled but Magic360 is not.
+5.9.13 (2017-10-23)
+    - Fixed an issue with displaying combination's thumbnails.
+5.9.12 (2017-10-10)
+    - Fixed an issue with replacing shortcodes.
+5.9.11 (2017-08-22)
+    - Fixed issue with non-working effect in Featured block.
+5.9.10 (2017-07-17)
+    - Added '360 as primary image' option.
+    - Added sorting of spin images.
+5.9.9 (2017-07-06)
+    - Fixed some minor issues.
+5.9.8 (2017-06-22)
+    - Fixed an issue with cleaning the 'Product Videos' field.
+5.9.7 (2017-05-25)
+    - Fixed some minor issues.
+5.9.6 (2017-05-18)
+    - License information updated
+5.9.5 (2017-04-27)
+    - Improved custom themes support in PrestaShop 1.7.x
+5.9.4 (2017-03-22)
+    - Added support for new Magic Thumb 3.0
+5.9 (2016-12-13)
+    - Added product's video support.
+5.8.1 (2016-12-13)
+    - Magic Zoom and Magic Zoom Plus updated to the most recent versions
+5.8 (2016-11-16)
+    - Added support for PrestaShop v1.7.x.
+5.7 (2015-08-26)
+    - Added support for Magic Scroll v2.
+    - Added support for Magic Slideshow v3.
+    - Added support for Magic Zoom Plus v5.
+    - Added support for 'Specials' block on homepage.
+5.6 (2015-01-22)
+    - Updated module settings page.
+    - Added support PrestaShop v1.6.x.
+5.5 (2013-12-12)
+    - Added support for Magic Slideshow v2.
+5.4 (2013-01-29)
+    - Added thumbnail to switch between Magic 360 (Flash) and other (Magic Zoom Plus, Magic Zoom, Magic Thumb, Magic Magnify, Magic Magnify Plus, Magic Touch) module view if they are both installed.
+    - Separate tab on the settings page of the product for loading Magic 360 (Flash) images.
+    - Added multi-language support for Home page Slideshow.
+5.3 (2012-11-02)
+    - Fixed an issue where modules were not working in PrestaShop 1.5.1.0 and above.
+    - Added support for 'search' page.
+    - Added 'max-number-of-products' option for bestsellers block.
+    - Added 'include-headers-on-all-pages' options.
+    - Added tutorial links in admin area.
+5.2 (2012-06-27)
+    - Added support PrestaShop 1.5.x.
+    - Improved multi-language support for new Magic 360 version.
+    - Added 'link-to-product-page' option to Magic Magnify module.
+    - Move 'Multiple images' group options to product tab.
+5.1 (2012-01-23)
+    - Added Magic 360 (JS version) support.
+    - Fixed issue with replacement pictures of not standard size.
+    - Added UrlRewriting+ mod support.
+    - Fixed issue with mysql on windows.
+    - Added some minor improvements.
+5.0.4 (2011-06-30)
+    - Fix warning on category page when 'Activate legacy images compatibility' option is on.
+5.0 (2011-06-20)
+    - Added templates for selectors.
+    - Added Magic Scroll for selectors.
+4.11 (2011-06-20)
+    - Added text description support to the images in custom slideshow block on home page.
+4.10 (2011-06-10)
+    - Added support for product listing pages (Category, Manufacturer, New product, Best sellers, Specials).
+    - Fix issue when the options with quotes in value are not saved.
+4.9 (2011-05-24)
+    - Fix issue when not included headers on home page.
+4.8 (2011-05-16)
+    - Improve compatibility with 'blockcart' module.
+4.7 (2011-04-21)
+    - Fix issue with not working parameters in Magic 360/Magic 360 Plus modules.
+4.6 (2011-04-20)
+    - Added support PrestaShop 1.1.x.
+4.5 (2011-04-11)
+    - Fix issue with the parameter "Enable effect" in admin area when its value is reset to "Yes".
+4.4 (2011-04-04)
+    - Fix issue with not working 'Add to cart' button (with 'blockcart' module).
+4.3 (2011-02-18)
+    - Added Magic 360 (Plus) support.
+4.2 (2011-02-15)
+    - Added support PrestaShop 1.4.x.
+    - Added support for 'New products' block.
+4.1 (2011-01-14)
+    - Added Magic Scroll support.
+4.0 (2010-12-20)
+    - Configuration improvements. Now supports custom options for different page.
+    - Slideshow can now be added as custom block on home page.
+    - Some bug fixes, code optimizations.
+3.2 (2010-10-15)
+    - Fix issue with some PrestaShop module which reset the 'product' smarty variable.
+3.1 (2010-07-20)
+    - Changed parameter prefixes to fix issue with parameter length.
+3.0 (2010-06-24)
+    - Added support to Magic Slideshow module.
+    - Added support for 'Viewed products', 'Featured products' and 'Specials' blocks.
+    - Code rewrite.
+2.0 (2010-06-11)
+    - Added link to product page option.
+    - Added category page support.
+1.10 (2010-06-08)
+    - Changes in caption-source parameter to allow multiple sources.
+1.9 (2010-05-19)
+    - Fixed small error when using the full image path.
+1.8 (2010-04-15)
+    - Fixed thumb-change parameter.
+1.7 (2010-04-15)
+    - Fixed module error when there are products in the shopping cart.
+1.6 (2010-03-30)
+    - Added description for parameters in admin area.
+    - Added notes for parameters which sets image sizes.
+    - Fixed default value for 'large-image' parameter set to 'thickbox'.
+1.5 (2010-03-18)
+    - Color swatches improved.
+1.4 (2010-03-17)
+    - Added translation support.
+1.3 (2010-02-03)
+    - Headers for JavaScript and CSS only loaded when needed.
+1.2 (2010-02-02)
+    - Remove the native PrestaShop Thickbox effect from the main product image then only one image exists.
+1.1 (2010-01-13)
+    - Disable effect for products without images.
+1.0 (2009-11-08)
+    - PrestaShop module created.

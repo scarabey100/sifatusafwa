@@ -1,0 +1,16 @@
+{
+  "name": "pageViews",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "pageViews"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

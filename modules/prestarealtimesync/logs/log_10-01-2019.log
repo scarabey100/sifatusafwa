@@ -1,0 +1,330 @@
+*WARN*	2019/10/01 - 10:51:40: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:52:20: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:53:10: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:53:36: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:54:01: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:58:05: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:58:13: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:58:31: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 10:58:51: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 10:58:52: File name: WkErpConfiguration.php - Line No: 290
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2449
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 05:28:52 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: 'http://192.168.10.122'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/model.py", line 35, in dispatch
+    security.check(db,uid,passwd)
+  File "/opt/odoo/odoo/service/security.py", line 15, in check
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 78, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 74, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 142, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 470, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 657, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 171, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 540, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 608, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.5/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "http://192.168.10.122" does not exist
+
+</string></value>
+</member>
+<member>
+<name>faultCode</name>
+<value><string>FATAL:  database "http://192.168.10.122" does not exist
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 10:59:38: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 10:59:38: File name: WkErpConfiguration.php - Line No: 290
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2449
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 05:29:38 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: 'http://192.168.10.122'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/model.py", line 35, in dispatch
+    security.check(db,uid,passwd)
+  File "/opt/odoo/odoo/service/security.py", line 15, in check
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 78, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 74, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 142, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 470, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 657, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 171, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 540, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 608, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.5/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "http://192.168.10.122" does not exist
+
+</string></value>
+</member>
+<member>
+<name>faultCode</name>
+<value><string>FATAL:  database "http://192.168.10.122" does not exist
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 11:03:16: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:03:40: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:04:46: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 11:04:46: File name: WkErpConfiguration.php - Line No: 303
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 05:34:46 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 11:04:51: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 11:04:51: File name: WkErpConfiguration.php - Line No: 303
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 05:34:51 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 11:05:05: File name: WkErpConfiguration.php - Line No: 52
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 11:05:05: File name: WkErpConfiguration.php - Line No: 303
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 05:35:05 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 11:36:33: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2019/10/01 - 11:36:33: File name: WkErpConfiguration.php - Line No: 281
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Tue, 01 Oct 2019 06:06:33 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2019/10/01 - 11:37:15: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:37:56: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:38:31: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:39:14: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:39:29: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 11:51:37: File name: WkErpConfiguration.php - Line No: 33
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:51:48: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:52:24: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:54:16: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:56:22: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:56:34: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:57:08: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:57:56: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 18:57:59: File name: WkErpConfiguration.php - Line No: 38
+Message: OpenERP Credentials Has been updated.
+*WARN*	2019/10/01 - 19:04:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.

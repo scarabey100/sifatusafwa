@@ -1,0 +1,19 @@
+/**
+ * Convert pixel to rem according to a base size.
+ * Values are rounded to two decimals by default.
+ *
+ * @param float $value - Number to convert in rem
+ * @param float $pixels - The pixel base reference
+ * @param boolean $rounded - Rounding the returned value.
+ * @return number - Number in rem
+ */
+
+@function pxToRem($value, $pixels: $font-size-base, $rounded: 1000) {
+    $return: (strip-unit($value) / strip-unit($pixels)) * 1rem;
+    @if $rounded { $return: floor( $return * $rounded ) / $rounded; }
+    @return $return;
+}
+
+@function rem($value, $pixels: $font-size-base, $rounded: 1000) {
+    @return pxToRem($value, $pixels, $rounded);
+}

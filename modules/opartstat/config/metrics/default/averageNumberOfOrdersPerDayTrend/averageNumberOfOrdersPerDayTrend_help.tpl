@@ -1,0 +1,1 @@
+{l s='This is the average number of orders per day trend for the selected period.' mod='opartstat'}

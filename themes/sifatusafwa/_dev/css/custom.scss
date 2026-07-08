@@ -1,0 +1,58 @@
+// ========================================= //
+// styles
+// ========================================= //
+
+// Config
+@import "config/layout";
+
+// Tools
+@import "tools/bootstrap-grid/mixins/breakpoints";
+@import "tools/pxToEm";
+@import "tools/pxToRem";
+@import "tools/pxToVw";
+@import "tools/stripUnit";
+
+// Vars
+@import "vars/font-family";
+@import "vars/colors";
+@import "vars/fonts";
+
+// Commons
+@import "commons/buttons";
+@import "commons/core";
+@import "commons/icons";
+@import "commons/images";
+@import "commons/inputs";
+@import "commons/typos";
+
+// Componenets
+@import "components/header";
+@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/imageslider";
+@import "components/featuredproducts";
+@import "components/contact-banner";
+@import "components/block-reassurance";
+@import "components/newsletter";
+@import "components/pagination";
+@import "components/editions";
+@import "components/popups";
+@import "components/quickview";
+
+// Modules
+@import "modules/slick/slick-theme";
+@import "modules/slick/slick";
+
+// Pages
+@import "components/category-page";
+@import "components/product-page";
+@import "components/homepage";
+@import "components/account";
+@import "components/forgotten-password";
+@import "components/cart-page";
+@import "components/checkout-page";
+@import "components/klevu";
+@import "components/faq";
+@import "components/cms";
+@import "components/gift-card";
+@import "components/contact-page";

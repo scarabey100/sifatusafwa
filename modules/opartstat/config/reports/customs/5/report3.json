@@ -1,0 +1,65 @@
+{
+    "title": {
+        "1": "Trafic",
+        "2": "Traffic"
+    },
+    "type": "classic",
+    "metrics": [
+        {
+            "name": "visitors",
+            "position": 1
+        },
+        {
+            "name": "visits",
+            "position": 2
+        },
+        {
+            "name": "pageViews",
+            "position": 3
+        },
+        {
+            "name": "pageViewsPerVisit",
+            "position": 4
+        },
+        {
+            "name": "bestTrafficPages",
+            "position": 5
+        },
+        {
+            "name": "bestTrafficSources",
+            "position": 6
+        },
+        {
+            "name": "visitorsTrend",
+            "position": 7
+        },
+        {
+            "name": "visitsTrend",
+            "position": 8
+        },
+        {
+            "name": "pageViewsTrend",
+            "position": 9
+        },
+        {
+            "name": "pageViewsPerVisitTrend",
+            "position": 10
+        },
+        {
+            "name": "bestTrafficCountries",
+            "position": 11
+        },
+        {
+            "name": "bestTrafficLanguages",
+            "position": 12
+        },
+        {
+            "name": "bestNumberOrderCountries",
+            "position": 13
+        },
+        {
+            "name": "bestRevenuesCountries",
+            "position": 14
+        }
+    ]
+}

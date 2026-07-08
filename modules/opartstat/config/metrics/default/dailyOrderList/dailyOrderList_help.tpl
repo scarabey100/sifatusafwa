@@ -1,0 +1,1 @@
+{l s='Here is the list of the number of orders over the selected period.' mod='opartstat'}<br />

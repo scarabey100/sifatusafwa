@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+Import finished
+
+The file {filename} has been successfully imported to your store.

@@ -1,0 +1,1 @@
+{l s='Here is the list of coupons sorted by revenues on the selected period.' mod='opartstat'}

@@ -1,0 +1,1 @@
+{l s='Here is the list of companies sorted by revenues on the selected period.' mod='opartstat'}

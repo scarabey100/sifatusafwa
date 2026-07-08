@@ -1,0 +1,300 @@
+.ets_pa_item .radio {
+    display: inline-block;
+}
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.ets_pa_item .radio label {
+    display: flex;
+    align-items: center;
+}
+.ets_pa_item .radio label * {
+    margin-right: 10px;
+}
+.pa_wrapper_content.is15 .defaultForm legend {
+    display: none;
+}
+.pa_wrapper_content .panel-heading {
+    min-height: 56px;
+    margin-bottom: 30px!important;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 18px!important;
+}
+#content.bootstrap .tab-content.panel {
+    border: 1px solid #e6e6e6;
+    border-radius: 0 0 3px 3px;
+}
+.bootstrap .help-block {
+    color: #777;
+    font-size: 13px;
+}
+.form-group-wrapper .form-group .form-group {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 0;
+}
+.form-group-wrapper .form-group .form-group .col-lg-10 {
+    padding-left: 0!important;
+}
+.row_pa_captcha_type .ets_pa_options li.ets_pa_item {
+    margin-bottom: 10px;
+}
+.row_pa_captcha_type .ets_pa_options li.ets_pa_item label[for="PA_CAPTCHA_TYPE_colorful"] img,
+.row_pa_captcha_type .ets_pa_options li.ets_pa_item label[for="PA_CAPTCHA_TYPE_basic"] img,
+.row_pa_captcha_type .ets_pa_options li.ets_pa_item label[for="PA_CAPTCHA_TYPE_complex"] img{
+    border: 1px solid #eee;
+}
+td .hidden-google-captcha {
+    padding-left: 17px;
+}
+td > .hidden-google-captcha label {
+    text-align: left;
+}
+td > .hidden-google-captcha input {
+	width: 100%;
+}
+td > #module_form_submit_btn {
+	margin-top: 10px;
+}
+#captcha .help-block {
+    max-width: 510px;
+}
+.avc_button_help{
+    margin: 0 10px 0 0!important;
+}
+ul.ets_pa_options {
+    padding-left: 10px;
+    list-style: none;
+}
+.pa_captcha_log_install h4 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px !important;
+}
+.pa_captcha_log_install {
+
+    font-size: 18px;
+    font-family: Arial;
+    color: #3a6b1f !important;
+    border: 1px solid #609d3f !important;
+    background-color: #d8eace !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    margin: 30px 0 !important;
+
+}
+.pa_captcha_log_install .pa_captcha_logs.alert-warning {
+
+    margin: 30px 0 20px;
+    padding: 10px 30px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #967800;
+
+}
+.pa_captcha_log_install > .pa_captcha_view_log, .pa_captcha_log_install > .pa_captcha_clear_log {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+.pa_captcha_log_install > .pa_captcha_view_log {
+    margin-top: 15px;
+}
+.pa_captcha_log_actions #pa_captcha_button_yes {
+
+    background-color: #3a6b1f;
+    border: 1px solid #3a6b1f;
+    font-size: 18px;
+    font-family: Arial;
+    text-transform: none;
+    padding: 5px 20px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+.pa_captcha_log_actions #pa_captcha_button_yes:hover{
+    background-color: #4d9028;
+}
+.pa_captcha_log_install h4::before {
+
+    content: "\f058";
+    font-size: 30px;
+    font-family: Fontawesome;
+    margin-right: 10px;
+    vertical-align: -1px;
+    line-height: 23px;
+    display: inline-block;
+
+}
+.pa_captcha_log_install:before{
+    display: none!important;
+}
+.pa_captcha_log_actions #pa_captcha_clear_log {
+
+    background-color: #967800;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1px solid #967800;
+    margin: 0 5px;
+
+}
+.pa_captcha_log_actions #pa_captcha_clear_log:hover{
+    background-color:  #bf9a06;
+}
+.pa_captcha_log_actions {
+
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+
+}
+.row_pa_captcha_help h3 {
+    margin-top: 10px!important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px!important;
+    border-bottom: none!important;
+    padding-left: 0!important;
+    border-top: 1px solid #eee!important;
+    padding-top: 10px!important;
+    height: auto!important;
+    text-shadow: none!important;
+    font-family: Open sans;
+    margin-left: 0!important;
+    position: relative;
+    margin-right: 0!important;
+}
+.row_pa_captcha_help ul img {
+    display: block;
+    margin: 15px 0;
+    border: 1px solid #eee;
+}
+.pa_wrapper_content ul.nav.nav-tabs li:first-child a:before {
+    content: "\f013";
+    font-family: Fontawesome;
+    display: inline-block;
+    margin-right: 5px;
+}
+.pa_wrapper_content ul.nav.nav-tabs li:last-child a[data-toggle="tab"]:before {
+    content: "\f059";
+    font-family: Fontawesome;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.row_pa_captcha_help ul {
+    border: 1px solid #eee;
+    padding: 20px;
+    list-style: none;
+    margin: 0!important;
+}
+.row_pa_captcha_help {
+    line-height: 28px;
+    font-size: 13px;
+}
+textarea#PA_CAPTCHA_IP_BLACKLIST, textarea#PA_CAPTCHA_EMAIL_BLACKLIST {
+    width: 500px;
+    max-width: 100%;
+}
+.is15 .ets_pa_options li.ets_pa_item {
+    margin-top: 5px;
+}
+.is15 .ets_pa_options label {
+    width: auto;
+    float: none;
+    margin-bottom: 5px;
+}
+.is15 input + label {
+    width: auto;
+    float: none;
+}
+.is15 input#module_form_submit_btn {
+    height: 35px;
+    padding: 0 15px;
+    margin-top: 15px;
+}
+.is15 ul.ets_pa_options {
+    padding-left: 0;
+    list-style: none;
+}
+.is15 .row_pa_google_captcha_site_key input, 
+.is15 .row_pa_google_captcha_secret_key input {
+    height: 22px;
+    width: 350px;
+    max-width: calc(100% - 15px);
+    max-width: -webkit-calc(100% - 15px);
+}
+.is15 label[for="PA_CAPTCHA_TYPE_colorful"] img,
+.is15 label[for="PA_CAPTCHA_TYPE_basic"] img,
+.is15 label[for="PA_CAPTCHA_TYPE_complex"] img,
+.is15 label[for="PA_CAPTCHA_TYPE_google"] img {
+    vertical-align: -10px;
+    margin-left: 5px;
+}
+.is15 .tab-content.panel {
+    border: 1px solid #ccc;
+    clear: both;
+    background-color: #fff;
+    padding: 20px 15px;
+    display: flex;
+    display: -webkit-flex;
+}
+.is15 .tab-content.panel > div.active {
+    display: block!important;
+}
+.is15 .tab-content.panel > div {
+    display: none!important;
+}
+.is15 .tab-content.panel #help {
+    float: none;
+    border: none;
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+.is15 ul.nav.nav-tabs a {
+    padding: 12px 15px;
+    display: block;
+    margin-right: 0px;
+}
+.is15 ul.nav.nav-tabs li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.is15 ul.nav.nav-tabs li.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.growl.growl-error, html :is(body:not(.no-smb-reskin)) .growl.growl-error,
+html :is(body:not(.ps-bo-rebrand)):is(body:not(.no-smb-reskin)) .growl.growl-error {
+    color: #fff;
+    background: rgba(224,143,149,.8);
+}
+@media (min-width: 768px){
+    .col-lg-4 {
+        width: 33.33333%;
+    }
+    .bootstrap .col-lg-3 {
+        width: 25%;
+    }
+}
+@media (max-width: 767px){
+    .bootstrap > .bootstrap.panel {
+        min-width: 550px;
+    }
+}
+
+
+
+
+

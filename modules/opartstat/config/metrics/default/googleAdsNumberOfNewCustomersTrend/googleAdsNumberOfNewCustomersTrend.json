@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsNumberOfNewCustomersTrend",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsNumberOfNewCustomersTrend"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

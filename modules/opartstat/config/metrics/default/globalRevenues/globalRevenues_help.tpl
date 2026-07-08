@@ -1,0 +1,1 @@
+{l s='This is the total revenues without taxes for the selected period.' mod='opartstat'}<br />

@@ -1,0 +1,175 @@
+*WARN*	2020/01/09 - 15:46:48: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2020/01/09 - 15:56:11: File name: prestarealtimesync.php - Line No: 585
+Message: Order id 25 Export response: 
+*INFO*	2020/01/09 - 15:56:11: File name: prestarealtimesync.php - Line No: 586
+Message: Order id 25 kwrgs resp : 
+*CRITICAL: *	2020/01/09 - 16:06:58: File name: prestarealtimesync.php - Line No: 159
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2664
+Server: Werkzeug/0.14.1 Python/3.6.8
+Date: Thu, 09 Jan 2020 10:36:58 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo13/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo13/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo13/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: 'prestaerpsync'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 63, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 43, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo13/odoo/http.py", line 138, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo13/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo13/odoo/service/common.py", line 24, in exp_login
+    res = security.login(db, login, password)
+  File "/opt/odoo13/odoo/service/security.py", line 8, in login
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo13/odoo/__init__.py", line 99, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 86, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/opt/odoo13/odoo/modules/loading.py", line 416, in load_modules
+    force, status, report, loaded_modules, update_module, models_to_check)
+  File "/opt/odoo13/odoo/modules/loading.py", line 312, in load_marked_modules
+    perform_checks=perform_checks, models_to_check=models_to_check
+  File "/opt/odoo13/odoo/modules/loading.py", line 179, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo13/odoo/modules/module.py", line 365, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/opt/custom_addons/prestashop_odoo_bridge/__init__.py", line 18, in &lt;module&gt;
+    from . import models
+  File "/opt/custom_addons/prestashop_odoo_bridge/models/__init__.py", line 8, in &lt;module&gt;
+    from . import pob_config
+  File "/opt/custom_addons/prestashop_odoo_bridge/models/pob_config.py", line 513
+    """
+      ^
+TabError: inconsistent use of tabs and spaces in indentation
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*INFO*	2020/01/09 - 16:08:02: File name: prestarealtimesync.php - Line No: 585
+Message: Order id 27 Export response: 
+*INFO*	2020/01/09 - 16:08:02: File name: prestarealtimesync.php - Line No: 586
+Message: Order id 27 kwrgs resp : 
+*INFO*	2020/01/09 - 16:19:13: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 28 Export response: 
+*INFO*	2020/01/09 - 16:19:13: File name: prestarealtimesync.php - Line No: 606
+Message: Order id 28 kwrgs resp : 
+*INFO*	2020/01/09 - 16:20:37: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 29 Export response: 
+*INFO*	2020/01/09 - 16:20:37: File name: prestarealtimesync.php - Line No: 606
+Message: Order id 29 kwrgs resp : 
+*INFO*	2020/01/09 - 16:38:30: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 33 Export response: 
+*INFO*	2020/01/09 - 16:38:30: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 33 kwrgs resp : 
+*WARN*	2020/01/09 - 16:47:04: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2020/01/09 - 17:04:13: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 36 Export response: 
+*INFO*	2020/01/09 - 17:04:13: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 36 kwrgs resp : 
+*INFO*	2020/01/09 - 17:09:33: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 37 Export response: 
+*INFO*	2020/01/09 - 17:09:33: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 37 kwrgs resp : 
+*INFO*	2020/01/09 - 17:13:00: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 38 Export response: 
+*INFO*	2020/01/09 - 17:13:00: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 38 kwrgs resp : 
+*WARN*	2020/01/09 - 17:15:12: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2020/01/09 - 17:22:19: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 39 Export response: 
+*INFO*	2020/01/09 - 17:22:19: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 39 kwrgs resp : 
+*INFO*	2020/01/09 - 17:25:50: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 40 Export response: 
+*INFO*	2020/01/09 - 17:25:50: File name: prestarealtimesync.php - Line No: 606
+Message: Order id 40 kwrgs resp : 
+*INFO*	2020/01/09 - 18:06:11: File name: prestarealtimesync.php - Line No: 604
+Message: Order id 41 Export response: 
+*INFO*	2020/01/09 - 18:06:11: File name: prestarealtimesync.php - Line No: 605
+Message: Order id 41 kwrgs resp : 
+*INFO*	2020/01/09 - 18:14:01: File name: prestarealtimesync.php - Line No: 606
+Message: Order id 42 Export response: 
+*INFO*	2020/01/09 - 18:14:01: File name: prestarealtimesync.php - Line No: 607
+Message: Order id 42 kwrgs resp : 
+*INFO*	2020/01/09 - 19:11:34: File name: prestarealtimesync.php - Line No: 608
+Message: Order id 57 Export response: 
+*INFO*	2020/01/09 - 19:11:34: File name: prestarealtimesync.php - Line No: 609
+Message: Order id 57 kwrgs resp : 
+*INFO*	2020/01/09 - 19:54:00: File name: prestarealtimesync.php - Line No: 585
+Message: Order id 58 Export response: 
+*INFO*	2020/01/09 - 19:54:00: File name: prestarealtimesync.php - Line No: 586
+Message: Order id 58 kwrgs resp : 
+*INFO*	2020/01/09 - 19:59:08: File name: prestarealtimesync.php - Line No: 586
+Message: Order id 60 Export response: 
+*INFO*	2020/01/09 - 19:59:08: File name: prestarealtimesync.php - Line No: 587
+Message: Order id 60 kwrgs resp : 
+*INFO*	2020/01/09 - 19:59:47: File name: prestarealtimesync.php - Line No: 586
+Message: Order id 61 Export response: 
+*INFO*	2020/01/09 - 19:59:47: File name: prestarealtimesync.php - Line No: 587
+Message: Order id 61 kwrgs resp : 
+*INFO*	2020/01/09 - 20:42:19: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 68 Export response: 
+*INFO*	2020/01/09 - 20:42:19: File name: prestarealtimesync.php - Line No: 583
+Message: Order id 68 kwrgs resp : 
+*INFO*	2020/01/09 - 20:44:48: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 69 Export response: 
+*INFO*	2020/01/09 - 20:44:48: File name: prestarealtimesync.php - Line No: 583
+Message: Order id 69 kwrgs resp : 
+*INFO*	2020/01/09 - 20:47:49: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 70 Export response: 
+*INFO*	2020/01/09 - 20:47:49: File name: prestarealtimesync.php - Line No: 583
+Message: Order id 70 kwrgs resp : 
+*INFO*	2020/01/09 - 20:49:32: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 71 Export response: 
+*INFO*	2020/01/09 - 20:49:32: File name: prestarealtimesync.php - Line No: 583
+Message: Order id 71 kwrgs resp : 
+*INFO*	2020/01/09 - 20:55:30: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 72 Export response: 
+*INFO*	2020/01/09 - 20:55:30: File name: prestarealtimesync.php - Line No: 583
+Message: Order id 72 kwrgs resp : 
+*INFO*	2020/01/09 - 20:56:47: File name: prestarealtimesync.php - Line No: 581
+Message: Order id 73 Export response: 
+*INFO*	2020/01/09 - 20:56:47: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 73 kwrgs resp : 
+*INFO*	2020/01/09 - 21:00:21: File name: prestarealtimesync.php - Line No: 581
+Message: Order id 74 Export response: 
+*INFO*	2020/01/09 - 21:00:21: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 74 kwrgs resp : 
+*INFO*	2020/01/09 - 21:03:53: File name: prestarealtimesync.php - Line No: 581
+Message: Order id 75 Export response: 
+*INFO*	2020/01/09 - 21:03:53: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 75 kwrgs resp : 
+*INFO*	2020/01/09 - 21:05:14: File name: prestarealtimesync.php - Line No: 581
+Message: Order id 76 Export response: 
+*INFO*	2020/01/09 - 21:05:14: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 76 kwrgs resp : 

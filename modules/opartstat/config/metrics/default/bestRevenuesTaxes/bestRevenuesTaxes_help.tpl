@@ -1,0 +1,1 @@
+{l s='Here is the list of taxes sorted by revenues on the selected period.' mod='opartstat'}

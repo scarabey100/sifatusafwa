@@ -1,0 +1,16 @@
+{
+  "name": "averageRevenuesPerOrderTrend",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "averageRevenuesPerOrderTrend"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

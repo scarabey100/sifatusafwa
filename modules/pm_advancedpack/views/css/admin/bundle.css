@@ -1,0 +1,33 @@
+#advancedpack-bundle-form .product-image {
+    display: inline-block;
+    margin: 0 0.625rem 0 0;
+    border: 1px solid #bbcdd2;
+    border-radius: 0.1875rem;
+    outline: solid 4px #fff;
+    cursor: pointer;
+}
+
+#advancedpack-bundle-form .product-image.img-highlight {
+    border: solid 2px #25b9d7;
+}
+
+#advancedpack-bundle-form .product-image input {
+    display: none;
+}
+
+#advancedpack-bundle-form .or-clause {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#advancedpack-bundle-form .required {
+    color: red;
+}
+
+#bundles #js-bundle-list thead th,
+#bundles #js-bundle-list tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}

@@ -1,0 +1,42 @@
+/* MODAL SUCCESS*/
+#gc-cart-success-modal {
+	display:none;
+}
+.gcsm-header {
+	background: #4cbb6c;
+    padding: 15px;
+}
+.gcsm-header h4 {
+	font-weight: 600;
+	color: #fff;
+    font-size: 18px;
+    text-align:center;
+    margin:0;
+}
+.gcsm-header .icon-ta-check {
+	margin-right:10px;
+	vertical-align: middle;
+}
+
+.gcsm-body {
+    padding: 3.125rem 1.875rem;
+    background:#fff;
+}
+.gcsm-body img {
+	width:13.125rem;
+	max-width: 100%;
+}
+.gcsm-body .gcsmb-left {
+	border-right: #acaaa6 1px solid;
+}
+
+.gcsm-cart-summary .btn  {
+	height: 36px;
+	font-size:12px;
+	font-weight: bold;
+    line-height: inherit;
+    text-transform:uppercase;
+    padding-top: 8px;
+    margin-bottom: 8px;
+}
+/* END MODAL SUCCESS*/

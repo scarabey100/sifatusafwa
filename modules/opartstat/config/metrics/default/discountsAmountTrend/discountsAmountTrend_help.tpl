@@ -1,0 +1,1 @@
+{l s='This is the discounts amount without taxes trend for the selected period.' mod='opartstat'}<br />

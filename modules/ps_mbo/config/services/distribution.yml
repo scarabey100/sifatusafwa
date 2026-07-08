@@ -1,0 +1,39 @@
+parameters:
+  ps_cache_dir: !php/const _PS_CACHE_DIR_
+
+services:
+  _defaults:
+    public: true
+
+  mbo.doctrine.cache.adapter:
+    class: Symfony\Component\Cache\Adapter\FilesystemAdapter
+    arguments:
+      - ''
+      - 0
+      - "%ps_cache_dir%%/ps_mbo"
+
+  mbo.doctrine.cache.provider:
+    class: Symfony\Component\Cache\DoctrineProvider
+    arguments:
+      - "@mbo.doctrine.cache.adapter"
+
+  # Distribution API Client
+  mbo.cdc.client.distribution_api:
+    class: PrestaShop\Module\Mbo\Distribution\Client
+    arguments:
+      - "%env(DISTRIBUTION_API_URL)%"
+      - '@Psr\Http\Client\ClientInterface'
+      - '@Psr\Http\Message\StreamFactoryInterface'
+      - '@Psr\Http\Message\ServerRequestFactoryInterface'
+      - '@mbo.doctrine.cache.provider'
+
+  # Distribution API Client with addons user
+  mbo.cdc.client.connected_distribution_api:
+    class: PrestaShop\Module\Mbo\Distribution\ConnectedClient
+    arguments:
+      - "%env(DISTRIBUTION_API_URL)%"
+      - '@Psr\Http\Client\ClientInterface'
+      - '@Psr\Http\Message\StreamFactoryInterface'
+      - '@Psr\Http\Message\ServerRequestFactoryInterface'
+      - '@mbo.doctrine.cache.provider'
+      - '@=service("mbo.addons.user.provider")'

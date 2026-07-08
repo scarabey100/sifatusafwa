@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>cookiesplus</name>
+    <displayName><![CDATA[Cookies - Loi sur les cookies GDPR (bloquer avant le consentement)]]></displayName>
+    <version><![CDATA[1.8.0]]></version>
+    <description><![CDATA[Rendez votre boutique conforme au RGPD en utilisant ce module. Ce module vous permet de bloquer les cookies jusqu&#039;&agrave; ce que le client donne son consentement en acceptant l&#039;avis.]]></description>
+    <author><![CDATA[idnovate]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr(e) de vouloir supprimer le module et les données associées ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

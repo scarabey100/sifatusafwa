@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsCustomerAcquisitionCost",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "googleAdsCustomerAcquisitionCost"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

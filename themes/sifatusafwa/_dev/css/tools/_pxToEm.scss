@@ -1,0 +1,19 @@
+/**
+ * Convert pixel to em according to a base size.
+ * Values are rounded to two decimals by default.
+ *
+ * @param float $value - Number to convert in em
+ * @param float $pixels - The pixel base reference
+ * @param boolean $rounded - Rounding the returned value.
+ * @return number - Number in em
+ */
+
+@function pxToEm($value, $pixels: $font-size-base, $rounded: 1000) {
+    $return: (strip-unit($value) / strip-unit($pixels)) * 1em;
+    @if $rounded { $return: floor( $return * $rounded ) / $rounded; }
+    @return $return;
+}
+
+@function em($value, $pixels: $font-size-base, $rounded: 1000) {
+    @return pxToEm($value, $pixels, $rounded);
+}

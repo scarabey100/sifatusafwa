@@ -1,0 +1,16 @@
+{
+  "name": "visitors",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "visitors"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

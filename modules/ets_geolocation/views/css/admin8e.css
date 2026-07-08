@@ -1,0 +1,18 @@
+.ets_geolocation_form_content_admin .panel-heading .badge {
+  min-width: calc(1.25em + 2px);
+  width: auto;
+  height: calc(1.25em + 2px);
+  position: relative;
+  top: -0.0625em;
+  line-height: 1.25 !important;
+  text-align: center;
+  padding-left: 0.25em !important;
+  padding-right: 0.25em !important;
+}
+
+@media (min-width: 1200px) {
+  .bootstrap .ets_geolocation_form_content_admin .form-group {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}

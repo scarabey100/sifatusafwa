@@ -1,0 +1,7 @@
+# your-module/config/services.yml
+services:
+  timactive.giftcard.set_up_shop_demo:
+    class: TimActive\Module\GiftCard\Command\SetUpShopDemoCommand
+    tags:
+      - { name: 'console.command' }
+

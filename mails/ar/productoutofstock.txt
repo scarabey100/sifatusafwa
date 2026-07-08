@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+المنتج {product} متوفر بكمية محدودة.
+
+There are now less than {last_qty} items in stock.
+
+المخزون المتبقي: {qty}
+
+Replenish your inventory, go to the Catalog > Stocks section of your back office to manage your stock.

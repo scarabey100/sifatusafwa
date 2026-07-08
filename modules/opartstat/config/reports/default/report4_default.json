@@ -1,0 +1,65 @@
+{
+    "title": {
+        "1": "Catalogue",
+        "2": "Catalog"
+    },
+    "type": "classic",
+    "metrics": [
+        {
+            "name": "bestRevenuesProducts",
+            "position": 1
+        },
+        {
+            "name": "bestProfitsProducts",
+            "position": 2
+        },
+        {
+            "name": "bestRevenuesCategories",
+            "position": 3
+        },
+        {
+            "name": "bestProfitsCategories",
+            "position": 4
+        },
+        {
+            "name": "bestRevenuesBrands",
+            "position": 5
+        },
+        {
+            "name": "bestProfitsBrands",
+            "position": 6
+        },
+        {
+            "name": "bestConversionRateProducts",
+            "position": 7
+        },
+        {
+            "name": "bestSellsProducts",
+            "position": 8
+        },
+        {
+            "name": "bestSellsBrands",
+            "position": 9
+        },
+        {
+            "name": "bestSellsCategories",
+            "position": 10
+        },
+        {
+            "name": "bestRevenuesLanguages",
+            "position": 11
+        },
+        {
+            "name": "bestRevenuesCountries",
+            "position": 12
+        },
+        {
+            "name": "bestRevenuesCarriers",
+            "position": 13
+        },
+        {
+            "name": "bestNumberShippingCarriers",
+            "position": 14
+        }
+    ]
+}

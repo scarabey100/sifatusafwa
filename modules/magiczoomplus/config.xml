@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>magiczoomplus</name>
+    <displayName><![CDATA[Magic Zoom Plus]]></displayName>
+    <version><![CDATA[5.10.3]]></version>
+    <description><![CDATA[Beautiful zoom and enlarge effect for your product images.]]></description>
+    <author><![CDATA[Magic Toolbox]]></author>
+    <tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[All magiczoomplus settings would be deleted. Do you really want to uninstall this module ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

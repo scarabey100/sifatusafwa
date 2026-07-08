@@ -1,0 +1,13 @@
+ 
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Merci d'avoir effectué vos achats sur {shop_name}!
+
+Le paiement pour votre commande ayant pour référence {order_name} a bien été effectué.
+
+Follow your order and download your invoice on our store, go to the [Historique et détails de mes commandes]({history_url}) section of your customer account.
+
+Si vous avez un compte invité, vous pouvez suivre votre commande via la section [Suivi de commande]({guest_tracking_url}) sur notre boutique.

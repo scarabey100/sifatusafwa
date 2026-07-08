@@ -1,0 +1,20 @@
+{
+    "name": "prestamodule/advancedpack",
+    "description": "Add a product bundling strategy into your store, sell more !",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrestaModule\\AdvancedPack\\": "src/"
+        },
+        "exclude-from-classmap": []
+    },
+    "config": {
+        "platform": {"php": "7.1"},
+        "platform-check": false,
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+}

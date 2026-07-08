@@ -1,0 +1,110 @@
+.hi-module-whats-this {
+    opacity: 0;
+    visibility: hidden;
+}
+.form-group:hover .hi-module-whats-this {
+    opacity: 1;
+    visibility: visible;
+}
+.hi-module-whats-this a {
+    font-size: 12px;
+    color: #9e9c9c;
+    font-style: italic;
+    border-bottom: 1px dotted;
+}
+.hi-module-whats-this a:hover {
+    text-decoration: none;
+    color: #2fb5d2;
+}
+
+#hmd-modal {
+    position: fixed;
+    top: 0;
+    right: -3em;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    float: right;
+    padding: 0 3em 0 0;
+    overflow: auto;
+    background: #fff;
+    z-index: 9999;
+    min-width: 600px;
+}
+
+.hmd-container {
+    width: 100%;
+    height: 100%;
+}
+
+#hmd-modal.hmd-sidebar-open {
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,.8);
+    box-shadow: 0 0 12px rgba(0,0,0,.8)
+}
+
+.hmd-sidebar-animate {
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease,-webkit-transform 300ms ease
+}
+
+#hmd-modal.hmd-sidebar-right {
+    -webkit-transform: translate(100%,0);
+    transform: translate(100%,0)
+}
+
+#hmd-modal.hmd-sidebar-right.hmd-sidebar-open{
+    -webkit-transform: translate(0,0);
+    transform:translate(0,0);
+}
+
+#hmd-modal.hmd-sidebar-right .hmd-header {
+    height: 50px;
+    padding: 1.2em;
+    color: #fff;
+    background: #363a41;
+    display: flex;
+    align-items: center;
+}
+
+#hmd-modal.hmd-sidebar-right .hmd-header h2 {
+    margin: 0 auto;
+    color: #fff
+}
+
+#hmd-modal.hmd-sidebar-right .hmd-content {
+    height: calc(100% - 50px - 50px);
+    overflow: auto;
+    padding: 20px;
+}
+.hmd-item h2 {
+    margin-top: 0;
+    color: #db5475;
+}
+.hmd-item img {
+    max-width: 100%;
+}
+.hmd-item .hmd-item-content {
+    font-size: 17px;
+    line-height: 1.7em;
+}
+
+.hmd-images-block {
+    margin: 10px 0;
+}
+.hmd-images-block span {
+    color: #7e7e83;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.hmd-footer {
+    padding: 0 20px 20px 20px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.mfp-image-holder .mfp-content {
+    z-index: 99999;
+}

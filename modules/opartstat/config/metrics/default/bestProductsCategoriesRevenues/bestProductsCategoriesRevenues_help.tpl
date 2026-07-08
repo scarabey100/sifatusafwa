@@ -1,0 +1,1 @@
+{l s='Here are the best products by revenues for each categories on the selected period.' mod='opartstat'}<br />

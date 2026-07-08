@@ -1,0 +1,22 @@
+*Connection Error*	2022/02/07 - 14:10:05: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*WARN*	2022/02/07 - 14:10:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/07 - 14:10:47: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:10:58: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:14:30: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:15:37: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:19:03: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:19:29: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/07 - 14:19:41: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 3 Export response: <br/> Product Mountain fox notebook Successfully Evaluate<br/> Order  successfully updated<br/>Order S00025 
+*INFO*	2022/02/07 - 14:19:43: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 2 Export response: <br/> Product The adventure begins Framed poster Successfully Evaluate<br/> Product Mug Today is a good day Successfully Evaluate<br/> Order  successfully updated<br/>Order S00024 
+*INFO*	2022/02/07 - 14:19:54: File name: prestarealtimesync.php - Line No: 386
+Message: Order id 44 Export response: <br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00075 <br/> Error in Delivering Order: Nothing to check the availability for. <br/>

@@ -1,0 +1,1 @@
+{l s='This is the total number of quantities sold trend for the selected period.' mod='opartstat'}<br />

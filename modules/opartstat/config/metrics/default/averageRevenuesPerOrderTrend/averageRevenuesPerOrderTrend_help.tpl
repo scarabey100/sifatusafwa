@@ -1,0 +1,1 @@
+{l s='This is the Average revenue without taxes per order trend for the selected period' mod='opartstat'}

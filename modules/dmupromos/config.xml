@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>dmupromos</name>
+    <displayName><![CDATA[DMU Discount campaigns]]></displayName>
+    <version><![CDATA[3.1.2]]></version>
+    <description><![CDATA[You can create campaigns in advance by selecting the products concerned and apply reductions in mass.]]></description>
+    <author><![CDATA[Dream me up]]></author>
+    <tab><![CDATA[pricing_promotion]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

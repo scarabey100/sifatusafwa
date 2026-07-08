@@ -1,0 +1,76 @@
+// ========================================= //
+// Account
+// ========================================= //
+
+.page-authentication,
+.page-registration,
+.page-password {
+    #content {
+        background: unset;
+        max-width: rem(640);
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: inherit;
+        color: inherit;
+    }
+}
+
+.page {
+
+    &-header,
+    &-footer {
+        text-align: center;
+        margin: rem(40) 0;
+    }
+
+    &-header {
+        h1 {
+            font-size: rem(46);
+            font-weight: 700;
+            line-height: rem(48);
+            text-transform: uppercase;
+        }
+    }
+
+    &-footer {
+        a {
+            display: inline-block;
+            margin: 0 rem(10);
+            transition: var(--bezier);
+            &:hover {
+                color: var(--orange);
+            }
+            &[data-role="back-to-your-account"] {
+                i {
+                    [dir="rtl"] & {
+                        rotate: -180deg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#back-to-login {
+    font-size: rem(18);
+    transition: var(--bezier);
+    &:hover {
+        color: var(--orange);
+    }
+    span {
+        vertical-align: middle;
+    }
+    i {
+        [dir="rtl"] & {
+            rotate: -180deg;
+        }
+    }
+}
+
+
+form .captcha_register {
+    &, + .form-group {
+        display: none;
+    }
+}

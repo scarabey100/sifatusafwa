@@ -1,0 +1,8 @@
+Bonjour {firstname} {lastname},
+Nous avons le plaisir de vous faire parvenir cette carte cadeau d'un montant de {giftcard_price}.
+Pour pouvoir en bénéficier :
+Copiez-collez ce numéro {giftcard_code} dans le panier de votre prochain achat avant de régler la commande.
+
+Vous trouverez joint à ce mail un fichier PDF récapitulatif, que vous pourrez imprimer et offrir.
+
+Joyeux shopping sur {shop_name} !

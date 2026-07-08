@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>egcombinationdescription</name>
+    <displayName><![CDATA[Combination Description]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Adds a description field to product combinations.]]></description>
+    <author><![CDATA[Egio Digital]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,20 @@
+<table border="1" class="orderTable">
+    <thead>
+        <tr>
+            <th>Total</th>
+            <th>total_paid_tax_excl</th>
+            <th>total_shipping_tax_excl</th>
+            <th>total_refunded_tax_excl</th>
+            <th>total_product_purchase_cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td>{$orderTotal['total_paid_tax_excl']|escape:'htmlall':'UTF-8'}</td>
+            <td>{$orderTotal['total_shipping_tax_excl']|escape:'htmlall':'UTF-8'}</td>
+            <td>{$orderTotal['total_refunded_tax_excl']|escape:'htmlall':'UTF-8'}</td>
+            <td>{$orderTotal['total_product_purchase_cost']|escape:'htmlall':'UTF-8'}</td>
+        </tr>
+    </tbody>
+<table>

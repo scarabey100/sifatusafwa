@@ -1,0 +1,32 @@
+/* SFS-4: keep the Klaviyo signup banner visible (it advertises the 10% off
+ * offer) but make sure it does not cover primary purchase CTAs.
+ *
+ * The companion JS at assets/js/sfs4-klaviyo-offset.js detects any
+ * third-party fixed-bottom banner and tags it with [data-sfs4-banner]; it
+ * also writes the banner's live height to --klaviyo-form-h on <body>. Using
+ * an attribute set by JS (rather than Klaviyo-specific class selectors)
+ * means the rules below survive Klaviyo or any successor module changing
+ * its DOM signature.
+ *
+ * On the multi-step checkout the banner is suppressed entirely so it cannot
+ * disrupt payment. The same applies while a full-screen popup is open
+ * (mini-cart preview, quick-view, etc.) — its own footer CTAs would otherwise
+ * compete with the banner.
+ *
+ * See https://youtrack.belvgdev.com/issue/SFS-4
+ */
+
+@media (max-width: 575.98px) {
+    body.page-cart .cart-grid-right {
+        bottom: var(--klaviyo-form-h, 0px);
+    }
+}
+
+body.page-order [data-sfs4-banner] {
+    display: none !important;
+}
+
+body:has(.popup.in) [data-sfs4-banner],
+body:has(.popup.active) [data-sfs4-banner] {
+    display: none !important;
+}

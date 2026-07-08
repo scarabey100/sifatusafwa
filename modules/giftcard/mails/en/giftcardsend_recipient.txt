@@ -1,0 +1,14 @@
+Hi {giftcard_lastname},
+
+We are pleased to send you this gift card in the amount of {giftcard_price}.
+This gift card was offered by {giftcard_from}.
+
+{giftcard_from} wrote a message:
+{giftcard_message}
+
+To use:
+Copy and paste this code {giftcard_code} in your cart on your next purchase before paying your order.
+
+You will find attached to this email a summary PDF file.
+
+Happy shopping on {shop_name}!

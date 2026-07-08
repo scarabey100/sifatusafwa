@@ -1,0 +1,16 @@
+{
+  "name": "averageRevenuesPerMonth",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "averageRevenuesPerMonth"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

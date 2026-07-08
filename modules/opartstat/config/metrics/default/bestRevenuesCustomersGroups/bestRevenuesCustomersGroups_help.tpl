@@ -1,0 +1,1 @@
+{l s='Here is the list of customers groups sorted by revenues without taxes on the selected period.' mod='opartstat'}

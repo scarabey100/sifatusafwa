@@ -1,0 +1,107 @@
+// ========================================= //
+// buttons
+// ========================================= //
+
+// V A R S
+$ctaDark : (
+        "color":                        var(--white),
+        "bg-color":                     var(--dark),
+        "border-color":                 var(--dark),
+
+        "hover-color":                  var(--white),
+        "hover-bg-color":               var(--orange),
+        "hover-border-color":           var(--orange),
+);
+
+$ctaOrange : (
+        "color":                        var(--white),
+        "bg-color":                     var(--orange),
+        "border-color":                 var(--orange),
+
+        "hover-color":                  var(--white),
+        "hover-bg-color":               var(--dark),
+        "hover-border-color":           var(--dark),
+);
+
+$ctaLight : (
+        "color":                        var(--dark),
+        "bg-color":                     transparent,
+        "border-color":                 var(--dark),
+
+        "hover-color":                  var(--white),
+        "hover-bg-color":               var(--dark),
+        "hover-border-color":           var(--dark),
+);
+
+// M I X I N S
+@mixin make-button($options) {
+    height: unset !important;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: rem(11) rem(24) rem(10);
+    background-color: map-get($options, "bg-color") !important;
+    //border: rem(1) solid map-get($options, "border-color") !important;
+    border: 0 !important;
+    border-radius: rem(5);
+    color: map-get($options, "color") !important;
+    outline: none !important;
+    cursor: pointer;
+    font-family: var(--Helvetica);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: rem(24);
+    letter-spacing: 0;
+    white-space: normal;
+    transition: var(--bezier);
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: map-get($options, "hover-bg-color") !important;
+            //border-color: map-get($options, "hover-border-color") !important;
+            color: map-get($options, "hover-color") !important;
+        }
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+}
+
+.btn {
+    @include make-button($ctaDark);
+
+    &.btn-orange {
+        @include make-button($ctaOrange);
+    }
+
+    &.btn-light {
+        @include make-button($ctaLight);
+        border-radius: rem(5);
+        border: rem(1) solid var(--dark) !important;
+    }
+
+    &__back {
+        display: inline-flex;
+        align-items: center;
+        margin: rem(24) 0;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+        svg {
+            margin-right: rem(14);
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,192 @@
+/*** sections ***/
+#choicegiftcard section h2 {
+	margin: 3rem 0 1rem;
+}
+
+/*** GIFTCARD TABS ***/
+#choicegiftcard .gctabs{
+	margin-top:15px;
+	list-style: none;
+}
+#choicegiftcard .gctabs li {
+    border:1px solid black;
+	margin:.5rem .5rem .5rem 0;
+	display:inline-block;
+}
+#choicegiftcard .gctabs li a {
+	color: black;
+    display:inline-block;
+    padding:0.5rem 1rem;
+	text-decoration:none;
+	font-size:.875rem;
+}
+#choicegiftcard .gctabs li a.selected {
+	color: #FFF;
+	background: black;
+}
+#choicegiftcard .gctab_content {
+	margin-top:15px;
+	display:none;
+}
+#choicegiftcard .gctab_content.selected {
+	display:block;
+}
+#choicegiftcard .gctab_content .row {
+	margin:0 -.5rem;
+}
+#choicegiftcard .gctab_content .row > li {
+	padding: .5rem !important;
+	position: relative;
+}
+/*** END TABS ***/
+/*** CARDS ***/
+.template_item .link_template {
+	transition: opacity ease .3s;
+}
+.template_item .link_template:hover {
+	opacity:.8
+}
+.template_item.selected .link_template {
+	opacity:1;
+	cursor:default;
+}
+.template_item::before {
+	content:'';
+	opacity:0;
+	transition: opacity ease .6s;
+  }
+.template_item.selected::before {
+	position:absolute;
+	z-index:3;
+	opacity:1;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background:white;
+	left:calc(50% - 30px);
+	top:calc(50% - 30px);
+	border:3px solid #4cbb6c;
+	outline: 2px solid white;
+	background-image: url("data:image/svg+xml,%3Csvg width='26' height='21' viewBox='0 0 26 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.97469 20.6115L0.558924 13.0555C-0.188885 12.2921 -0.188885 11.0613 0.574504 10.3135C1.33789 9.56572 2.56866 9.56572 3.31647 10.3291L8.00585 15.112L22.6972 0.560857C23.4606 -0.186952 24.6913 -0.186952 25.4391 0.560857C26.187 1.32424 26.187 2.55501 25.4391 3.30282L7.97469 20.6115Z' fill='%234cbb6c'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	box-shadow: 0 0 20px rgba(0,0,0,.75);
+}
+/*** END CARDS ***/
+#choicegiftcard p.error {
+	background-color : #fdf7f7;
+	border: 1px solid #d9534f;
+	color : #d9534f;
+	padding : 5px;
+}
+#choicegiftcard p.success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    padding : 5px;
+}
+
+/*** FORM GIFT CARD ***/
+.gc-receptmode-option label {
+	padding:0.5rem 1rem;
+	margin:.5rem .5rem .5rem 0;
+	display: inline-flex;
+	align-items: center;
+	line-height: 1.25;
+	border:1px solid black;
+	cursor: pointer;
+	transition: all ease .3s;
+}
+.gc-receptmode-option label:hover {
+	  background:#eee;
+}
+.gc-receptmode-option label svg {
+	  margin-right:.75rem;
+}
+.gc-receptmode-option input {
+	visibility:hidden;
+	position:absolute;
+	z-index:-1;
+}
+
+.gc-receptmode-option input:checked + label {
+	  background: black !important;
+	  color:#fff;
+	  cursor:default;
+}
+.gc-receptmode-option input:checked + label svg path {
+		fill: #fff;
+}
+
+#recepmode-mail-additional-information {
+    display:none;
+	margin-top: 15px;
+}
+
+#recepmode-mail-additional-information .datesendcard {
+	display:flex;
+	gap:.5rem;
+	margin-bottom:0;
+}
+#recepmode-mail-additional-information .datesendcard .form-control {
+	width:auto;
+}
+
+#ta_gc_products_virtual,
+#ta_gc_products_physical {
+	width: auto;
+}
+
+#remaining_characters {
+	margin-top:.5rem;
+}
+
+.ta-gc-submit {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	gap:1rem;
+}
+
+/* MODAL SUCCESS*/
+#gc-cart-success-modal {
+	display:none;
+}
+.gcsm-header {
+	background: #4cbb6c;
+    padding: 15px;
+}
+.gcsm-header h4 {
+	font-weight: 600;
+	color: #fff;
+    font-size: 18px;
+    text-align:center;
+    margin:0;
+}
+.gcsm-header .icon-ta-check {
+	margin-right:10px;
+	vertical-align: middle;
+}
+
+.gcsm-body {
+    padding: 3.125rem 1.875rem;
+    background:#fff;
+}
+.gcsm-body img {
+	width:13.125rem;
+	max-width: 100%;
+}
+.gcsm-body .gcsmb-left {
+	border-right: #acaaa6 1px solid;
+}
+
+.gcsm-cart-summary .btn  {
+	height: 36px;
+	font-size:12px;
+	font-weight: bold;
+    line-height: inherit;
+    text-transform:uppercase;
+    padding-top: 8px;
+    margin-bottom: 8px;
+}
+/* END MODAL SUCCESS*/

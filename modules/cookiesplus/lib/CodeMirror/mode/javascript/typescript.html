@@ -1,0 +1,85 @@
+<!--
+  ~ ISC License
+  ~
+  ~ Copyright (c) 2025 idnovate.com
+  ~ idnovate is a Registered Trademark & Property of idnovate.com, innovación y desarrollo SCP
+  ~
+  ~ Permission to use, copy, modify, and/or distribute this software for any
+  ~ purpose with or without fee is hereby granted, provided that the above
+  ~ copyright notice and this permission notice appear in all copies.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+  ~ REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+  ~ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+  ~ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+  ~ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+  ~ PERFORMANCE OF THIS SOFTWARE.
+  ~
+  ~ @author    idnovate
+  ~ @copyright 2025 idnovate.com
+  ~ @license   https://www.isc.org/licenses/ https://opensource.org/licenses/ISC ISC License
+  -->
+
+<!doctype html>
+
+<title>CodeMirror: TypeScript mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="../../addon/edit/matchbrackets.js"></script>
+<script src="javascript.js"></script>
+<style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
+<div id=nav>
+  <a href="https://codemirror.net"><h1>CodeMirror</h1><img id=logo src="../../doc/logo.png" alt=""></a>
+
+  <ul>
+    <li><a href="../../index.html">Home</a>
+    <li><a href="../../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/codemirror/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a href="../index.html">Language modes</a>
+    <li><a class=active href="#">TypeScript</a>
+  </ul>
+</div>
+
+<article>
+<h2>TypeScript mode</h2>
+
+
+<div><textarea id="code" name="code">
+class Greeter {
+  greeting: string;
+  constructor (message: string) {
+    this.greeting = message;
+  }
+  greet() {
+    return "Hello, " + this.greeting;
+  }
+}
+
+var greeter = new Greeter("world");
+
+var button = document.createElement('button')
+button.innerText = "Say Hello"
+button.onclick = function() {
+  alert(greeter.greet())
+}
+
+document.body.appendChild(button)
+
+</textarea></div>
+
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/typescript"
+      });
+    </script>
+
+    <p>This is a specialization of the <a href="index.html">JavaScript mode</a>.</p>
+  </article>

@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+{reply}
+
+يرجى عدم الرد مباشرة على هذه الرسالة, الرد لن يصلنا. In order to reply, click on the following link: {link}

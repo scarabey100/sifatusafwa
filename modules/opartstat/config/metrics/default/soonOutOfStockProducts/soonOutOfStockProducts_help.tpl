@@ -1,0 +1,2 @@
+{l s='This is the list of products soon out of stock' mod='opartstat'}
+{l s='To know if a product will be soon out of stock we compare the quantities sold for this product on the selected period with its available stock today' mod='opartstat'}

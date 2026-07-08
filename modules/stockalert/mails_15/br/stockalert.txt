@@ -1,0 +1,10 @@
+Olá,
+
+O produto {product_name} já está disponível.
+Este artigo já se encontra novamente disponível.
+
+Poderá aceder à página do produto ao clicar na ligação: {product_name}
+
+Poderá encomendá-lo agora mesmo na nossa loja online.
+
+[{shop_name}]({shop_url})

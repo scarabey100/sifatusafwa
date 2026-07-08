@@ -1,0 +1,14 @@
+
+[/{shop_url}]
+
+Salve,
+
+L'articolo è di nuovo in magazzino.
+
+Puoi accedere alla pagina del prodotto cliccando sul link: {product_name}
+[/{product_link}]
+
+Puoi ordinarlo fin d'ora dal nostro negozio online.
+
+{shop_name} [/{shop_url}]
+

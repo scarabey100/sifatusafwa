@@ -1,0 +1,14 @@
+
+[/{shop_url}]
+
+Hallo,
+
+{product_name} ist ab sofort wieder erhältlich.
+
+Wechseln Sie einfach auf die Artikelseite, indem Sie auf den
+folgenden Link klicken: {product_name} [/{product_link}]
+
+Sie können es sofort bestellen!
+
+{shop_name} [/{shop_url}]
+

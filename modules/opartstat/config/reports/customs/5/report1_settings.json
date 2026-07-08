@@ -1,0 +1,10 @@
+{
+    "initial": {
+        "date": "monthToDate",
+        "filters": false
+    },
+    "compare": {
+        "date": "samePeriod",
+        "filters": false
+    }
+}

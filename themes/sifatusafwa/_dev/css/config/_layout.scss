@@ -1,0 +1,19 @@
+/**
+ * L A Y O U T
+ * Global layout mandatories vars.
+ */
+
+$font-size-base: 16px;
+$designReference: 375px;
+$designReference-desktop: 1600px;
+$enable-grid-classes: false;
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 375px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    mxl: 1400px,
+    xxl: 1600px
+);

@@ -1,0 +1,16 @@
+{
+  "name": "bestRevenuesDayOfTheWeek",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "bestRevenuesDayOfTheWeek"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

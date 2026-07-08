@@ -1,0 +1,11 @@
+Hi {firstname} {lastname},
+
+Your favorite product {product_name} is now in store.
+Please login to your account and purchased it before going out of stock again!
+
+
+Thank you.
+
+{shop_name} - {shop_url}
+
+{shop_url} powered by PrestaShop&trade;

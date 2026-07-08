@@ -1,0 +1,17 @@
+{
+	"appName":{
+	 "en":"Gift Card",   
+	 "es":"Targeta Regalo",
+	 "fr":"Carte cadeau"	    
+	},
+	"docVersion":"v1.01.00",
+	"docDescription":{
+	    "en" : "Installation &amp; User guide &amp; FAQ",
+	    "es" : "Instalaci&oacute;n &amp; Gu&iacute;a del usuario &amp; FAQ",
+	    "fr" : "Installation &amp; Guide utilisateur &amp; FAQ"
+	},
+	"pdfLogo":"logo_doc.png",
+	"purshaseUrl":"",
+	"langs":["en","fr","es"],
+	"addonsSupport": "https://addons.prestashop.com/contact-form.php?id_product=16680"
+}

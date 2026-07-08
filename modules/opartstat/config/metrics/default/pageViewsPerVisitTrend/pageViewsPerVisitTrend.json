@@ -1,0 +1,16 @@
+{
+  "name": "pageViewsPerVisitTrend",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "pageViewsPerVisitTrend"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

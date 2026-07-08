@@ -1,0 +1,73 @@
+.hi-module-badge {
+    padding: 0.25em 0.4em !important;
+    font-size: 75% !important;
+    line-height: 1 !important;
+    border-radius: 0.25rem !important;
+    vertical-align: top !important;
+}
+.hi-presta-table-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.1);
+    z-index: 999;
+}
+.hi-presta-table-loader i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 40px;
+    font-size: 43px;
+    bottom: 0;
+    height: 40px;
+}
+.bootstrap .hi-presta-module-form .btn {
+    padding: 6px 8px;
+}
+@keyframes hi-presta-module-spinner {
+    to { transform: rotate(360deg); }
+}
+
+.hi-presta-module-spinner {
+    position: relative;
+}
+.hi-presta-module-spinner:after {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: text-bottom;
+    border: 0.3em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: hi-presta-module-spinner .75s linear infinite;
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+}
+.hi-presta-module-spinner:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.bootstrap .hi-presta-module-form input.filter,
+.bootstrap .hi-presta-module-form select.filter,
+.bootstrap .hi-presta-module-form select.filtercenter {
+    height: 31px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

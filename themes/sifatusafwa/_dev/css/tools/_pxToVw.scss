@@ -1,0 +1,19 @@
+/**
+ * Convert pixel to vw according to a base size.
+ * Values are rounded to two decimals by default.
+ *
+ * @param float $value - Number to convert in vw
+ * @param float $pixels - The pixel base reference
+ * @param boolean $rounded - Rounding the returned value.
+ * @return number - Number in vw
+ */
+
+@function pxToVw($value, $pixels: $designReference, $rounded: 1000) {
+    $return: (strip-unit($value) / strip-unit($pixels)) * 100vw;
+    @if $rounded { $return: floor( $return * $rounded ) / $rounded; }
+    @return $return;
+}
+
+@function vw($value, $pixels: $designReference, $rounded: 1000) {
+    @return pxToVw($value, $pixels, $rounded);
+}

@@ -1,0 +1,44 @@
+// ========================================= //
+// Fonts
+// ========================================= //
+
+:root {
+
+    --Helvetica : 'Helvetica LT Std';
+    --HelveticaBoldCond: 'Helvetica LT Std - Bold Condensed';
+    --Cairo : "Cairo", serif;
+
+    --icomoon : 'icomoon' !important;
+
+    --body-font-family: var(--Helvetica);
+    --body-font-weight: 300;
+    --body-line-height: var(--p-line-height);
+
+//    --h1-font-size: #{rem(28)};
+//    --h1-line-height: #{rem(28)};
+
+//    --h2-font-size: #{rem(24)};
+//    --h2-line-height: #{rem(28)};
+
+//    --h3-font-size: #{rem(24)};
+//    --h3-line-height: #{rem(28)};
+
+//    --h4-font-size: #{rem(20)};
+//    --h4-line-height: #{rem(28)};
+
+//    --h5-font-size: #{rem(20)};
+//    --h5-line-height: #{rem(24)};
+
+//    --h6-font-size: #{rem(16)};
+//    --h6-line-height: #{rem(20)};
+
+    --p-font-size       : #{rem(16)};
+    --p-line-height     : #{rem(24)};
+
+
+//    // M E D I A   Q U E R I E S
+//    @include media-breakpoint-up(lg) { // min-width: 992px
+//
+//    }
+
+}

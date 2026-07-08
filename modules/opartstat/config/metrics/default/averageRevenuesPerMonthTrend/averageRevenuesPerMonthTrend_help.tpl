@@ -1,0 +1,1 @@
+{l s='This is the average revenue per month trend for the selected period.' mod='opartstat'}

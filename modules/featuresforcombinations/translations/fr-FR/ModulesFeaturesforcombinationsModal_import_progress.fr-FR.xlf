@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin861j1beuhvmifpeox8f" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="8a1d14318cfc965da76c0b9d0a53bb93">
+        <source>Aborting, please wait...</source>
+        <target>Aborting, please wait...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d85366190ecd2aebf8363980ad9d6740">
+        <source>Importing your data...</source>
+        <target>Importing your data...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e130ff31fe5f7a054a2db876a7acc94d">
+        <source>Data imported!</source>
+        <target>Data imported!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="118f9dbc8442c6be19dfc0b70d965929">
+        <source>Look at your listings to make sure it's all there as you wished.</source>
+        <target>Look at your listings to make sure it's all there as you wished.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4959a069997257077022c1b96b3b8001">
+        <source>Errors occurred:</source>
+        <target>Errors occurred:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f6307d02a36ffa3f32344e2e63b2a535">
+        <source>Warning, the current import may require a PHP setting update, to allow more data to be transferred. If the current import stops before the end, you should increase your PHP "post_max_size" setting to </source>
+        <target>Warning, the current import may require a PHP setting update, to allow more data to be transferred. If the current import stops before the end, you should increase your PHP "post_max_size" setting to </target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a615c6d48867005fedf8f12ab4d1294a">
+        <source>at least, and try again.</source>
+        <target>at least, and try again.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="841e4579e55a01ab8f0c565995ba7cfc">
+        <source>Some errors were detected. Please check the details:</source>
+        <target>Some errors were detected. Please check the details:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3df311b82f78fa4059e9a78a26e77b06">
+        <source>We made the following adjustments:</source>
+        <target>We made the following adjustments:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6e17621d481059924339f91ed431a116">
+        <source>Validating data...</source>
+        <target>Validating data...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9e825f4641cd3bec0ba01a0c2d67755">
+        <source>validated</source>
+        <target>validated</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fd2f43e6f9f4de5be1b08cdac13d7749">
+        <source>Processing next page...</source>
+        <target>Processing next page...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f438c83e3ff4dd40a3fc1bf4bb3e79f5">
+        <source>Linking accessories...</source>
+        <target>Linking accessories...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="19290604eee3233f77c10a970658725f">
+        <source>imported</source>
+        <target>imported</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="650e0b1fd707ad8ad3a94e2eb494de3d">
+        <source>Ignore warnings and continue?</source>
+        <target>Ignore warnings and continue?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b8388ec68dcac2402d944fbb3382b0f1">
+        <source>Abort import</source>
+        <target>Abort import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

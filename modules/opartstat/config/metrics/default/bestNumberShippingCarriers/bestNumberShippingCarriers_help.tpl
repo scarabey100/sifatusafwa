@@ -1,0 +1,1 @@
+{l s='Here is the list of carriers sorted by number of shipping on the selected period.' mod='opartstat'}<br />

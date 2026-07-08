@@ -1,0 +1,131 @@
+/**
+ * NOTICE OF LICENSE
+ *  _____ _            ___       _   _
+ * |_   _(_)          / _ \     | | (_)
+ *   | |  _ _ __ ___ / /_\ \ ___| |_ ___   _____
+ *   | | | | '_ ` _ \|  _  |/ __| __| \ \ / / _ \
+ *   | | | | | | | | | | | | (__| |_| |\ V /  __/
+ *   \_/ |_|_| |_| |_\_| |_/\___|\__|_| \_/ \___|
+ *
+ * This source file is subject to a commercial license from TimActive Siret 750 571 366 00046
+ * Use, copy, modification or distribution of this source file without written
+ * license agreement from the TimActive EIRL is strictly forbidden.
+ *
+ * @author    TimActive
+ * @copyright Since 2012 TimActive
+ * @license   Commercial license
+*/
+form#giftcardproduct_form
+{
+	background-color: #ebedf4;
+	border: 1px solid #ccced7;
+	min-height: 404px;
+	padding: 5px 10px 10px;
+	margin-left: 140px;
+}
+div.action .btngiftcard
+{
+	float:left;
+}
+a.btngiftcard
+{
+	margin-top:5px;
+	color: #FFF;
+	text-shadow: 0px 1px 0px rgba( 200, 200, 200, 0.4);
+	background: #3C98CF;
+	background: -webkit-linear-gradient( #3C98CF, #2D74A0);
+	background: -moz-linear-gradient( #3C98CF, #2D74A0);
+	background: -ms-linear-gradient( #3C98CF, #2D74A0);
+	background: -o-linear-gradient( #3C98CF, #2D74A0);
+	background: linear-gradient( #3C98CF, #2D74A0);
+	font-size: 1.5em;
+	width: 150px;
+	padding: 6px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 15px 15px 0;
+	border-radius: 7px;
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1);
+	
+}
+a.btngiftcard:hover
+{
+	background: #3CA1D3;
+background: -webkit-linear-gradient( #3CA1D3, #3386AF);
+background: -moz-linear-gradient( #3CA1D3, #3386AF);
+background: -ms-linear-gradient( #3CA1D3, #3386AF);
+background: -o-linear-gradient( #3CA1D3, #3386AF);
+background: linear-gradient( #3CA1D3, #3386AF);
+}
+#giftcardtemplateselect{
+	float: left;
+	padding: 20px;
+	background-color: #FFF;
+	border: 1px dotted #CECECE;
+	width: 45%;
+	max-width: 560px;
+	min-width: 320px;
+	
+}
+#giftcardtemplateselect_img{
+	text-align: center;
+}
+div#giftcardcustom_form{
+	float:left;
+	margin-left:5px;
+	background-color: #FFF;
+	border: 1px dotted #CECECE;
+	width: auto;
+}
+#giftcardcustom_form h3
+{
+border-bottom: 1px solid #CECECE;
+text-transform: uppercase;
+padding-left: 5px;
+margin-top: 0;
+}
+#giftcardcustom_form .tableformcustom{
+	width: 100%;
+}
+#giftcardcustom_form .tableformcustom td.label{
+	padding:3px;
+	vertical-align: top;
+	
+}
+#giftcardtemplates
+{
+	height:auto;
+	display: inline-block;
+}
+#giftcardtemplates .template_item{
+	width:auto;
+	padding:5px;
+	display: block;
+	position:relative;
+	border-bottom:1px dashed #CECECE;
+	padding-bottom:50px;
+}
+#giftcardtemplates .template_item:hover{
+	background-color:#FAAC58;
+}
+#giftcardtemplates .template_item a.button_delete{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+}
+#giftcardtemplates .template_item a.button_check{
+	position:absolute;
+	bottom:0px;
+	left:5px;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/icon/check.png');
+	background-repeat:no-repeat;
+}
+#giftcardtemplates .template_item a.button_check:hover{
+	background-image: url('../img/icon/check_green.png');
+}
+
+.tagify-container > input{
+	border: 0 none !important;
+}

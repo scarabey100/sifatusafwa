@@ -1,0 +1,98 @@
+<?php
+/**
+ * Creative Popup - https://creativepopup.webshopworks.com
+ *
+ * @author    WebshopWorks <info@webshopworks.com>
+ * @copyright 2018-2024 WebshopWorks
+ * @license   One Domain Licence
+ *
+ * Not allowed to resell or redistribute this software
+ */
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+?>
+<script type="text/html" id="tmpl-cp-preview-context-menu">
+    <div class="cp-preview-context-menu">
+        <ul>
+            <li class="group">
+                <i class="dashicons dashicons-plus"></i>
+                <?php cp_e('Add Layer'); ?>
+                <div>
+                    <ul class="cp-context-add-layer">
+                        <li data-type="img">
+                            <i class="dashicons dashicons-format-image"></i>
+                            <?php cp_e('Image'); ?>
+                        </li>
+                        <li data-type="text">
+                            <i class="dashicons dashicons-text"></i>
+                            <?php cp_e('Text'); ?>
+                        </li>
+                        <li data-type="button">
+                            <i class="dashicons dashicons-marker"></i>
+                            <?php cp_e('Button'); ?>
+                        </li>
+                        <li data-type="media">
+                            <i class="dashicons dashicons-video-alt3"></i>
+                            <?php cp_e('Video / Audio'); ?>
+                        </li>
+                        <li data-type="html">
+                            <i class="dashicons dashicons-editor-code"></i>
+                            <?php cp_e('HTML'); ?>
+                        </li>
+                        <li data-type="post">
+                            <i class="dashicons dashicons-admin-post"></i>
+                            <?php cp_e('Dynamic Layer'); ?>
+                        </li>
+                        <li data-type="import">
+                            <i class="dashicons dashicons-upload"></i>
+                            <?php cp_e('Import Layer'); ?>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="group cp-context-overlapping-layers">
+                <i class="dashicons dashicons-menu"></i>
+                <?php cp_e('Overlapping Layers'); ?>
+                <div>
+                    <ul></ul>
+                </div>
+            </li>
+            <li class="cp-context-menu-duplicate">
+                <i class="dashicons dashicons-admin-page"></i>
+                <?php cp_e('Duplicate Layer'); ?>
+            </li>
+            <li class="cp-context-menu-remove">
+                <i class="dashicons dashicons-trash"></i>
+                <?php cp_e('Remove Layer'); ?>
+            </li>
+            <li class="divider"></li>
+            <li class="ls-context-menu-copy-layer">
+                <i class="dashicons dashicons-clipboard"></i>
+                <?php cp_e('Copy Layer'); ?>
+            </li>
+            <li class="ls-context-menu-paste-layer">
+                <i class="dashicons dashicons-admin-page"></i>
+                <?php cp_e('Paste Layer'); ?>
+            </li>
+            <li class="divider"></li>
+            <li class="cp-context-menu-hide">
+                <i class="dashicons dashicons-visibility"></i>
+                <?php cp_e('Toggle Layer Visibility'); ?>
+            </li>
+            <li class="cp-context-menu-lock">
+                <i class="dashicons dashicons-lock"></i>
+                <?php cp_e('Toggle Layer Locking'); ?>
+            </li>
+            <li class="divider"></li>
+            <li class="cp-context-menu-copy-styles">
+                <i class="dashicons dashicons-clipboard"></i>
+                <?php cp_e('Copy Layer Styles'); ?>
+            </li>
+            <li class="cp-context-menu-paste-styles">
+                <i class="dashicons dashicons-admin-page"></i>
+                <?php cp_e('Paste Layer Styles'); ?>
+            </li>
+        </ul>
+    </div>
+</script>

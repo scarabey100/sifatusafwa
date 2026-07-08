@@ -1,0 +1,16 @@
+{
+  "name": "numberOfOrdersTrend",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "numberOfOrdersTrend"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "trend"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayTrend"]
+  }
+}

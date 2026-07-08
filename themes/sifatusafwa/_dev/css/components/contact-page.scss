@@ -1,0 +1,20 @@
+// ========================================= //
+// Contact page
+// ========================================= //
+
+#contact {
+    .page-content,
+    .contact-form {
+        padding: 0;
+    }
+
+    h3, h4 {
+        font-size: rem(28);
+    }
+
+    .category__view {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(50);
+        }
+    }
+}

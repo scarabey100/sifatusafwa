@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+مرحباً
+
+Subscribing to newsletter
+
+Thank you for subscribing to our newsletter. We are pleased to offer you the following voucher: {discount}

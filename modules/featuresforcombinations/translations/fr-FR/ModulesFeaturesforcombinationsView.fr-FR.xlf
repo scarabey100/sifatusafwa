@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin861j1beuhvmifpeox8f" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="43a37c093f7655efe882a7ffd7ce2e8d">
+        <source>Match your data</source>
+        <target>Correspondance des données</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e275f3b49dc3286ef66d7c2774a1f79b">
+        <source>Please match each column of your source file to one of the destination columns.</source>
+        <target>Veuillez faire correspondre chaque colonne de votre fichier source avec l'une des colonnes cibles.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="371ed088d2c0e456f5cae0bb97fe7c4b">
+        <source>Two columns cannot have the same type of values</source>
+        <target>Deux colonnes ne peuvent pas être mise en correspondance avec le même champ.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6a00e03023004b3330275e8d9842b54c">
+        <source>This column must be set:</source>
+        <target>Cette colonne est requise :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3b057f0f92ac8d274701c269ac00c5fa">
+        <source>Rows to skip</source>
+        <target>Lignes à ignorer</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="225ba2bdb1c56af16651110411fc21b1">
+        <source>Indicate how many of the first rows of your file should be skipped when importing the data. For instance set it to 1 if the first row of your file contains headers.</source>
+        <target>Indiquez combien de lignes parmi les premières lignes du fichier doivent être ignorées lors de l'import des données. Par exemple, indiquez "1" si la première ligne de votre fichier contient les entêtes.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="72d6d7a1885885bb55a565fd1070581a">
+        <source>Import</source>
+        <target>Importer</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

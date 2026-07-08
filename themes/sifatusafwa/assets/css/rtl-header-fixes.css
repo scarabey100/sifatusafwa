@@ -1,0 +1,225 @@
+/* Temporary RTL fixes loaded without rebuilding theme assets. */
+[dir="rtl"] #header .header__search .search-widgets input,
+[dir="rtl"] #header .header__search .search_widget input {
+    padding-right: 1.562rem !important;
+    padding-left: 4.625rem !important;
+    text-align: right;
+}
+
+[dir="rtl"] #header .header__search .search-widgets button,
+[dir="rtl"] #header .header__search .search_widget button {
+    right: auto;
+    left: 0;
+    width: 4rem;
+    height: 2.25rem;
+    z-index: 2;
+}
+
+[dir="rtl"] #header .header__search .search-widgets i.search,
+[dir="rtl"] #header .header__search .search_widget i.search {
+    right: auto;
+    left: 0;
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+
+@media (min-width: 992px) {
+    [dir="rtl"] #header .header__search .search-widgets button,
+    [dir="rtl"] #header .header__search .search_widget button {
+        height: 2.875rem;
+    }
+
+    [dir="rtl"] #header .header__search .search-widgets i.search,
+    [dir="rtl"] #header .header__search .search_widget i.search {
+        border-radius: 1.4375rem 0 0 1.4375rem;
+    }
+}
+
+/* Temporary RTL product flag fixes loaded without rebuilding theme assets. */
+[dir="rtl"] ul.product-flags {
+    align-items: flex-end !important;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag {
+    align-self: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag > svg {
+    right: 96% !important;
+    left: auto !important;
+    scale: -1;
+    transform: none;
+}
+
+[dir="rtl"] .product-miniature ul.product-flags li.product-flag.sticker_bottom {
+    right: 0 !important;
+    left: auto !important;
+}
+
+[dir="rtl"] .product-miniature ul.product-flags li.product-flag.sticker_bottom {
+    min-width: 5.25rem;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+[dir="rtl"] .product-miniature ul.product-flags li.product-flag.sticker_bottom > span {
+    display: inline-block;
+    padding-right: 0.5rem;
+}
+
+/* Temporary RTL quick-view overlay centering fix loaded without rebuilding theme assets. */
+[dir="rtl"] .product-miniature .highlighted-informations {
+    right: 50%;
+    left: auto;
+    translate: 50% -50%;
+}
+
+[dir="rtl"] .product-miniature .highlighted-informations .quick-view {
+    margin-right: 0.75rem;
+}
+
+[dir="rtl"] .product-miniature .highlighted-informations .wishlist-icon,
+[dir="rtl"] .product-miniature .highlighted-informations .wishlist-remove {
+    border-right: 0.062rem solid var(--gray-5);
+    border-left: 0;
+    padding-right: 0.812rem;
+    padding-left: 0;
+    margin-right: 1.25rem;
+    margin-left: 0;
+}
+
+/* Temporary RTL product-page fixes loaded without rebuilding theme assets. */
+[dir="rtl"] .product__view .product__info {
+    padding-left: 0 !important;
+    padding-right: 1.875rem !important;
+}
+
+[dir="rtl"] .input-group.bootstrap-touchspin {
+    direction: ltr;
+}
+
+[dir="rtl"] .input-group.bootstrap-touchspin .input-group-btn-vertical .btn.bootstrap-touchspin-up {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .input-group.bootstrap-touchspin .input-group-btn-vertical .btn.bootstrap-touchspin-down {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .input-group.bootstrap-touchspin .input-group-btn-vertical .btn::before,
+[dir="rtl"] .input-group.bootstrap-touchspin .input-group-btn-vertical .btn::after {
+    right: 50%;
+    left: auto;
+    translate: 50% -50%;
+}
+
+[dir="rtl"] #product .product__view .product__info h1 {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir="rtl"] #product .product__view .product__info h1 .font-ar {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] #product .product__view .product__info--intro {
+    direction: ltr;
+}
+
+[dir="rtl"] #product .product__view .product__author {
+    direction: rtl;
+    order: 2;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] #product .product__view .product__ref {
+    direction: ltr;
+    order: 1;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Temporary RTL cart-summary fixes loaded without rebuilding theme assets. */
+[dir="rtl"] #cart .cart-summary .cart-summary-line,
+[dir="rtl"] #cart .cart-detailed-totals .cart-summary-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+[dir="rtl"] #cart .cart-summary-line .label {
+    flex: 1 1 auto;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: right;
+}
+
+[dir="rtl"] #cart .cart-summary-line .value {
+    flex: 0 0 auto;
+    float: none !important;
+    margin-right: auto;
+    margin-left: 0;
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: isolate;
+}
+
+/* Temporary RTL mega-menu product text fixes loaded without rebuilding theme assets. */
+[dir="rtl"] .ets_mm_megamenu .product-miniature .product-description,
+[dir="rtl"] .ets_mm_megamenu .product-miniature .product-title,
+[dir="rtl"] .ets_mm_megamenu .product-miniature .product-title a,
+[dir="rtl"] .ets_mm_megamenu .product-miniature .product-subtitle {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: plaintext;
+}
+
+/* Temporary RTL checkout-summary fixes loaded without rebuilding theme assets. */
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-line .label {
+    flex: 1 1 auto;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: right;
+}
+
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-line .value {
+    flex: 0 0 auto;
+    float: none !important;
+    margin-right: auto;
+    margin-left: 0;
+    direction: rtl;
+    text-align: left;
+    unicode-bidi: isolate;
+}
+
+/* Temporary RTL payment-option description fix loaded without rebuilding theme assets. */
+[dir="rtl"] #checkout .checkout-payment-option__pay_later {
+    margin-right: 0.75rem !important;
+    margin-left: 0 !important;
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+/* Temporary RTL checkout-summary product spacing fix loaded without rebuilding theme assets. */
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-products .media {
+    gap: 1.5rem;
+}
+
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-products .media-left,
+[dir="rtl"] #checkout #js-checkout-summary .cart-summary-products .media-body {
+    padding-right: 0;
+    padding-left: 0;
+}

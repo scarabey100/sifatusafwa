@@ -1,0 +1,3 @@
+{l s='This is the number of visits on the selected period.' mod='opartstat'}<br />
+{l s='A visit is counted the first time a single person land on your site during the day. The other pages she will consult on the same day will be counted as page views and not as visits. In summary: A single person can only count for one visit per day.' mod='opartstat'}<br />
+{l s='Those data are limited. The oldest date available is %1$s' sprintf=[$humanLastStatDate] mod='opartstat'}

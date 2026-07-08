@@ -1,0 +1,195 @@
+*WARN*	2022/02/02 - 04:53:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:55:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:55:41: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:55:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:56:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:56:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:56:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/02 - 04:56:33: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2487
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Wed, 02 Feb 2022 04:56:33 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB11'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB11" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/02 - 04:56:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 04:57:07: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:07:28: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:07:31: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:07:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:10:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:12:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:12:57: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:13:12: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:18:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:19:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:19:19: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:19:44: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:20:28: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:21:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:22:23: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:56:00: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:56:12: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:56:36: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 07:56:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 09:21:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 09:22:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 09:23:36: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/02 - 09:26:51: File name: prestarealtimesync.php - Line No: 332
+Message: Order id 43 Export response: 
+*INFO*	2022/02/02 - 09:27:51: File name: prestarealtimesync.php - Line No: 332
+Message: Order id 43 Export response: 
+*WARN*	2022/02/02 - 09:50:15: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 10:57:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 10:58:16: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 10:58:27: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:08:54: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:08:56: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:09:16: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:09:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:11:25: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:11:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:32:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:36:22: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:36:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:38:03: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:38:05: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 11:38:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:05:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:11:21: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:11:37: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:11:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:14:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:23:31: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:23:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:24:37: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:25:16: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:25:58: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 12:35:00: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 13:56:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 13:58:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 14:04:37: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/02 - 15:18:52: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.

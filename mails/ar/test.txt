@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+مرحبا {firstname} {lastname}،
+
+Here is a test email from your shop.
+
+If you can read this, it means the test is successful!

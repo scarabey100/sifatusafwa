@@ -1,0 +1,33 @@
+{
+    "title": {
+        "1": "Temps réel",
+        "2": "Live"
+    },
+    "type": "live",
+    "metrics": [
+        {
+            "name": "globalRevenues",
+            "position": 1
+        },
+        {
+            "name": "numberOfQuantitiesSold",
+            "position": 2
+        },
+        {
+            "name": "pageViews",
+            "position": 3
+        },
+        {
+            "name": "visitors",
+            "position": 4
+        },
+        {
+            "name": "bestTrafficPages",
+            "position": 5
+        },
+        {
+            "name": "bestTrafficCountries",
+            "position": 6
+        }
+    ]
+}

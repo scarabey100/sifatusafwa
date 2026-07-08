@@ -1,0 +1,6 @@
+Hi {firstname} {lastname},
+We are pleased to send you this gift card {giftcard_price}.
+To use:
+Copy and paste this code <b>{giftcard_code}</b> in your cart on your next purchase before paying your order.
+
+Happy shopping on {shop_name}!

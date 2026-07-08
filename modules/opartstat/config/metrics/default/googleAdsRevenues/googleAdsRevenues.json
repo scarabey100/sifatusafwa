@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsRevenues",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "googleAdsRevenues"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

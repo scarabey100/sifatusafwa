@@ -1,0 +1,6 @@
+Hi,
+
+El cliente {customer} se ha suscrito al producto [{product_name}] ({product_link})
+
+
+[{shop_name}]({shop_url})

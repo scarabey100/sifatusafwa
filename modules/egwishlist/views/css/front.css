@@ -1,0 +1,163 @@
+/**
+ * 2019 (c) Egio digital
+ *
+ * MODULE EgWishList
+ *
+ * @author    Egio digital
+ * @copyright Copyright (c) , Egio digital
+ * @license   Commercial
+ * @version    1.0.0
+ */
+
+#egwishlist-modal {
+  text-align: center;
+}
+
+#_wishlist-nv {
+  float: right;
+  position: relative;
+  top: 0;
+}
+
+#egwishlist-modal .forgot-password {
+  margin-bottom: 1rem;
+}
+
+#egwishlist-user-products .egwishlist-product ._name {
+  padding: 0;
+}
+
+.wishlist_count{
+    position: absolute;
+    top: .125rem;
+    right: 7px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: #ba101f;
+}
+
+.btn-egwishlist-add .added {
+  display: none;
+  color: #ba101f;
+}
+
+.btn-egwishlist-add.egwishlist-added .added {
+  display: inline-block;
+}
+
+.btn-egwishlist-add.egwishlist-added .not-added {
+  display: none; }
+
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.addToCartForm {
+  margin-top: 10px;
+}
+.addToCartButtonNumber {
+  padding: 9px 10px;
+  width: 100px;
+  height: 2.75rem;
+}
+.addToCartButtonBox {
+  margin: 0 auto 30px !important;
+  height: 2.75rem;
+  display: block;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-family: "Open Sans",sans-serif !important;
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1) !important;
+  border: none;
+}
+
+.addToCartFormWrapper {
+  padding: 10px;
+
+}
+
+#productCombinations{
+  font-size: 0.75rem;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+.addToCartFormWrapper .product-variants-item {
+  margin-top: 7px;
+}
+/*.addToCartFormWrapper .control-label {
+  bottom: 5px; position: relative;
+}*/
+.addToCartFormWrapper .form-control-select {
+  margin-bottom: 10px;
+  width: 100px;
+}
+.addToCartFormWrapper .groupUl {
+  margin: 0 auto;display:table;
+}
+.addToCartFormWrapper .groupUl li{
+  float: left !important;
+}
+.addToCartFormWrapper .groupLi {
+  margin-right: .625rem;
+}
+.eg_wishlist.wishlist_btn_top {
+  /*
+  position: absolute;
+  top: -235px;
+  left: 10px;
+  font-size: 20px;
+  */
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+}
+
+.eg_wishlist.wishlist_btn_top i:hover {
+  color: #ba101f;
+}
+
+.btn-iconic.btn-egwishlist-add.js-egwishlist-add i:hover {
+  color: #ba101f;
+}
+#egwishlist-user-products{
+  width: 100%;
+    display: flex;
+    margin-bottom: 1.25rem;
+
+}
+/*.product-miniature .wishlist-button-add {*/
+/*  z-index: 100;*/
+/*  height: 2.1rem;*/
+/*  width: 2.1rem;*/
+/*  min-width: 2.1rem;*/
+/*  color: var(--black);*/
+/*  background-color: var(--white) !important;*/
+/*  border: 1px solid var(--black) !important;*/
+/*  -webkit-box-shadow: none;*/
+/*  box-shadow: none;*/
+/*  border-radius: 0;*/
+/*  margin: 0!important;*/
+/*  -webkit-box-flex: 0;*/
+/*  display: flex;*/
+/*  -webkit-box-align: center;*/
+/*  -ms-flex-align: center;*/
+/*  align-items: center;*/
+/*  -webkit-box-pack: center;*/
+/*  -ms-flex-pack: center;*/
+/*  justify-content: center;*/
+/*}*/
+/*# sourceMappingURL=front.css.map*/

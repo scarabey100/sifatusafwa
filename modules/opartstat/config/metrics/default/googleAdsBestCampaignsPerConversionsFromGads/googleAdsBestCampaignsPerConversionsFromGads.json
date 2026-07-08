@@ -1,0 +1,16 @@
+{
+  "name": "googleAdsBestCampaignsPerConversionsFromGads",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "googleAdsBestCampaignsPerConversionsFromGads"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

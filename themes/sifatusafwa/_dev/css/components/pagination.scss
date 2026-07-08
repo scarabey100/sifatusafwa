@@ -1,0 +1,91 @@
+// ========================================= //
+// Pagination
+// ========================================= //
+
+.kuSearchResultsPageContainer {
+    .kuPagination {
+        width: 100%;
+        padding: rem(40) 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        float: none;
+        a {
+            width: rem(24);
+            height: rem(24);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: rem(20);
+            font-weight: 600;
+            color: var(--dark);
+            transition: var(--bezier);
+            margin: 0 rem(5);
+            padding: 0;
+            border: 0;
+            &.kuCurrent,
+            &:hover {
+                color: var(--orange);
+            }
+            &.disabled {
+                color: var(--gray);
+            }
+            i {
+                font-size: rem(30);
+            }
+        }
+    }
+}
+
+.pagination {
+    width: 100%;
+    padding: rem(40) 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    ol {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            display: flex;
+            margin: 0 rem(5);
+            &.current {
+                a {
+                    color: var(--orange);
+                    text-decoration: none;
+                }
+            }
+            &.previous {
+                margin-left: 0;
+                margin-right: rem(30);
+            }
+            &.next {
+                margin-left: rem(30);
+                margin-right: 0;
+            }
+        }
+    }
+
+    a {
+        width: rem(24);
+        height: rem(24);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(20);
+        font-weight: 600;
+        color: var(--dark);
+        transition: var(--bezier);
+        &:hover {
+            color: var(--orange);
+        }
+        &.disabled {
+            color: var(--gray);
+        }
+        i {
+            font-size: rem(30);
+        }
+    }
+}

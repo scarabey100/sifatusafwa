@@ -1,0 +1,1 @@
+{foreach from=$helpTexts item=helpText}{if $hideDiez===true && strpos($helpText, '#') !== false}{else}{$helpText|escape:'html':'UTF-8'}{/if}{/foreach}

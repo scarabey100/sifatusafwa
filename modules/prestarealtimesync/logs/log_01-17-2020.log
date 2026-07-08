@@ -1,0 +1,142 @@
+*WARN*	2020/01/17 - 11:29:03: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2020/01/17 - 11:30:17: File name: prestarealtimesync.php - Line No: 581
+Message: Order id 85 Export response: 
+*INFO*	2020/01/17 - 11:30:17: File name: prestarealtimesync.php - Line No: 582
+Message: Order id 85 kwrgs resp : 
+*CRITICAL: *	2020/01/17 - 12:23:38: File name: prestarealtimesync.php - Line No: 165
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2507
+Server: Werkzeug/0.14.1 Python/3.6.8
+Date: Fri, 17 Jan 2020 06:53:38 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>Model 'multi.channel.sale' does not exist in registry.</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo13/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo13/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo13/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: 'prestaerpsync2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 54, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 43, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo13/odoo/http.py", line 138, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo13/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo13/odoo/service/common.py", line 24, in exp_login
+    res = security.login(db, login, password)
+  File "/opt/odoo13/odoo/service/security.py", line 8, in login
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo13/odoo/__init__.py", line 99, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 86, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/opt/odoo13/odoo/modules/loading.py", line 416, in load_modules
+    force, status, report, loaded_modules, update_module, models_to_check)
+  File "/opt/odoo13/odoo/modules/loading.py", line 312, in load_marked_modules
+    perform_checks=perform_checks, models_to_check=models_to_check
+  File "/opt/odoo13/odoo/modules/loading.py", line 188, in load_module_graph
+    model_names = registry.load(cr, package)
+  File "/opt/odoo13/odoo/modules/registry.py", line 221, in load
+    model = cls._build_model(self, cr)
+  File "/opt/odoo13/odoo/models.py", line 476, in _build_model
+    raise TypeError("Model %r does not exist in registry." % name)
+TypeError: Model 'multi.channel.sale' does not exist in registry.
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*CRITICAL: *	2020/01/17 - 12:23:39: File name: prestarealtimesync.php - Line No: 165
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2507
+Server: Werkzeug/0.14.1 Python/3.6.8
+Date: Fri, 17 Jan 2020 06:53:39 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>Model 'multi.channel.sale' does not exist in registry.</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo13/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo13/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo13/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: 'prestaerpsync2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 54, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo13/odoo/addons/base/controllers/rpc.py", line 43, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo13/odoo/http.py", line 138, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo13/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo13/odoo/service/common.py", line 24, in exp_login
+    res = security.login(db, login, password)
+  File "/opt/odoo13/odoo/service/security.py", line 8, in login
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo13/odoo/__init__.py", line 99, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo13/odoo/modules/registry.py", line 86, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/opt/odoo13/odoo/modules/loading.py", line 416, in load_modules
+    force, status, report, loaded_modules, update_module, models_to_check)
+  File "/opt/odoo13/odoo/modules/loading.py", line 312, in load_marked_modules
+    perform_checks=perform_checks, models_to_check=models_to_check
+  File "/opt/odoo13/odoo/modules/loading.py", line 188, in load_module_graph
+    model_names = registry.load(cr, package)
+  File "/opt/odoo13/odoo/modules/registry.py", line 221, in load
+    model = cls._build_model(self, cr)
+  File "/opt/odoo13/odoo/models.py", line 476, in _build_model
+    raise TypeError("Model %r does not exist in registry." % name)
+TypeError: Model 'multi.channel.sale' does not exist in registry.
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*INFO*	2020/01/17 - 12:37:23: File name: prestarealtimesync.php - Line No: 592
+Message: Order id 91 Export response: 
+*INFO*	2020/01/17 - 12:37:23: File name: prestarealtimesync.php - Line No: 593
+Message: Order id 91 kwrgs resp : 
+*INFO*	2020/01/17 - 12:39:10: File name: prestarealtimesync.php - Line No: 592
+Message: Order id 92 Export response: 
+*INFO*	2020/01/17 - 12:39:10: File name: prestarealtimesync.php - Line No: 593
+Message: Order id 92 kwrgs resp : 

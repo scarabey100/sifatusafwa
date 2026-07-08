@@ -1,0 +1,111 @@
+// ========================================= //
+// Gidt Card
+// ========================================= //
+
+#module-giftcard-choicegiftcard {
+
+    .breadcrumb {
+        display: block;
+    }
+
+    .page-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: rem(16);
+    }
+
+    #choicegiftcard {
+        .step {
+            padding: rem(40) rem(20);
+            box-shadow: none;
+            &:not(:last-of-type) {
+                border-bottom: rem(1) solid var(--gray-1);
+            }
+            &-title {
+                font-size: rem(24);
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                .done {
+                    display: none;
+                }
+            }
+            &-number {
+                margin-right: rem(10);
+            }
+            &-edit {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: rem(24);
+                margin-left: auto;
+                i {
+                    font-size: inherit;
+                }
+            }
+            &-content {
+                display: none;
+                padding: rem(30) 0 0;
+            }
+            &-action {
+                margin-top: rem(24);
+            }
+            &-current {
+                .step {
+                    &-content {
+                        display: block;
+                    }
+                }
+            }
+            &-complete {
+                .step {
+                    &-title {
+                        .done {
+                            display: flex;
+                        }
+                    }
+                    &-edit {
+                        display: flex;
+                    }
+                    &-content {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .template_item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #formgiftcard {
+        border: rem(1) solid var(--gray-1);
+
+        .datesendcard {
+            position: relative;
+            .email {
+                position: unset;
+                visibility: unset;
+                z-index: unset;
+            }
+        }
+
+        .form-group {
+            position: relative;
+        }
+    }
+
+    #gc-step-information {
+        select {
+            width: 100%;
+        }
+    }
+
+}

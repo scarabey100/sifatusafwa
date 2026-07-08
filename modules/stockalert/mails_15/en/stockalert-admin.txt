@@ -1,0 +1,6 @@
+Hi,
+
+Customer {customer} has been suscribed to product [{product_name}] ({product_link})
+
+
+[{shop_name}]({shop_url})

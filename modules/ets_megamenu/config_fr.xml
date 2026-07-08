@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ets_megamenu</name>
+    <displayName><![CDATA[Mega Menu PRO]]></displayName>
+    <version><![CDATA[2.6.3]]></version>
+    <description><![CDATA[Visual glisser-d&eacute;poser constructeur de m&eacute;ga menus]]></description>
+    <author><![CDATA[PrestaHero]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

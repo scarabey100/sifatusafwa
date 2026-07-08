@@ -1,0 +1,176 @@
+// ========================================= //
+// Reassurance
+// ========================================= //
+
+.blockreassurance {
+    position: relative;
+    padding: rem(40) rem(14);
+    isolation: isolate;
+    overflow: hidden;
+    @include media-breakpoint-up(lg) {
+        padding-block: rem(50);
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        width: rem(380);
+        height: rem(400);
+        background: transparent url('../img/mosaic.svg') center no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        z-index: -1;
+    }
+    &:before {
+        left: 0;
+        translate: -50% -50%;
+    }
+    &:after {
+        right: 0;
+        translate: 50% -50%;
+    }
+
+    .container {
+        max-width: rem(1157);
+    }
+
+    &__intro {
+        text-align: center;
+        margin-bottom: rem(30);
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(46);
+        }
+        .container {
+            max-width: rem(707);
+        }
+        h2 {
+            font-size: rem(26);
+            font-weight: 600;
+            line-height: rem(26);
+            margin-bottom: rem(10);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(46);
+                line-height: rem(48);
+                margin-bottom: rem(20);
+            }
+        }
+        p {
+            font-size: rem(18);
+            line-height: rem(22);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(20);
+                line-height: rem(26);
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            max-width: rem(260);
+        }
+
+        &s {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(30);
+            @include media-breakpoint-up(md) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &--icon {
+            background-color: var(--white);
+            border-radius: rem(20);
+            border: rem(1) solid var(--orange);
+            box-shadow: 0 rem(3) rem(6) rgba(var(--black-rgb), 0.16);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(125);
+            height: rem(125);
+            margin-bottom: rem(20);
+            @include media-breakpoint-up(lg) {
+                width: rem(185);
+                height: rem(185);
+                margin-bottom: rem(39);
+                border-radius: rem(40);
+            }
+        }
+
+        img {
+            height: rem(60);
+            width: auto;
+            @include media-breakpoint-up(lg) {
+                height: rem(110);
+            }
+        }
+
+        h3, p {
+            color: var(--orange);
+        }
+
+        h3 {
+            font-size: rem(26);
+            font-weight: 600;
+            line-height: rem(26);
+            margin-bottom: rem(4);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(36);
+                line-height: rem(36);
+            }
+        }
+
+        p {
+            font-size: rem(18);
+            line-height: rem(22);
+            @include media-breakpoint-up(lg) {
+                font-size: rem(26);
+                line-height: rem(26);
+            }
+        }
+    }
+
+    &_product {
+        display: flex;
+        flex-flow: column;
+        gap: rem(20);
+        &__item {
+            display: flex;
+            align-items: center;
+            &--icon {
+                width: rem(45);
+                flex: 0 0 rem(45);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: auto;
+                    height: rem(45);
+                }
+            }
+            &--desc {
+                flex: 1;
+                padding-left: rem(10);
+                h3 {
+                    font-size: rem(20);
+                    color: var(--orange);
+                }
+                p {
+                    font-size: rem(16);
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+
+}

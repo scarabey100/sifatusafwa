@@ -1,0 +1,1147 @@
+*Connection Error*	2022/02/15 - 06:47:21: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*WARN*	2022/02/15 - 06:53:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 06:54:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 07:04:54: File name: WkErpConfiguration.php - Line No: 278
+Message: 
+*ERROR*	2022/02/15 - 07:06:16: File name: WkErpConfiguration.php - Line No: 278
+Message: 
+*WARN*	2022/02/15 - 07:17:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 07:17:30: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:22:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:22:51: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:23:06: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:23:39: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:26:39: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:28:01: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 08:28:01: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2489
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 08:28:01 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: '1DB10'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "1DB10" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 08:28:58: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 08:28:58: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2489
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 08:28:58 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: '1DB10'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "1DB10" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 08:29:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 08:29:10: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2489
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 08:29:10 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: '1DB10'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "1DB10" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 08:29:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:32:30: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 08:32:34: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:16:28: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:19:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:19:34: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:19:37: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:19:44: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:19:58: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:24:37: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 09:37:51: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*WARN*	2022/02/15 - 09:50:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:51:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:51:54: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:52:04: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:52:13: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:54:27: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:54:36: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:54:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:54:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:56:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:56:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:58:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:58:31: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:58:49: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 09:58:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:00:07: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:00:21: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:00:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:01:35: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:01:43: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:02:23: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:02:30: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:05:12: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:05:16: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:05:24: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:06:47: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:12:09: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:12:32: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:14:05: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:14:14: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:15:01: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 10:15:26: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: 
+*Connection Error*	2022/02/15 - 10:19:03: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:19:03 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 10:19:11: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:19:22: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:19:22 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 10:19:39: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:19:54: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:20:05: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:20:05 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 10:20:14: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:20:42: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:21:09: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:22:02: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:22:30: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:22:52: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:23:05: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:23:57: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:23:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:24:32: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:27:42: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:27:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:28:14: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:28:30: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:28:45: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:29:41: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:29:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:32:18: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:32:44: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:32:47: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:33:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:34:06: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:37:41: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:37:49: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:38:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:41:26: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:41:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:41:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:41:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:42:04: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:42:04 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*Connection Error*	2022/02/15 - 10:42:25: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:42:25 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*INFO*	2022/02/15 - 10:42:50: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*WARN*	2022/02/15 - 10:43:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:44:41: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:44:49: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:44:57: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:45:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 10:45:24: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*WARN*	2022/02/15 - 10:45:34: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:45:43: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:45:49: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:49:32: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*WARN*	2022/02/15 - 10:49:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 10:50:06: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: 
+*Connection Error*	2022/02/15 - 10:50:45: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:50:45 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 10:50:57: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:51:05: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:51:05 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 10:51:11: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 10:51:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 10:51:25: File name: AdminErpManualOrdersController.php - Line No: 254
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 862
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 10:51:25 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>exp_login() takes 3 positional arguments but 4 were given</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+TypeError: exp_login() takes 3 positional arguments but 4 were given
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*INFO*	2022/02/15 - 10:54:42: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*INFO*	2022/02/15 - 10:55:04: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: <br/> Product Hummingbird printed t-shirt Successfully Evaluate<br/> Product Hummingbird printed sweater Successfully EvaluateOnly order state can be update as order not in draft state.<br/>Order S00023 <br/> Order ==> Cancelled. 
+*WARN*	2022/02/15 - 10:55:20: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 10:55:33: File name: prestarealtimesync.php - Line No: 388
+Message: Order id 1 Export response: 
+*WARN*	2022/02/15 - 11:00:53: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:01:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:02:40: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:02:46: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:03:31: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:04:43: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:04:52: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:05:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:05:23: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:05:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:06:27: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:06:33: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:06:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:07:12: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:07:55: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:08:28: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:08:54: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:09:00: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:09:07: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:09:28: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:09:38: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:12:03: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:12:10: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:12:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:13:25: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:13:42: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:13:43: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 11:13:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*Connection Error*	2022/02/15 - 11:15:01: File name: AdminErpManualOrdersController.php - Line No: 253
+Message: 
+*CRITICAL: *	2022/02/15 - 17:06:14: File name: prestarealtimesync.php - Line No: 170
+Message: 
+*CRITICAL: *	2022/02/15 - 17:12:05: File name: prestarealtimesync.php - Line No: 170
+Message: 
+*WARN*	2022/02/15 - 17:12:58: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 17:13:33: File name: prestarealtimesync.php - Line No: 387
+Message: Order id 7 Export response: <br/> Product Printed Chiffon Dress Successfully EvaluateAttributeError("'str' object has no attribute 'get'",)
+*INFO*	2022/02/15 - 17:21:07: File name: prestarealtimesync.php - Line No: 387
+Message: Order id 8 Export response: <br/> Product Printed Dress Successfully Evaluate<br/>Product Feed Error: For product id (4) sku (demo_4) no mapping as well feed found.
+*INFO*	2022/02/15 - 17:22:39: File name: prestarealtimesync.php - Line No: 387
+Message: Order id 9 Export response: <br/> Product Printed Summer Dress Successfully EvaluateAttributeError("'str' object has no attribute 'get'",)
+*INFO*	2022/02/15 - 17:46:17: File name: prestarealtimesync.php - Line No: 387
+Message: Order id 10 Export response: <br/> Product Printed Dress Successfully Evaluate<br/>Order S00079 <br/> Order 10 successfully evaluated
+*WARN*	2022/02/15 - 17:48:11: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:48:19: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 17:48:19: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2489
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 12:18:19 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB101'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB101" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*Connection Error*	2022/02/15 - 17:48:38: File name: AdminOrdersController.php - Line No: 99
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2534
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 12:18:38 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>FATAL:  database "DB101" does not exist
+</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB101'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB101" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*CRITICAL: *	2022/02/15 - 17:49:11: File name: prestarealtimesync.php - Line No: 170
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2534
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 12:19:11 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>FATAL:  database "DB101" does not exist
+</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB101'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB101" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*Connection Error*	2022/02/15 - 17:49:51: File name: AdminOrdersController.php - Line No: 99
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2534
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 12:19:51 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>FATAL:  database "DB101" does not exist
+</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB101'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 60, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB101" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 17:50:09: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*ERROR*	2022/02/15 - 17:50:09: File name: WkErpConfiguration.php - Line No: 278
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 2489
+Server: Werkzeug/0.16.1 Python/3.6.9
+Date: Tue, 15 Feb 2022 12:20:09 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><int>1</int></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'DB101'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 69, in xmlrpc_2
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 49, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 140, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 56, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 20, in exp_login
+    return exp_authenticate(db, login, password, None)
+  File "/opt/odoo/odoo/service/common.py", line 25, in exp_authenticate
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 77, in new
+    registry.init(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 147, in init
+    with closing(self.cursor()) as cr:
+  File "/opt/odoo/odoo/modules/registry.py", line 683, in cursor
+    return self._db.cursor()
+  File "/opt/odoo/odoo/sql_db.py", line 675, in cursor
+    return Cursor(self.__pool, self.dbname, self.dsn, serialized=serialized)
+  File "/opt/odoo/odoo/sql_db.py", line 248, in __init__
+    self._cnx = pool.borrow(dsn)
+  File "/opt/odoo/odoo/sql_db.py", line 558, in _locked
+    return fun(self, *args, **kwargs)
+  File "/opt/odoo/odoo/sql_db.py", line 626, in borrow
+    **connection_info)
+  File "/usr/local/lib/python3.6/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  database "DB101" does not exist
+
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+
+*WARN*	2022/02/15 - 17:50:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 17:50:29: File name: prestarealtimesync.php - Line No: 387
+Message: Order id 11 Export response: <br/> Product Printed Dress Successfully Evaluate<br/>Order S00080 <br/> Order 11 successfully evaluated
+*WARN*	2022/02/15 - 17:56:59: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:57:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:57:13: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:57:18: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:58:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 17:58:42: File name: prestarealtimesync.php - Line No: 385
+Message: Order id 1 Export response: 
+*WARN*	2022/02/15 - 17:59:01: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 17:59:08: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 18:00:17: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*INFO*	2022/02/15 - 18:00:27: File name: prestarealtimesync.php - Line No: 385
+Message: Order id 1 Export response: 
+*INFO*	2022/02/15 - 18:01:22: File name: prestarealtimesync.php - Line No: 385
+Message: Order id 12 Export response: 
+*WARN*	2022/02/15 - 18:04:29: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.
+*WARN*	2022/02/15 - 18:04:35: File name: WkErpConfiguration.php - Line No: 34
+Message: OpenERP Credentials Has been updated.

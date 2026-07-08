@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>featuresforcombinations</name>
+    <displayName><![CDATA[Caract&eacute;ristiques pour les d&eacute;clinaisons]]></displayName>
+    <version><![CDATA[1.5.2]]></version>
+    <description><![CDATA[Caract&eacute;ristiques pour les d&eacute;clinaisons]]></description>
+    <author><![CDATA[Ciren]]></author>
+    <tab><![CDATA[content_management]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir supprimer ce module ?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

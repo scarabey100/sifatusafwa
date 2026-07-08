@@ -1,0 +1,1 @@
+{l s='Here is the list of order status sorted by revenues without taxes on the selected period.' mod='opartstat'}

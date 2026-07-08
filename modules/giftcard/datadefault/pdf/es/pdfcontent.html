@@ -1,0 +1,73 @@
+<table cellpadding="10"
+    style="width:100%;text-align:center;color:#333; background:#ffffff;font-size:14px;">
+    <tbody>
+        <tr>
+            <td style="width:25%">&nbsp;</td>
+            <td style="width:50%;font-size:30px;display:inline-block !important;border:1px solid #333;">
+                <div style="">
+                    <strong>Tarjeta regalo</strong>
+                </div>
+            </td>
+            <td style="width:25%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p>
+                    Hola {$card_lastname},
+                </p>
+                <p>
+                    Has recibido una tarjeta regalo de
+                    <strong>{$card_price}</strong>
+                    de {$card_from} !
+                </p>
+                <p style="font-size:18px;margin:0;">
+                    <em>Buenas compras en {$shop_name} !</em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p>
+                    {$card_image}
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:25%">&nbsp;</td>
+            <td style="width:50%;font-size:16px;background-color:#333333;color:#fff;">
+                Su código :<br /><strong>{$card_code}</strong>
+            </td>
+            <td style="width:25%">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p>
+                    <strong>Mensaje de {$card_from}</strong>
+                </p>
+                <div>
+                    {$card_message}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="font-size:1px;"></td>
+        </tr>
+        <tr>
+            <td style="width:33%;font-size:1px;">&nbsp;</td>
+            <td style="width:34%;font-size:1px;border-top:1px solid #777777;">
+                &nbsp;
+            </td>
+            <td style="width:33%;font-size:1px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p style="font-size:16px;">
+                    <strong>Para beneficiarse de la tarjeta regalo</strong>
+                </p>
+                <p>
+                    Copia/pega tu código <strong>{$card_code}</strong> en el carrito de tu próxima compra antes de pasar por caja.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>

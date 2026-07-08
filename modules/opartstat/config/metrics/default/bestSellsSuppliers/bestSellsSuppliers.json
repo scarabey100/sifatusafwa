@@ -1,0 +1,16 @@
+{
+  "name": "bestSellsSuppliers",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "bestSellsSuppliers"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

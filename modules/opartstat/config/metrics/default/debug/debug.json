@@ -1,0 +1,16 @@
+{
+  "name": "debug",
+  "cols": "4",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "debug"
+  },
+  "template": {
+    "isCustom": true,
+    "name": "debug"
+  },
+  "callBackJsfunction": {
+    "isCustom": true,
+    "name": ["debug"]
+  }
+}

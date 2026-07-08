@@ -1,0 +1,1 @@
+{l s='Here is the list of products sorted by profits without taxes on the selected period.' mod='opartstat'}

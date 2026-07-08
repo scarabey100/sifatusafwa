@@ -1,0 +1,37 @@
+.saving-stock {
+    background-color: #fff3cd !important; /* Yellowish (loading) */
+    border-color: #ffeeba !important;
+}
+
+.stock-saved {
+    background-color: #d4edda !important; /* Green (success) */
+    border-color: #c3e6cb !important;
+}
+/* Notification container */
+#custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  background-color: #28a745; /* Green */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  transform: translateY(-20px);
+  z-index: 10000;
+  white-space: nowrap;
+}
+
+/* Show alert with fade-in and slight slide-down */
+#custom-alert.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+

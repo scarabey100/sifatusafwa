@@ -1,0 +1,16 @@
+{
+  "name": "bestProfitsLandingPages",
+  "cols": "2",
+  "rows": "2",
+  "ajaxCallBack": {
+    "name": "bestProfitsLandingPages"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "list"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayList","displayPie"]
+  }
+}

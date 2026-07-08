@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>savecartforlater</name>
+    <displayName><![CDATA[Save cart for later buy]]></displayName>
+    <version><![CDATA[7.0.2]]></version>
+    <description><![CDATA[Allow customer to save cart product for later buy]]></description>
+    <author><![CDATA[presta_world]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Do you want to uninstall this module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

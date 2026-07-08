@@ -1,0 +1,3 @@
+{l s='This is the page views per visit trend for the selected period.' mod='opartstat'}<br />
+{l s='This number is calculated over a given period of time. It is therefore normal that the total value does not correspond to the sum (or average) of the values shown on your graph.' mod='opartstat'}<br />
+{l s='Those data are limited. The oldest date available is %1$s' sprintf=[$humanLastStatDate] mod='opartstat'}

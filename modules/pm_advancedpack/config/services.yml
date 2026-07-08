@@ -1,0 +1,42 @@
+services:
+  _defaults:
+    public: true
+
+  prestamodule.core.api.stock.repository:
+    class: 'PrestaModule\AdvancedPack\PackStockRepository'
+    decorates: 'prestashop.core.api.stock.repository'
+    arguments:
+        - "@service_container"
+        - "@doctrine.dbal.default_connection"
+        - "@doctrine.orm.default_entity_manager"
+        - "@prestashop.adapter.legacy.context"
+        - "@prestashop.adapter.image_manager"
+        - "@prestashop.adapter.stock_manager"
+        - "%database_prefix%"
+
+  prestamodule.core.api.stock_movement.repository:
+    class: 'PrestaModule\AdvancedPack\PackStockMovementRepository'
+    decorates: 'prestashop.core.api.stock_movement.repository'
+    arguments:
+      - "@service_container"
+      - "@doctrine.dbal.default_connection"
+      - "@doctrine.orm.default_entity_manager"
+      - "@prestashop.adapter.legacy.context"
+      - "@prestashop.adapter.image_manager"
+      - "%database_prefix%"
+      - '@=service("prestashop.adapter.legacy.context").getLanguage().date_format_full'
+
+  prestamodule.adapter.data_provider.attribute:
+    class: PrestaModule\AdvancedPack\PackAttributeDataProvider
+    decorates: 'prestashop.adapter.data_provider.attribute'
+
+  prestamodule.advancedpack.adapter.order.amount.updater:
+    class: PrestaModule\AdvancedPack\OrderAmountUpdater
+    decorates: 'prestashop.adapter.order.amount.updater'
+    arguments:
+        - '@prestamodule.advancedpack.adapter.order.amount.updater.inner'
+
+  PrestaModule\AdvancedPack\ProductForm\ProductFormModifier:
+    class: PrestaModule\AdvancedPack\ProductForm\ProductFormModifier
+    autowire: true
+    public: true

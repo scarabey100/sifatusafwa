@@ -1,0 +1,16 @@
+{
+    "name": "bestProfitsVariationsAndFeatures",
+    "cols": "4",
+    "rows": "2",
+    "ajaxCallBack": {
+        "name": "bestProfitsVariationsAndFeatures"
+    },
+    "template": {
+        "isCustom": false,
+        "name": "list"
+    },
+    "callBackJsfunction": {
+        "isCustom": false,
+        "name": ["displayList","displayPie"]
+    }
+}

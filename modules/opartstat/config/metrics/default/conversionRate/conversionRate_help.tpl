@@ -1,0 +1,2 @@
+{l s='This is the conversion rate on the selected period. This is, the number of orders divided by the number of visits multiplied by 100' mod='opartstat'}<br />
+{l s='Those data are limited. The oldest date available is %1$s' sprintf=[$humanLastStatDate] mod='opartstat'}

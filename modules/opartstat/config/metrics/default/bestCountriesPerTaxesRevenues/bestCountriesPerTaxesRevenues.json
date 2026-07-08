@@ -1,0 +1,16 @@
+{
+    "name": "bestCountriesPerTaxesRevenues",
+    "cols": "2",
+    "rows": "2",
+    "ajaxCallBack": {
+        "name": "bestCountriesPerTaxesRevenues"
+    },
+    "template": {
+        "isCustom": false,
+        "name": "list"
+    },
+    "callBackJsfunction": {
+        "isCustom": false,
+        "name": ["displayList","displayPie"]
+    }
+}

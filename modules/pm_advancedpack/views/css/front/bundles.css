@@ -1,0 +1,89 @@
+.bundle-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.bundle-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bundle {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid #f6f6f6;
+    min-width: 120px;
+    height: 100%;
+    line-height: 25px;
+}
+
+.bundle.active {
+    border: 2px solid #232323;
+}
+
+.bundle-detail {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.bundle-detail p {
+    margin: 0;
+}
+
+.bundle-detail .price {
+    font-weight: 700;
+    color: #f39d72;
+}
+
+.bundle-detail .base {
+    color: inherit;
+}
+
+.bundle-detail .old-price {
+    color: #7a7a7a;
+    font-size: 0.875rem;
+    text-decoration: line-through;
+}
+
+.bundle-detail .badge {
+    position: absolute;
+    bottom: -14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #24b9d7;
+    border-radius: 30px;
+    color: #fff;
+    height: 29px;
+    line-height: 29px;
+    left: 8px;
+    right: 8px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Bundle remove icon */
+.bundle-wrapper .ap5-bundle-product-icon-remove:after {
+    display: none;
+}
+.bundle-wrapper .active .ap5-bundle-product-icon-remove:after {
+    display: block;
+    color: red;
+    content: "\e5cd";
+    font-family: "Material Icons";
+    font-size: 18px;
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    cursor: pointer;
+}

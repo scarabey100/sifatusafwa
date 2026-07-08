@@ -1,0 +1,968 @@
+body {
+    height: auto;
+}
+/* Quick */
+.kuQuickSearchResultsContainer.klevuTarget.klevu-fluid > div {
+    width: 100%;
+    max-width: 850px;
+}
+.kuQuickSearchResultsContainer > .klevuWrap {
+    margin-top: 3px;
+}
+.kuQuickSearchResultsContainer [ku-container][data-container-role="main"] {
+    display: flex;
+    flex-direction: row;
+}
+.kuQuickSearchResultsContainer [ku-container][data-container-role="header"] {
+    width: 20%;
+}
+.kuQuickSearchResultsContainer [ku-container][data-container-role="header"] > section,
+.kuQuickSearchResultsContainer .klevuSuggestionsBlock {
+    height: 100%;
+}
+.kuQuickSearchResultsContainer .klevuSuggestionsBlock .klevuAutosuggestions {
+    height: 100%;
+    padding: 0 0 0 10px;
+    border: none;
+}
+.kuQuickSearchResultsContainer .klevuSuggestionHeading {
+    padding: 0;
+}
+.kuQuickSearchResultsContainer .klevuSuggestionHeading .klevuHeadingText {
+    margin: 10px 0 20px;
+    padding: 21px 15px;
+    color: #89939c;
+    font-family: PT Sans,Tahoma,sans-serif,Arial;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.1;
+    text-transform: none;
+}
+.kuQuickSearchResultsContainer .klevuAutoSuggestionsWrap ul {
+    display: block;
+    height: calc(100% - 122px);
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid #dfe7ed;
+    list-style-type: none;
+}
+.kuQuickSearchResultsContainer [ku-container] ul li {
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 7px 15px;
+}
+.kuQuickSearchResultsContainer .klevuAutoSuggestionsWrap ul li a {
+    margin: 0;
+    padding: 0;
+    color: #89939c;
+    font-family: PT Sans,Tahoma,sans-serif,Arial;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+.kuQuickSearchResultsContainer [ku-container][data-container-role="content"] {
+    width: 100%;
+    height: 100%;
+}
+.kuQuickSearchResultsContainer [ku-container][data-container-role="header"] + [ku-container][data-container-role="content"] {
+    width: 80%;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuSuggestionHeading {
+    padding: 0;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuSuggestionHeading .klevuHeadingText {
+    padding-left: 27px;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock {
+    padding: 0 10px 10px 0;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .kuQuickResultsListContainer {
+    padding: 0 0 0 15px;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul:before {
+    content: none;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li {
+    float: left;
+    display: flex;
+    width: 33.3%!important;
+    min-height: 1px;
+    margin: 0;
+    padding: 0 10px 10px;
+    border: none;
+    font-size: 12px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li:hover {
+    background-color: #fff;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li a.klevuQuickProductInnerBlock {
+    padding: 0 10px;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults .klevuProductItemTop {
+    float: none;
+    display: table;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 0;
+    height: 130px;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults .klevuQuickImgWrap {
+    position: relative;
+    height: 130px!important;
+    width: 100%!important;
+    margin: 0 0 10px;
+    padding: 0 0 120%;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults .klevuProductItemBottom {
+    float: none;
+    display: table;
+    width: 100%;
+    min-height: 100px;
+    padding: 4px 9px 0;
+    vertical-align: top;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickProductDescBlock {
+    float: none;
+    margin: 0;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickProductName {
+    display: -webkit-box;
+    width: 100%;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: oswald;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickProductNameAr {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 44px;
+    margin-top: 10px;
+    color: #444;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickProductPrice {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickProductPrice > div {
+    width: unset;
+    max-width: 80%;
+    margin: 20px 0 5px;
+    text-align: center;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickOrigPrice {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .klevuQuickSalePrice {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #6d071a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+}
+.kuQuickSearchResultsContainer .klevuResultsBlock .klevuQuickSearchResults ul li .kuCaptionVat {
+    float: none;
+    display: inline-block;
+    width: auto;
+    margin: 0 0 0 4px;
+    padding: 0;
+    color: #777;
+    font-family: PT Sans,Tahoma,sans-serif,Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: bottom;
+}
+.kuQuickSearchResultsContainer .klevuQuickSearchingArea .klevuProductsViewAll a {
+    display: block;
+    width: 73%;
+    height: 34px;
+    margin: 0 auto 20px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #f29300;
+    color: #fff;
+    font-family: PT Sans,Tahoma,sans-serif,Arial;
+    font-size: 13px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+@media only screen and (max-width: 990px) {
+    .kuQuickSearchResultsContainer [ku-container][data-container-role="header"] {
+        width: 100%;
+    }
+    .kuQuickSearchResultsContainer .klevuSuggestionHeading .klevuHeadingText {
+        margin: 15px 0;
+        padding: 0 5px;
+        color: #c6c6c6;
+        font-size: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .kuQuickSearchResultsContainer .klevuAutoSuggestionsWrap ul {
+        height: 100%;
+        margin-bottom: 15px;
+        border: none;
+    }
+    .kuQuickSearchResultsContainer [ku-container] ul li {
+        padding-left: 5px;
+    }
+    .kuQuickSearchResultsContainer [ku-container][data-container-role="content"],
+    .kuQuickSearchResultsContainer .klevuQuickSearchingArea .klevuProductsViewAll {
+        display: none;
+    }
+}
+/* Landing */
+.klevuLanding [ku-container][data-container-role="main"] {
+    width: 100%;
+}
+.klevuLanding [ku-container][data-container-role="main"] .kuContainer {
+    max-width: none;
+    padding: 0 0 80px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuFilters .kuFilterBox * {
+    direction: initial;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuFilters .kuFilterBox .kuFilterShowAll ul {
+    max-height: 266px;
+    overflow-y: auto;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuFilters .kuFilterSearchBox {
+    display: none;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuFilters .kuFilterShowAll .kuFilterSearchBox {
+    display: block;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap {
+    border: none;
+    padding-bottom: 42px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap.kuProdOutOfStock {
+    padding-bottom: 14px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop {
+    padding: 0;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop .klevuImgWrap {
+    height: auto!important;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop .klevuImgWrap a img {
+    position: static;
+    height: auto;
+    max-height: none!important;
+    vertical-align: middle;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdBottom {
+    height: auto;
+    padding: 10px 6px 0;
+    text-align: center;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li:hover .kuProdWrap .kuProdBottom {
+    background-color: #f2f2f2;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults .kuCaptionStockOut {
+    margin: 0;
+    padding: 0 0 6px;
+    text-align: center;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults .kuCaptionStockOut > div {
+    display: inline-block;
+    padding: 0 4px;
+    border: 2px solid #999;
+    color: #777;
+    font-size: .75rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuName {
+    display: block;
+    height: 43px;
+    margin-bottom: 6px;
+    margin-top: 0;
+    padding: 0;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuName a {
+    display: block;
+    font-family: "Oswald";
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuName a:hover {
+    color: #e54d26;
+    text-decoration: none;
+}
+.klevuLanding .kuProdBottom .kuPrice {
+    margin: 0;
+    padding-bottom: .375rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.klevuLanding .kuProdBottom .kuPrice .kuOrigPrice,
+.klevuLanding .kuProdBottom .kuPrice .kuSalePrice,
+.klevuLanding.kuSearchResultsPageContainer .kuCaptionVat {
+    float: none!important;
+    display: inline!important;
+    line-height: 1.5;
+    vertical-align: bottom;
+}
+.klevuLanding .kuProdBottom .kuPrice .kuOrigPrice,
+.klevuLanding .kuProdBottom .kuPrice .kuSalePrice {
+    margin-right: 4px;
+}
+.klevuLanding .kuProdBottom .kuPrice .kuOrigPrice {
+    color: #999;
+    font-size: .875rem;
+}
+.klevuLanding .kuProdBottom .kuPrice .kuSalePrice {
+    color: #6D071A;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuCaptionVat {
+    width: auto;
+    margin: 0;
+    color: #777;
+    font-size: .75rem;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuCaptionVat::before {
+    content: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdAdditional {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li:hover .kuProdAdditional {
+    box-shadow: none;
+    background-color: #f2f2f2;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdAdditional .kuProdAdditionalData {
+    padding: 0 6px 10px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuAddtocart {
+    margin: 0 auto;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuAddtocart .kuBtn {
+    height: 34px;
+    margin: 0;
+    background-color: #e82e53;
+    border-color: #e82e53;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'PT Sans'!important;
+    text-transform: uppercase;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuAddtocart .kuBtn.kuBtnDisabled {
+    background-color: #aaa;
+    border-color: #aaa;
+    pointer-events: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuAddtocart .kuBtn > div > i {
+    font-size: 1rem;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuAddtocart .kuBtn > div > span {
+    font-size: .875rem;
+    line-height: 20px;
+}
+/* Recommendations */
+.kuRECSContainer > section {
+    margin-bottom: 15px;
+}
+.kuRECSContainer .kuRECSWrap {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item {
+    max-width: 280px;
+    border: none;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemImg {
+    position: relative;
+    padding: 0 6px;
+    overflow: hidden;
+    z-index: 2;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemImg .kuRECSImg {
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemDesc {
+    position: relative;
+    padding: 10px 6px 0;
+    text-align: center;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item:hover .kuRECS-itemDesc {
+    background-color: #f2f2f2;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemName {
+    height: 43px;
+    margin-bottom: 6px;
+    margin-top: 0;
+    padding: 0;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemName a {
+    display: block;
+    font-family: "Oswald";
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemName a:hover {
+    color: #e54d26;
+    text-decoration: none;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemPrice {
+    padding-bottom: .375rem;
+    text-align: center;
+    /* white-space: nowrap; */
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemPrice .kuOrigPrice,
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemPrice .kuSalePrice {
+    margin-right: 4px;
+    white-space: nowrap;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemPrice .kuOrigPrice {
+    color: #999;
+    font-size: .875rem;
+    text-decoration: line-through;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemPrice .kuSalePrice {
+    color: #6D071A;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom {
+    padding: 0 6px 4px;
+    visibility: hidden;
+}
+.mobile_device .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom {
+    visibility: visible;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item:hover .kuRECSItemBottom {
+    background-color: #f2f2f2;
+    visibility: visible;
+}
+.kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn {
+    margin-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+@media (max-width: 1440px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1200px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 11px;
+    }
+}
+@media (max-width: 992px) {
+    .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 13px !important;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 11px !important;
+    }
+}
+@media (max-width: 600px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 14px;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 540px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 11px;
+    }
+    .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 11px !important;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 9px !important;
+    }
+}
+@media (max-width: 480px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 14px;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 420px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 11px;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 9px !important;
+    }
+}
+@media (max-width: 379px) {
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 14px;
+    }
+    .lang-fr .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 10px !important;
+    }
+}
+/* Product page recommendations */
+#product .kuRECSContainer > section {
+    position: relative;
+    margin-bottom: 30px;
+}
+#product .kuRECSContainer .kuRECSWrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#product .kuRECSContainer .kuRECSResults {
+    position: static;
+}
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item {
+    max-width: none;
+    padding: 10px 10px 45px;
+}
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemImg,
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-itemDesc,
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom {
+    padding-left: 0;
+    padding-right: 0;
+}
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom {
+    padding-bottom: 0;
+}
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item:hover .kuRECS-itemDesc,
+#product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECS-item:hover .kuRECSItemBottom {
+    background-color: transparent;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 5px;
+    background-color: #D4D4D4;
+    border: none;
+    border-radius: 0;
+    font-size: 0;
+    line-height: 24px;
+    z-index: 1;
+    cursor: pointer;
+    transform: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button:hover {
+    background: #2FB5D2;
+    border-color: #2FB5D2;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-prev {
+    right: 30px;
+    left: auto;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-next {
+    right: 0;
+    left: auto;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-disabled,
+#product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-disabled:hover {
+    background-color: #D4D4D4;
+    opacity: .5;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button:before {
+    width: 8px;
+    height: 8px;
+    content: "";
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-135deg);
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(-135deg);
+    margin-left: 1px;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-next:before {
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    left: auto;
+    right: 6px;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button:not(.swiper-button-disabled):hover:before {
+    border-color: #fff;
+}
+#product .kuRECSContainer .kuRECSResults .swiper-button i {
+    display: none;
+}
+@media (max-width: 1200px) {
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    #product .kuRECSContainer > section {
+        padding-bottom: 25px;
+    }
+    #product .kuRECSContainer .kuRECSResults .swiper-button {
+        top: auto;
+        bottom: 0;
+    }
+    #product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-prev {
+        right: 50%;
+        left: auto;
+        margin-right: 5px;
+    }
+    #product .kuRECSContainer .kuRECSResults .swiper-button.swiper-button-next {
+        right: auto;
+        left: 50%;
+    }
+}
+@media (min-width: 541px) and (max-width: 992px) {
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 13px !important;
+    }
+}
+@media (min-width: 380px) and (max-width: 540px) {
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+@media (min-width: 380px) and (max-width: 460px) {
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn i {
+        font-size: 11px;
+    }
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn span {
+        font-size: 9px !important;
+    }
+}
+@media (max-width: 379px) {
+    #product .kuRECSContainer .kuRECSResults .kuRECSItem .kuRECSItemBottom .kuRECSAddToCartBtn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/* Mobile */
+.open-ku-product-filters, .open-ku-product-sorting {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButtonsContainer {
+    display: none;
+    margin: 0 -15px 20px;
+    border: solid #ddd;
+    border-width: 1px 0;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButton {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButton.kuProductFiltersOpenButton {
+    border-left: 1px solid #ddd;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButton span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    background-color: #fff;
+    color: rgba(0,0,0,.93);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    line-height: 1;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButton svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 20px;
+    font-size: 11px;
+    fill: currentColor;
+    pointer-events: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButton.kuProductFiltersOpenButton svg {
+    font-size: 18px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileButtonsDivider {
+    width: 7px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuProductListMobilePopUpBackdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-in-out, visibility 0s .5s;
+    -webkit-transition: opacity .5s ease-in-out, visibility 0s .5s;
+}
+.open-ku-product-filters .klevuLanding.kuSearchResultsPageContainer .kuProductListMobilePopUpBackdrop,
+.open-ku-product-sorting .klevuLanding.kuSearchResultsPageContainer .kuProductListMobilePopUpBackdrop {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .5s ease-in-out, visibility 0s;
+    -webkit-transition: opacity .5s ease-in-out, visibility 0s;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSortingContainer {
+    display: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuProductFiltersCloseButton,
+.klevuLanding.kuSearchResultsPageContainer .kuProductSortingCloseButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuProductFiltersCloseButton {
+    display: none;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSort {
+    position: relative;
+    display: block;
+    margin: 2px 5px 2px 0;
+    padding: 0;
+    background: 0;
+    color: #333;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 130%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSortIcon {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSortIcon::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin: 0 8px 0 0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #ccc;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color 200ms;
+    -moz-transition: border-color 200ms;
+    transition: border-color 200ms;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSortActive .kuMobileSortIcon::before {
+    background: #fff;
+    border: 1px solid #333;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuMobileSortActive .kuMobileSortIcon::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+}
+@media only screen and (max-width: 991px) {
+    .klevuLanding.kuSearchResultsPageContainer .kuMobileButtonsContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .productList .kuDropSortBy,
+    .klevuLanding.kuSearchResultsPageContainer .productList .kuLandingResultsViewSwitchContainer {
+        display: none;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .kuProductListMobilePopUpBackdrop {
+        display: block;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .productList [ku-container][data-container-role="left"],
+    .klevuLanding.kuSearchResultsPageContainer .kuMobileSortingContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 86%;
+        max-width: 595px;
+        background-color: #fff;
+        transform: translate3d(calc(-100% - 320px), 0px, 0px);
+        -webkit-transform: translate3d(calc(-100% - 320px), 0px, 0px);
+        transition: transform .5s ease-in-out;
+        -webkit-transition: -webkit-transform .5s ease-in-out;
+        overflow-y: auto;
+        z-index: 9999;
+    }
+    .open-ku-product-filters .klevuLanding.kuSearchResultsPageContainer .productList [ku-container][data-container-role="left"],
+    .open-ku-product-sorting .klevuLanding.kuSearchResultsPageContainer .kuMobileSortingContainer {
+        transform: translate3d(0%, 0px, 0px);
+        -webkit-transform: translate3d(0%, 0px, 0px);
+    }
+    .klevuLanding.kuSearchResultsPageContainer .productList .kuFilters,
+    .klevuLanding.kuSearchResultsPageContainer .kuMobileSorting {
+        padding: 0 10px 0 20px;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .productList .kuFiltersTitleHeading,
+    .klevuLanding.kuSearchResultsPageContainer .kuMobileSortingTitleHeading {
+        margin: 0 -10px 0.5rem -20px;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        background-color: #f3f3f3;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .kuMobileSortingTitleHeading {
+        margin-bottom: 10px;
+    }
+    .klevuLanding.kuSearchResultsPageContainer .kuProductFiltersCloseButton {
+        display: block;
+    }
+    #sidebar_box {
+        transform: translate3d(0px, 0%, 0px);
+        -webkit-transform: translate3d(0px, 0%, 0px);
+        transition: transform .2s ease-in-out .3s;
+        -webkit-transition: -webkit-transform .2s ease-in-out .3s;
+    }
+    .open-ku-product-filters #sidebar_box, .open-ku-product-sorting #sidebar_box {
+        transform: translate3d(0px, 100%, 0px);
+        -webkit-transform: translate3d(0px, 100%, 0px);
+        transition: transform .2s ease-in-out;
+        -webkit-transition: -webkit-transform .2s ease-in-out;
+    }
+}
+

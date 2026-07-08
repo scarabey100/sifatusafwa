@@ -1,0 +1,75 @@
+*CRITICAL: *	2019/09/27 - 17:15:31: File name: prestarealtimesync.php - Line No: 157
+Message: HTTP/1.0 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: 3213
+Server: Werkzeug/0.14.1 Python/3.5.2
+Date: Fri, 27 Sep 2019 11:45:31 GMT
+
+<?xml version='1.0'?>
+<methodResponse>
+<fault>
+<value><struct>
+<member>
+<name>faultCode</name>
+<value><string>invalid syntax
+('/opt/odoo/custom_addons/prestashop_odoo_bridge/models/pob_config.py', 89, 45, '        _logger.info("==============&gt; %r",[**kwargs])\n')</string></value>
+</member>
+<member>
+<name>faultString</name>
+<value><string>Traceback (most recent call last):
+  File "/opt/odoo/odoo/modules/registry.py", line 60, in __new__
+    return cls.registries[db_name]
+  File "/opt/odoo/odoo/tools/func.py", line 69, in wrapper
+    return func(self, *args, **kwargs)
+  File "/opt/odoo/odoo/tools/lru.py", line 44, in __getitem__
+    a = self.d[obj].me
+KeyError: '12DB'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 27, in xmlrpc_1
+    response = self._xmlrpc(service)
+  File "/opt/odoo/odoo/addons/base/controllers/rpc.py", line 16, in _xmlrpc
+    result = dispatch_rpc(service, method, params)
+  File "/opt/odoo/odoo/http.py", line 120, in dispatch_rpc
+    result = dispatch(method, params)
+  File "/opt/odoo/odoo/service/common.py", line 61, in dispatch
+    return g[exp_method_name](*params)
+  File "/opt/odoo/odoo/service/common.py", line 24, in exp_login
+    res = security.login(db, login, password)
+  File "/opt/odoo/odoo/service/security.py", line 8, in login
+    res_users = odoo.registry(db)['res.users']
+  File "/opt/odoo/odoo/__init__.py", line 78, in registry
+    return modules.registry.Registry(database_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 62, in __new__
+    return cls.new(db_name)
+  File "/opt/odoo/odoo/modules/registry.py", line 86, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/opt/odoo/odoo/modules/loading.py", line 422, in load_modules
+    force, status, report, loaded_modules, update_module, models_to_check)
+  File "/opt/odoo/odoo/modules/loading.py", line 318, in load_marked_modules
+    perform_checks=perform_checks, models_to_check=models_to_check
+  File "/opt/odoo/odoo/modules/loading.py", line 181, in load_module_graph
+    load_openerp_module(package.name)
+  File "/opt/odoo/odoo/modules/module.py", line 368, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "&lt;frozen importlib._bootstrap&gt;", line 969, in _find_and_load
+  File "&lt;frozen importlib._bootstrap&gt;", line 958, in _find_and_load_unlocked
+  File "&lt;frozen importlib._bootstrap&gt;", line 664, in _load_unlocked
+  File "&lt;frozen importlib._bootstrap&gt;", line 634, in _load_backward_compatible
+  File "/opt/odoo/odoo/modules/module.py", line 82, in load_module
+    exec(open(modfile, 'rb').read(), new_mod.__dict__)
+  File "&lt;string&gt;", line 18, in &lt;module&gt;
+  File "/opt/odoo/custom_addons/prestashop_odoo_bridge/models/__init__.py", line 8, in &lt;module&gt;
+    from . import pob_config
+  File "/opt/odoo/custom_addons/prestashop_odoo_bridge/models/pob_config.py", line 89
+    _logger.info("==============&gt; %r",[**kwargs])
+                                        ^
+SyntaxError: invalid syntax
+</string></value>
+</member>
+</struct></value>
+</fault>
+</methodResponse>
+

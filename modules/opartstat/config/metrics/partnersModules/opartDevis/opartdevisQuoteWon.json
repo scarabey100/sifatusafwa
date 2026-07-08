@@ -1,0 +1,16 @@
+{
+  "name": "opartdevisQuoteWon",
+  "cols": "1",
+  "rows": "1",
+  "ajaxCallBack": {
+    "name": "opartdevisQuoteWon"
+  },
+  "template": {
+    "isCustom": false,
+    "name": "singleNumber"
+  },
+  "callBackJsfunction": {
+    "isCustom": false,
+    "name": ["displayNumber"]
+  }
+}

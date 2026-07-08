@@ -1,0 +1,1 @@
+{l s='Here is the list of countries sorted by number of orders on the selected period.' mod='opartstat'}

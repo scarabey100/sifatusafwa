@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin861j1beuhvmifpeox8f" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="8b670f8847e6dd1ff679b8073d237323">
+        <source>Features for the combinations</source>
+        <target>Caractéristiques pour les déclinaisons</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4d927be2616583f82d07788511df0d63">
+        <source>Import features for the combinations</source>
+        <target>Importer les caractéristiques des déclinaisons</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bb8956c67b82c7444a80c6b2433dd8b4">
+        <source>Are you sure you want to uninstall this module?</source>
+        <target>Êtes-vous sûr de vouloir supprimer ce module ?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="97f08a40f22a625d0cbfe03db3349108">
+        <source>Product ID</source>
+        <target>ID du produit</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e7ec1ee72c6d0c0bf0d9140822b0f06a">
+        <source>Combination ID</source>
+        <target>ID de la déclinaison</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4eaaa231ff39b98cbd4ff257a0072a41">
+        <source>Feature ID</source>
+        <target>ID de la caractéristique</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0f6949f27930f368d850f45b4a8ce861">
+        <source>Feature value ID</source>
+        <target>ID de la valeur de la caractéristique</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6acec4d2dbecc08e23550eb5db40d016">
+        <source>Custom value</source>
+        <target>Valeur personnalisée</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8a0971de15fd5ce8c2a8b115cc04da43">
+        <source>Delete (0/1)</source>
+        <target>Supprimer (0/1)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdfbaae9a62d89db464f77c49d66f1c0">
+        <source>Import configuration</source>
+        <target>Configuration de l'import</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="55023e79976870d8789b6b788c2f7e8f">
+        <source>File (.csv, .xlsx, .odt)</source>
+        <target>Fichier (.csv, .xlsx, .odt)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d276018111c77832030624f349083c07">
+        <source>Separator (only for .csv)</source>
+        <target>Séparateur (seulement pour les .csv)</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9b4ffc892718d1aa0880c338f67cacb0">
+        <source>Visualize</source>
+        <target>Visualiser</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="aa17427e79e049b51b41d28449f6c69e">
+        <source>Please provide a value ID or a custom value for the line number %d.</source>
+        <target>Veuillez fournir une valeur de caractéristique ou une valeur personnalisée pour la ligne numéro %d.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="886beaaccb6c5e94eeb4c1b8504e88d7">
+        <source>Product with ID %s does not exist.</source>
+        <target>Le produit avec l'ID %s n'existe pas.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d85366190ecd2aebf8363980ad9d6740">
+        <source>Importing your data...</source>
+        <target>Importation des données...</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="663da33727a3ebb06be9d0a5ab7e815e">
+        <source>Import by File</source>
+        <target>Import par fichier</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

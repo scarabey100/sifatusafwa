@@ -1,0 +1,1 @@
+{l s='This is the list of Google Ads ads sort by cost per click (CPC) for the selected period.' mod='opartstat'}<br />

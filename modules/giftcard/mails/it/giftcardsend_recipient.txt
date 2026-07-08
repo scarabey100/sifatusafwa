@@ -1,0 +1,16 @@
+Ciao {firstname} {lastname},
+Siamo lieti di inviarle questa carta regalo da {giftcard_price}. Questa carta regalo è stata offerta da {giftcard_from}.
+
+{giftcard_from} ha scritto un messaggio:
+
+⚬------------------------------⚬
+
+{giftcard_message}
+
+⚬------------------------------⚬
+
+Per approfittare di questa offerta:
+Copiate e incollate questo numero {giftcard_code} nel carrello del vostro prossimo acquisto prima di effettuare il check-out.
+Troverete in allegato a questa e-mail un file PDF riassuntivo.
+
+Buon shopping su {shop_name}!
