@@ -190,7 +190,7 @@ class EgCategoryLancer extends Module {
             foreach ($banners as &$banner) {
                 $banner['category_name'] = EgCategoryLancerClass::getNameCategoryById($banner['id_category']);
                 $banner['category_link'] = $this->context->link->getCategoryLink($banner['id_category']);
-                $banner['type'] = $banner['type'];
+                $banner['type'] = isset($banner['type']) ? $banner['type'] : '';
             }
             $this->context->smarty->assign(array(
                 'banners' => $banners,
