@@ -69,7 +69,9 @@
                     <div class="row">
 
                         {block name='product_list_header'}
-                            {include file='catalog/_partials/category-header.tpl' listing=$listing category=$category}
+                            {if isset($listing)}
+                                {include file='catalog/_partials/category-header.tpl' listing=$listing category=$category|default:null}
+                            {/if}
                         {/block}
 
                         {block name="left_column"}
