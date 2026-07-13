@@ -25,7 +25,7 @@
 <div class="images-container js-images-container">
     {block name='product_cover'}
         <div class="product-cover">
-            {foreach from=$product.images item=image key=$key}
+            {foreach from=$product.images|default:[] item=image key=$key}
                 <div id="product-cover__item--{$key}" class="product-cover__item">
                     <picture>
                         <source media="(min-width: 768px)" srcset="{$image.bySize.large_default.url}">
@@ -40,8 +40,8 @@
                                     alt="{$product.name}"
                                 {/if}
                                 loading="lazy"
-                                width="{$product.default_image.bySize.large_default.width}"
-                                height="{$product.default_image.bySize.large_default.height}"
+                                width="{$product.default_image.bySize.large_default.width|default:''}"
+                                height="{$product.default_image.bySize.large_default.height|default:''}"
                         />
                     </picture>
                 </div>
@@ -64,8 +64,8 @@
                                     alt="{$product.name}"
                                 {/if}
                                 loading="lazy"
-                                width="{$product.default_image.bySize.small_default.width}"
-                                height="{$product.default_image.bySize.small_default.height}"
+                                width="{$product.default_image.bySize.small_default.width|default:''}"
+                                height="{$product.default_image.bySize.small_default.height|default:''}"
                         />
                     </picture>
                 </div>
