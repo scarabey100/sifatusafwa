@@ -16,10 +16,6 @@ require_once(dirname(__FILE__) . '/../../config/config.inc.php');
 use MncKlevu\PrestaShop\Adapter\ObjectModel\ProductRecord;
 use MncKlevu\Synchronizer\Product\ProductSynchronizer;
 use MncKlevu\Synchronizer\Settings;
-use Language;
-use Db;
-use Product;
-use Validate;
 
 // Get product ID from parameter
 $productId = isset($_GET['product_id']) ? (int)$_GET['product_id'] : (isset($argv[1]) ? (int)$argv[1] : 4588);

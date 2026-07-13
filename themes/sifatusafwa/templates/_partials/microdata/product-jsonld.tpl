@@ -37,7 +37,14 @@
 {if isset($product.weight) && ($product.weight != 0)}
     {assign var=hasWeight value=true}
 {/if}
-{assign var=hasOffers value=$product.show_price}
+{assign var=hasOffers value=false}
+{if !empty($product.show_price)}
+    {assign var=hasOffers value=true}
+{/if}
+{assign var=brandName value=$shop.name|default:''}
+{if !empty($product_manufacturer) && !empty($product_manufacturer->name)}
+    {assign var=brandName value=$product_manufacturer->name}
+{/if}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -51,10 +58,10 @@
     {if $product.ean13},"gtin13": "{$product.ean13}"
     {else if $product.upc},"gtin13": "{$product.upc}"
     {/if}
-    {if $product_manufacturer->name OR $shop.name},
+    {if !empty($brandName)},
     "brand": {
       "@type": "Brand",
-      "name": "{if $product_manufacturer->name}{$product_manufacturer->name|escape:'html':'UTF-8'}{else}{$shop.name}{/if}"
+      "name": "{$brandName|escape:'html':'UTF-8'}"
     }
     {/if}
     {if $hasAggregateRating},
@@ -80,7 +87,7 @@
       "price": "{$product.price_amount}",
       "url": "{$product.url}",
       "priceValidUntil": "{($smarty.now + (int) (60*60*24*15))|date_format:"%Y-%m-%d"}",
-      {if $product.images|count > 0}
+      {if !empty($product.images) && $product.images|count > 0}
         "image": {strip}[
           {foreach from=$product.images item=p_img name="p_img_list"}
             "{$p_img.large.url}"{if not $smarty.foreach.p_img_list.last},{/if}

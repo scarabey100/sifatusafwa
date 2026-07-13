@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div id="js-product-list-header">
-    {if $listing.pagination.items_shown_from == 1}
+    {if !empty($listing.pagination) && isset($listing.pagination.items_shown_from) && $listing.pagination.items_shown_from == 1}
         <div class="category__view">
             {if !empty($category.image.large.url)}
                 <div class="category__view--img">
@@ -38,12 +38,12 @@
                     </picture>
                 </div>
             {/if}
-            <h1>{if $category.name}{$category.name}{else}{$page.meta.title}{/if}</h1>
-            {if $category.description}
+            <h1>{if !empty($category.name)}{$category.name}{else}{$page.meta.title}{/if}</h1>
+            {if !empty($category.description)}
                 <div id="category-description" class="category__view--desc">
                     <div class="category__view--desc--wrapper">
                         <div class="category__view--desc--inner">
-                            {$category.short_description nofilter}
+                            {$category.short_description|default:'' nofilter}
                             {$category.description nofilter}
                         </div>
                     </div>
@@ -56,11 +56,11 @@
                         </div>
                     </div>
                 </div>
-            {elseif $page.meta.description}
+            {elseif !empty($page.meta.description)}
                 <div id="category-description" class="category__view--desc">
                     <div class="category__view--desc--wrapper">
                         <div class="category__view--desc--inner">
-                            {$page.meta.short_description nofilter}
+                            {$page.meta.short_description|default:'' nofilter}
                             {$page.meta.description nofilter}
                         </div>
                     </div>

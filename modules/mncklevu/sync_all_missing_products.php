@@ -23,14 +23,6 @@ require_once(dirname(__FILE__) . '/../../config/config.inc.php');
 
 use MncKlevu\PrestaShop\Adapter\ObjectModel\ProductRecord;
 use MncKlevu\Synchronizer\Settings;
-use Language;
-use Db;
-use DbQuery;
-use Product;
-use Validate;
-use Context;
-use Shop;
-use Module;
 
 echo "=== Cleanup and Add Missing Products to mncklevu_product_record Table ===\n";
 echo "This script will:\n";

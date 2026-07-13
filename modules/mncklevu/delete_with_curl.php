@@ -19,11 +19,6 @@
 require_once(dirname(__FILE__) . '/../../config/config.inc.php');
 
 use MncKlevu\PrestaShop\Adapter\Configuration;
-use Language;
-use Validate;
-use Module;
-use Context;
-use Db;
 
 // Get shop ID
 $shopId = Context::getContext()->shop->id;
