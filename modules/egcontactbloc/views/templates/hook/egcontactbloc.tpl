@@ -23,14 +23,14 @@
                     </picture>
                 {/if}
                 <div class="contact-banner__inner">
-                    {if isset($title) && !empty($title)}
+                    {if !empty($title)}
                         <h2>{$title}</h2>
                     {/if}
-                    {if isset($sub_title) && !empty($sub_title)}
+                    {if !empty($sub_title)}
                         <h3>{$sub_title}</h3>
                     {/if}
-                    {if isset($desc) && !empty($desc)}
-                        <p>{$desc|strip_tags:'UTF-8'|truncate:360:'...' nofilter}</p>
+                    {if !empty($desc)}
+                        <p>{$desc|strip_tags|truncate:360:'...' nofilter}</p>
                     {/if}
                     {if !empty($btn_url) && !empty($btn_txt)}
                         <a class="btn" href="{$btn_url}">{$btn_txt}</a>
