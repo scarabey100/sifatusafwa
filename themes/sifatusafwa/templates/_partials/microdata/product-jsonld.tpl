@@ -58,10 +58,10 @@
     {if $product.ean13},"gtin13": "{$product.ean13}"
     {else if $product.upc},"gtin13": "{$product.upc}"
     {/if}
-    {if $product_manufacturer->name OR $shop.name},
+    {if !empty($brandName)},
     "brand": {
       "@type": "Brand",
-      "name": "{if $product_manufacturer->name}{$product_manufacturer->name|escape:'html':'UTF-8'}{else}{$shop.name}{/if}"
+      "name": "{$brandName|escape:'html':'UTF-8'}"
     }
     {/if}
     {if $hasAggregateRating},
