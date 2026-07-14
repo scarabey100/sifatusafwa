@@ -49,6 +49,42 @@ class IncrementalSyncRepository extends AbstractRepository
     }
 
     /**
+     * Make the incremental sync table compatible with module versions that include
+     * the optional `action` field. Some shops were upgraded without this column,
+     * which makes add-to-cart fail in debug mode when ps_eventbus records cart changes.
+     *
+     * @return void
+     */
+    private function ensureIncrementalSyncSchema()
+    {
+        if (self::$incrementalSyncSchemaChecked) {
+            return;
+        }
+
+        self::$incrementalSyncSchemaChecked = true;
+
+        $table = _DB_PREFIX_ . self::INCREMENTAL_SYNC_TABLE;
+
+        try {
+            $tableExists = $this->db->executeS('SHOW TABLES LIKE "' . pSQL($table) . '"');
+
+            if (empty($tableExists)) {
+                return;
+            }
+
+            $actionColumn = $this->db->executeS('SHOW COLUMNS FROM `' . bqSQL($table) . '` LIKE "action"');
+
+            if (empty($actionColumn)) {
+                $this->db->execute('ALTER TABLE `' . bqSQL($table) . '` ADD `action` VARCHAR(20) NULL DEFAULT NULL AFTER `created_at`');
+            }
+        } catch (\PrestaShopDatabaseException $e) {
+            $this->errorHandler->handle(
+                new \PrestaShopDatabaseException('Failed to ensure incremental sync schema', $e->getCode(), $e)
+            );
+        }
+    }
+
+    /**
      * @param array<mixed> $data
      *
      * @return bool
