@@ -94,7 +94,7 @@ class IncrementalSyncRepository extends AbstractRepository
         try {
             $arrayOfData = $data;
 
-            if (!is_array($data[0])) {
+            if (!isset($data[0]) || !is_array($data[0])) {
                 $arrayOfData = [$data];
             }
 
