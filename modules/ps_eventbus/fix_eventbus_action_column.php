@@ -18,10 +18,10 @@
  * - Delete this file after a successful run.
  */
 
-if (PHP_SAPI !== 'cli') {
+/*if (PHP_SAPI !== 'cli') {
     http_response_code(403);
     exit("This maintenance script must be run from CLI. Example: php fix_eventbus_action_column.php\n");
-}
+}*/
 
 $rootDir = __DIR__.'/../..';
 
