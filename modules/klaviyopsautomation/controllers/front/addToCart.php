@@ -96,10 +96,15 @@ class KlaviyoPsAddToCartModuleFrontController extends KlaviyoPsAjaxModuleFrontCo
             return array();
         }
 
-        $productId = $itemDetails['id_product'];
-        $langId = $this->context->language->id;
-        $shopId = $this->context->shop->id;
-        $product = new Product($itemDetails['id_product'], $full = false, $id_lang = $langId, $id_shop = $shopId);
+        if (empty($itemDetails['id_product'])) {
+            return array();
+        }
+
+        $productId = (int) $itemDetails['id_product'];
+        $productAttributeId = isset($itemDetails['id_product_attribute']) ? (int) $itemDetails['id_product_attribute'] : 0;
+        $langId = (int) $this->context->language->id;
+        $shopId = (int) $this->context->shop->id;
+        $product = new Product($productId, $full = false, $id_lang = $langId, $id_shop = $shopId);
 
         return array(
             'AddedItemCategories' => ProductPayloadService::getCategoryNamesForProduct($productId, $langId),
