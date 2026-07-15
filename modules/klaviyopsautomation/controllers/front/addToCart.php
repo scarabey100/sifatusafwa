@@ -51,6 +51,10 @@ class KlaviyoPsAddToCartModuleFrontController extends KlaviyoPsAjaxModuleFrontCo
      */
     private function buildAddedToCartPayload()
     {
+        if (!isset($this->context->cart) || empty($this->context->cart->id)) {
+            return array();
+        }
+
         $cartId = $this->context->cart->id;
         $cartObject = new Cart($cartId);
         $cartLineItemsArray = KlaviyoUtils::buildCartLineItemsArray($cartObject);
