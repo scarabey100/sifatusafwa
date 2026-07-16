@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `PREFIX_eventbus_incremental_sync`
     `id_shop`    INT(10) UNSIGNED NOT NULL,
     `lang_iso`   VARCHAR(3),
     `created_at` DATETIME         NOT NULL,
+    `action`     VARCHAR(20)      NULL DEFAULT NULL,
     PRIMARY KEY (`type`, `id_object`, `id_shop`, `lang_iso`)
 ) ENGINE = ENGINE_TYPE
   DEFAULT CHARSET = utf8;

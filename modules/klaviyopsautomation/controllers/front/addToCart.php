@@ -51,6 +51,10 @@ class KlaviyoPsAddToCartModuleFrontController extends KlaviyoPsAjaxModuleFrontCo
      */
     private function buildAddedToCartPayload()
     {
+        if (!isset($this->context->cart) || empty($this->context->cart->id)) {
+            return array();
+        }
+
         $cartId = $this->context->cart->id;
         $cartObject = new Cart($cartId);
         $cartLineItemsArray = KlaviyoUtils::buildCartLineItemsArray($cartObject);
@@ -59,11 +63,11 @@ class KlaviyoPsAddToCartModuleFrontController extends KlaviyoPsAjaxModuleFrontCo
             $this->getAddedItem(),
             array(
                 '$value' => $cartObject->getOrderTotal(),
-                'ItemNames' => $cartLineItemsArray['itemNames'],
-                'Items' => $cartLineItemsArray['lineItems'],
-                'ItemCount' => $cartLineItemsArray['itemCount'],
-                'Categories' => $cartLineItemsArray['uniqueCategories'],
-                'Tags' => $cartLineItemsArray['uniqueTags'],
+                'ItemNames' => isset($cartLineItemsArray['itemNames']) ? $cartLineItemsArray['itemNames'] : array(),
+                'Items' => isset($cartLineItemsArray['lineItems']) ? $cartLineItemsArray['lineItems'] : array(),
+                'ItemCount' => isset($cartLineItemsArray['itemCount']) ? (int) $cartLineItemsArray['itemCount'] : 0,
+                'Categories' => isset($cartLineItemsArray['uniqueCategories']) ? $cartLineItemsArray['uniqueCategories'] : array(),
+                'Tags' => isset($cartLineItemsArray['uniqueTags']) ? $cartLineItemsArray['uniqueTags'] : array(),
                 'ReclaimCartUrl' => KlaviyoUtils::buildReclaimCartUrl($cartObject),
                 'external_catalog_id' => KlaviyoUtils::formatKlaviyoCatalogIdentifier($this->context->shop->id, $this->context->language->id),
                 'integration_key' => KlaviyoValue::SERVICE,
@@ -92,20 +96,25 @@ class KlaviyoPsAddToCartModuleFrontController extends KlaviyoPsAjaxModuleFrontCo
             return array();
         }
 
-        $productId = $itemDetails['id_product'];
-        $langId = $this->context->language->id;
-        $shopId = $this->context->shop->id;
-        $product = new Product($itemDetails['id_product'], $full = false, $id_lang = $langId, $id_shop = $shopId);
+        if (empty($itemDetails['id_product'])) {
+            return array();
+        }
+
+        $productId = (int) $itemDetails['id_product'];
+        $productAttributeId = isset($itemDetails['id_product_attribute']) ? (int) $itemDetails['id_product_attribute'] : 0;
+        $langId = (int) $this->context->language->id;
+        $shopId = (int) $this->context->shop->id;
+        $product = new Product($productId, $full = false, $id_lang = $langId, $id_shop = $shopId);
 
         return array(
             'AddedItemCategories' => ProductPayloadService::getCategoryNamesForProduct($productId, $langId),
-            'AddedItemDescription' => strip_tags($itemDetails['description_short']),
-            'AddedItemImageURL' => KlaviyoUtils::getProductImageLink($productId, $itemDetails['id_product_attribute'], $shopId, $langId),
-            'AddedItemPrice' => (float) $itemDetails['price'],
+            'AddedItemDescription' => strip_tags(isset($itemDetails['description_short']) ? $itemDetails['description_short'] : ''),
+            'AddedItemImageURL' => KlaviyoUtils::getProductImageLink($productId, $productAttributeId, $shopId, $langId),
+            'AddedItemPrice' => isset($itemDetails['price']) ? (float) $itemDetails['price'] : 0.0,
             'AddedItemPriceInclTax' => $product->getPrice(),
-            'AddedItemProductID' => (int) $productId,
-            'AddedItemProductName' => $itemDetails['name'],
-            'AddedItemSKU' => $itemDetails['reference'],
+            'AddedItemProductID' => $productId,
+            'AddedItemProductName' => isset($itemDetails['name']) ? $itemDetails['name'] : '',
+            'AddedItemSKU' => isset($itemDetails['reference']) ? $itemDetails['reference'] : '',
             'AddedItemTags' => ProductPayloadService::getProductTagsArray($productId, $langId),
             'AddedItemURL' => ProductPayloadService::getProductUrl($product, $langId, $shopId),
             'AddedItemConstructedVariantID' => KlaviyoUtils::formatKlaviyoVariantIdentifier($itemDetails['id_product'], $itemDetails['id_product_attribute']),

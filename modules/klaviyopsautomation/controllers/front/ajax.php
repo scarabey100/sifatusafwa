@@ -28,8 +28,11 @@ use ModuleFrontController;
 
 abstract class KlaviyoPsAjaxModuleFrontController extends ModuleFrontController
 {
-    /** @var array|null Data returned from the AJAX request. */
-    public $returnData;
+    /** @var array Error information. */
+    public $errors = array();
+
+    /** @var array Data returned from the AJAX request. */
+    public $returnData = array();
 
     /**
      * @see Controller::run()
