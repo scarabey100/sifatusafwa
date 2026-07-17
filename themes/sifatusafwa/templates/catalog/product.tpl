@@ -106,11 +106,11 @@
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
 
-                <script>
+                {*<script>
                     if (typeof prestashop !== 'undefined' && prestashop.urls && prestashop.urls.pages) {
                         prestashop.urls.pages.product = '{$product.url|escape:'javascript'}';
                     }
-                </script>
+                </script>*}
 
                 <div class="product-information">
                     {block name='product_description_short'}
