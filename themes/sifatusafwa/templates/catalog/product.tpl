@@ -106,11 +106,14 @@
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
 
-                <script>
+                {*<script>
                     if (typeof prestashop !== 'undefined' && prestashop.urls && prestashop.urls.pages) {
-                        prestashop.urls.pages.product = '{$product.url|escape:'javascript'}';
+                        // Product combination URLs can include a hash (for example, #/34-edition-...).
+                        // The refresh request must use the URL before the hash so its query parameters
+                        // are sent to PrestaShop rather than being treated as a browser fragment.
+                        prestashop.urls.pages.product = '{$product.url|escape:'javascript'}'.split('#')[0];
                     }
-                </script>
+                </script>*}
 
                 <div class="product-information">
                     {block name='product_description_short'}
