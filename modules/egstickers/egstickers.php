@@ -167,6 +167,14 @@ class EgStickers extends Module
     {
         $id_product = (int)$params['id_product'];
 
+        if (!$id_product) {
+            return '';
+        }
+
+        $idProductAttribute = isset($params['id_product_attribute'])
+            ? (int) $params['id_product_attribute']
+            : 0;
+        
         // Fetch all stickers
         $stickers = Db::getInstance()->executeS('
             SELECT s.*, sl.name, ps.id_product 
@@ -177,6 +185,7 @@ class EgStickers extends Module
             LEFT JOIN `' . _DB_PREFIX_ . 'product_sticker` ps 
             ON s.id_sticker = ps.id_sticker 
             WHERE ps.id_product = ' . (int)$id_product . '
+            AND s.active = 1
         ');
  
         // Assign variables to the template
