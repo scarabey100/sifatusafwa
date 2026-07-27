@@ -54,4 +54,7 @@
   {/literal}
   <link rel="stylesheet" href="/themes/sifatusafwa/assets/css/checkout-payment-custom.css?v=checkout-payment-3" media="all">
 {/if}
+{* EG Stickers custom ribbons; standalone file, no theme build required. *}
+<link rel="stylesheet" href="{$urls.theme_assets}css/product-flags-custom.css" type="text/css" media="all">
+
 <link rel="stylesheet" href="{$urls.css_url}rtl-header-fixes.css" type="text/css" media="all">
