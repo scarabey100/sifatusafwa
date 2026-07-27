@@ -187,14 +187,51 @@ class EgStickers extends Module
             WHERE ps.id_product = ' . (int)$id_product . '
             AND s.active = 1
         ');
- 
+
         // Assign variables to the template
         $this->context->smarty->assign([
-            'stickers' => $stickers, 
+            'stickers' => $stickers,
         ]);
 
         // Render the template without checkboxes
         return $this->context->smarty->fetch(_PS_MODULE_DIR_ . 'egstickers/views/templates/hook/product_flags.tpl');
+    }
+
+    /**
+     * Return the discount selected by PrestaShop for the current visitor context.
+     * SpecificPrice applies dates, shop, currency, country, group, customer,
+     * combination and the product specific-price priority rules.
+     */
+    private function getCurrentDiscount($idProduct, $idProductAttribute)
+    {
+        $context = $this->context;
+        $countryId = isset($context->country->id) ? (int) $context->country->id : 0;
+        $groupId = isset($context->customer->id_default_group)
+            ? (int) $context->customer->id_default_group
+            : (int) Group::getCurrent();
+        $customerId = isset($context->customer->id) ? (int) $context->customer->id : 0;
+        $cartId = isset($context->cart->id) ? (int) $context->cart->id : 0;
+
+        $specificPrice = SpecificPrice::getSpecificPrice(
+            (int) $idProduct,
+            (int) $context->shop->id,
+            (int) $context->currency->id,
+            $countryId,
+            $groupId,
+            1,
+            (int) $idProductAttribute,
+            $customerId,
+            $cartId,
+            1
+        );
+
+        $amount = (float) $specificPrice['reduction'];
+        
+
+        return [
+            'type' => 'amount',
+            'label' => '-' . Tools::displayPrice($amount, $context->currency),
+        ];
     }
 
     public function hookActionProductUpdate($params)
