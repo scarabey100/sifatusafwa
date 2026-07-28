@@ -229,7 +229,17 @@ class EgStickers extends Module
         );
 
         $amount = (float) $specificPrice['reduction'];
-        
+        $sourceCurrencyId = (int) $specificPrice['id_currency'];
+        if (!$sourceCurrencyId) {
+            $sourceCurrencyId = (int) Configuration::get('PS_CURRENCY_DEFAULT');
+        }
+        if ($sourceCurrencyId !== (int) $context->currency->id) {
+            $amount = Tools::convertPriceFull(
+                $amount,
+                Currency::getCurrencyInstance($sourceCurrencyId),
+                $context->currency
+            );
+        }
 
         return [
             'type' => 'amount',
