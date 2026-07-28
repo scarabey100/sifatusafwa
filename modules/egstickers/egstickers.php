@@ -228,6 +228,17 @@ class EgStickers extends Module
             1
         );
 
+        if (!$specificPrice || (float) $specificPrice['reduction'] <= 0) {
+            return null;
+        }
+
+        if ($specificPrice['reduction_type'] === 'percentage') {
+            return [
+                'type' => 'percentage',
+                'label' => '-' . Tools::ps_round((float) $specificPrice['reduction'] * 100, 2) . '%',
+            ];
+        }
+
         $amount = (float) $specificPrice['reduction'];
         $sourceCurrencyId = (int) $specificPrice['id_currency'];
         if (!$sourceCurrencyId) {
