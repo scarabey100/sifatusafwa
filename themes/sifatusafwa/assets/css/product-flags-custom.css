@@ -1,0 +1,120 @@
+/* ============================================================
+   SifatuSafwa — Ribbon product labels (client-approved design).
+   Standalone runtime stylesheet: no SCSS/theme build is required.
+   ============================================================ */
+.thumbnail-top,
+.product__media .page-content {
+    overflow: visible;
+}
+
+ul.product-flags {
+    top: 14px;
+    overflow: visible;
+}
+
+ul.product-flags li.product-flag.ss-ribbon {
+    position: relative;
+    top: auto;
+    left: -7px;
+    z-index: 2;
+    padding: 4px 12px !important;
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .02em;
+    color: #fff;
+    pointer-events: none;
+    background-color: var(--green);
+}
+
+ul.product-flags li.product-flag.ss-ribbon > span {
+    color: #fff;
+}
+
+ul.product-flags li.product-flag.ss-ribbon > svg {
+    display: none;
+}
+
+ul.product-flags li.product-flag.ss-ribbon::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 7px;
+    height: 5px;
+    background: inherit;
+    filter: brightness(.5);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -7px;
+}
+
+ul.product-flags li.product-flag.ss-signet {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    left: auto;
+    z-index: 3;
+    padding: 12px 9px 16px !important;
+    min-width: 0;
+    min-height: 0;
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff !important;
+    background-color: var(--orange-1) !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%);
+    pointer-events: none;
+}
+
+ul.product-flags li.product-flag.ss-signet > span {
+    color: #fff;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.ss-ribbon {
+    right: -7px;
+    left: auto;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.ss-ribbon::before {
+    right: 0;
+    left: auto;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
+    right: -7px;
+    left: auto;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.ss-signet {
+    right: auto;
+    left: 14px;
+}
+
+@media (max-width: 480px) {
+    ul.product-flags {
+        top: 10px;
+    }
+
+    ul.product-flags li.product-flag.ss-ribbon {
+        padding: 3px 10px !important;
+        font-size: 11px !important;
+    }
+
+    ul.product-flags li.product-flag.ss-signet {
+        right: 10px;
+        padding: 10px 7px 14px !important;
+        font-size: 11px !important;
+    }
+
+    [dir="rtl"] ul.product-flags li.product-flag.ss-signet {
+        right: auto;
+        left: 10px;
+    }
+}
