@@ -188,9 +188,12 @@ class EgStickers extends Module
             AND s.active = 1
         ');
 
+        $discount = $this->getCurrentDiscount($id_product, $idProductAttribute);
+
         // Assign variables to the template
         $this->context->smarty->assign([
             'stickers' => $stickers,
+            'discount' => $discount,
         ]);
 
         // Render the template without checkboxes
