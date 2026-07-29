@@ -55,6 +55,6 @@
                 </li>
             {/if}
         {/foreach}
-        {hook h='displayProductFlags' id_product=$product.id_product }
+        {hook h='displayProductFlags' id_product=$product.id_product id_product_attribute=$product.id_product_attribute}
     </ul>
 {/block}
