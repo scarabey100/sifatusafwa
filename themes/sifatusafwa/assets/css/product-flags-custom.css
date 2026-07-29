@@ -49,6 +49,15 @@ ul.product-flags li.product-flag.ss-ribbon::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
+/*
+ * Product cards clip the 7px ribbon overhang at the thumbnail boundary.
+ * Move only the fold back by the same 7px so it starts at the card edge;
+ * the product-page media container does not need this compensation.
+ */
+.product-miniature ul.product-flags li.product-flag.ss-ribbon::before {
+    left: 7px;
+}
+
 ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
     position: absolute;
     top: auto;
@@ -89,6 +98,11 @@ ul.product-flags li.product-flag.ss-signet > span {
     right: 0;
     left: auto;
     clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+[dir="rtl"] .product-miniature ul.product-flags li.product-flag.ss-ribbon::before {
+    right: 7px;
+    left: auto;
 }
 
 [dir="rtl"] ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
