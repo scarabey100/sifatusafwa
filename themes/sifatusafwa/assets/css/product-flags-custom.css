@@ -28,7 +28,9 @@ ul.product-flags li.product-flag.ss-ribbon {
 }
 
 ul.product-flags li.product-flag.ss-ribbon > span {
+    display: block;
     color: #fff;
+    transform: translateY(1px);
 }
 
 ul.product-flags li.product-flag.ss-ribbon > svg {
@@ -73,7 +75,9 @@ ul.product-flags li.product-flag.ss-signet {
 }
 
 ul.product-flags li.product-flag.ss-signet > span {
+    display: block;
     color: #fff;
+    transform: translateY(1px);
 }
 
 [dir="rtl"] ul.product-flags li.product-flag.ss-ribbon {
