@@ -25,6 +25,10 @@
 {block name='product_flags'}
     <ul class="product-flags js-product-flags">
         {foreach from=$product.flags item=flag}
+            {* EG Stickers replaces native discount values below; keep independent flags such as on-sale. *}
+            {if Module::isEnabled('egstickers') && in_array($flag.type, ['discount', 'discount-percentage', 'discount-amount'])}
+                {continue}
+            {/if}
             {if Module::isEnabled('egstickers')}
                 {hook h='displayNativeStickers' flag=$flag.type}
                 {assign var="nativeFlag" value=EgStickersFlags::NativeFlag($flag.type)}
