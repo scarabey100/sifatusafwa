@@ -32,3 +32,8 @@
         {/if}
     </li>
 {/foreach}
+{if !empty($discount)}
+    <li class="product-flag eg-discount-flag ss-signet eg-discount-{$discount.type|escape:'html':'UTF-8'}">
+        <span>{$discount.label|escape:'html':'UTF-8'}</span>
+    </li>
+{/if}
