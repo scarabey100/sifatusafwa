@@ -38,7 +38,7 @@
     </li>
 {/if}
 {if !empty($discount)}
-    <li class="product-flag eg-discount-flag ss-signet eg-discount-{$discount.type|escape:'html':'UTF-8'}">
+    <li class="product-flag eg-discount-flag ss-signet eg-discount-{$discount.type|escape:'html':'UTF-8'}"{if !empty($discount.color)} style="background-color: {$discount.color|escape:'html':'UTF-8'};"{/if}>
         <span>{$discount.label|escape:'html':'UTF-8'}</span>
     </li>
 {/if}
