@@ -41,7 +41,7 @@
 												{/if}
 												{if isset($nativeFlag) &&  !empty($nativeFlag)}
 													{if $nativeFlag.active}
-													<li class="product-flag {if $nativeFlag.sticker_position} {if $nativeFlag.sticker_position == 1}sticker_top what1{else}sticker_bottom{/if}{/if}" {if $nativeFlag.color}style="background-color: {$nativeFlag.color}; color: {$nativeFlag.color}; padding-right: 0px !important; min-width: auto;"{/if}>
+													<li class="product-flag eg-sticker ss-ribbon {if $nativeFlag.sticker_position} {if $nativeFlag.sticker_position == 1}sticker_top what1{else}sticker_bottom{/if}{/if}" {if $nativeFlag.color}style="background-color: {$nativeFlag.color}; color: {$nativeFlag.color}; min-width: auto;"{/if}>
 														<span>{$nativeFlag.parallel_value}</span>
 														<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 34" width="22" height="32" style="left: 100%;">
 															<g id="Group 5212">
