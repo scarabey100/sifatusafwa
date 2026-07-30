@@ -70,7 +70,7 @@ ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
 ul.product-flags li.product-flag.ss-signet {
     position: absolute;
     top: 0;
-    right: 14px;
+    right: -7px;
     left: auto;
     z-index: 3;
     padding: 12px 9px 16px !important;
