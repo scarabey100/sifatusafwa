@@ -32,6 +32,11 @@
         {/if}
     </li>
 {/foreach}
+{if !empty($classicDiscount)}
+    <li class="product-flag eg-classic-discount ss-ribbon {if $classicDiscount.sticker_position == 1}sticker_top{else}sticker_bottom{/if}" style="background-color: {$classicDiscount.color|escape:'html':'UTF-8'};">
+        <span>{$classicDiscount.label|escape:'html':'UTF-8'}</span>
+    </li>
+{/if}
 {if !empty($discount)}
     <li class="product-flag eg-discount-flag ss-signet eg-discount-{$discount.type|escape:'html':'UTF-8'}">
         <span>{$discount.label|escape:'html':'UTF-8'}</span>
