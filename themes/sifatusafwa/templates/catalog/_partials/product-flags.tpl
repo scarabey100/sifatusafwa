@@ -25,24 +25,33 @@
 {block name='product_flags'}
     <ul class="product-flags js-product-flags">
         {foreach from=$product.flags item=flag}
+            {* EG Stickers renders the contextual classic/numeric discount flags below. *}
+            {if Module::isEnabled('egstickers') && in_array($flag.type, ['discount', 'discount-percentage', 'discount-amount'])}
+                {continue}
+            {/if}
             {if Module::isEnabled('egstickers')}
                 {hook h='displayNativeStickers' flag=$flag.type}
-                {assign var="nativeFlag" value=EgStickersFlags::NativeFlag($flag.type)}
-            {/if} 
-            {if isset($nativeFlag) &&  !empty($nativeFlag)} 
+                {assign var="nativeFlagType" value=$flag.type}
+                {* All native discount variants are controlled by the single Reduction switch. *}
+                {if in_array($flag.type, ['discount-percentage', 'discount-amount'])}
+                    {assign var="nativeFlagType" value='discount'}
+                {/if}
+                {assign var="nativeFlag" value=EgStickersFlags::NativeFlag($nativeFlagType)}
+            {/if}
+            {if isset($nativeFlag) &&  !empty($nativeFlag)}
                 {if $nativeFlag.active}
-                <li class="product-flag {if $nativeFlag.sticker_position} {if $nativeFlag.sticker_position == 1}sticker_top what{else}sticker_bottom{/if}{/if}" {if $nativeFlag.color}style="background-color: {$nativeFlag.color}; color: {$nativeFlag.color};"{/if}>
-                    <span>{$nativeFlag.parallel_value}</span>
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 36" width="22" height="36">
-                        <g id="Group 5212">
-                            <path id="Path 18046" fill-rule="evenodd" fill="currentColor" d="M20 17.05 L0 0 H-107 Q-111 0 -111 4 V30.1 Q-111 34.1 -107 34.1 H0 Z"></path>
-                        </g>
-                    </svg>
-                </li>
+                    <li class="product-flag ss-ribbon {if $nativeFlag.sticker_position} {if $nativeFlag.sticker_position == 1}sticker_top what{else}sticker_bottom{/if}{/if}" {if $nativeFlag.color}style="background-color: {$nativeFlag.color}; color: {$nativeFlag.color};"{/if}>
+                        <span>{$nativeFlag.parallel_value|escape:'html':'UTF-8'}</span>
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 36" width="22" height="36">
+                            <g id="Group 5212">
+                                <path id="Path 18046" fill-rule="evenodd" fill="currentColor" d="M20 17.05 L0 0 H-107 Q-111 0 -111 4 V30.1 Q-111 34.1 -107 34.1 H0 Z"></path>
+                            </g>
+                        </svg>
+                    </li>
                 {/if}
             {else}
-                <li class="product-flag {$flag.type}">
-                    <span>{$flag.label}</span>
+                <li class="product-flag ss-ribbon {$flag.type}">
+                    <span>{$flag.label|escape:'html':'UTF-8'}</span>
                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 36" width="22" height="36">
                         <g id="Group 5212">
                             <path id="Path 18046" fill-rule="evenodd" fill="currentColor" d="M20 17.05 L0 0 H-107 Q-111 0 -111 4 V30.1 Q-111 34.1 -107 34.1 H0 Z"></path>
@@ -51,6 +60,6 @@
                 </li>
             {/if}
         {/foreach}
-        {hook h='displayProductFlags' id_product=$product.id_product }
+        {hook h='displayProductFlags' id_product=$product.id_product id_product_attribute=$product.id_product_attribute}
     </ul>
 {/block}

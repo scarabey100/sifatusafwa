@@ -167,6 +167,14 @@ class EgStickers extends Module
     {
         $id_product = (int)$params['id_product'];
 
+        if (!$id_product) {
+            return '';
+        }
+
+        $idProductAttribute = isset($params['id_product_attribute'])
+            ? (int) $params['id_product_attribute']
+            : 0;
+
         // Fetch all stickers
         $stickers = Db::getInstance()->executeS('
             SELECT s.*, sl.name, ps.id_product 
@@ -177,15 +185,102 @@ class EgStickers extends Module
             LEFT JOIN `' . _DB_PREFIX_ . 'product_sticker` ps 
             ON s.id_sticker = ps.id_sticker 
             WHERE ps.id_product = ' . (int)$id_product . '
+            AND s.active = 1
         ');
- 
+
+        $discount = null;
+        $classicDiscount = null;
+        $classicDiscountFlag = EgStickersFlags::NativeFlag('discount');
+        $discountFlag = EgStickersFlags::NativeFlag('specific-price-discount');
+        $showClassicDiscount = !empty($classicDiscountFlag) && (bool) $classicDiscountFlag['active'];
+        $showNumericDiscount = !empty($discountFlag) && (bool) $discountFlag['active'];
+
+        if ($showClassicDiscount || $showNumericDiscount) {
+            $currentDiscount = $this->getCurrentDiscount($id_product, $idProductAttribute);
+
+            if ($currentDiscount && $showClassicDiscount) {
+                $classicDiscount = [
+                    'label' => !empty($classicDiscountFlag['parallel_value'])
+                        ? $classicDiscountFlag['parallel_value']
+                        : $this->l('Special offer'),
+                    'color' => $classicDiscountFlag['color'],
+                    'sticker_position' => (int) $classicDiscountFlag['sticker_position'],
+                ];
+            }
+
+            if ($currentDiscount && $showNumericDiscount) {
+                $discount = $currentDiscount;
+                $discount['color'] = $discountFlag['color'];
+            }
+        }
+
         // Assign variables to the template
         $this->context->smarty->assign([
-            'stickers' => $stickers, 
+            'stickers' => $stickers,
+            'classicDiscount' => $classicDiscount,
+            'discount' => $discount,
         ]);
 
         // Render the template without checkboxes
         return $this->context->smarty->fetch(_PS_MODULE_DIR_ . 'egstickers/views/templates/hook/product_flags.tpl');
+    }
+
+    /**
+     * Return the discount selected by PrestaShop for the current visitor context.
+     * SpecificPrice applies dates, shop, currency, country, group, customer,
+     * combination and the product specific-price priority rules.
+     */
+    private function getCurrentDiscount($idProduct, $idProductAttribute)
+    {
+        $context = $this->context;
+        $countryId = isset($context->country->id) ? (int) $context->country->id : 0;
+        $groupId = isset($context->customer->id_default_group)
+            ? (int) $context->customer->id_default_group
+            : (int) Group::getCurrent();
+        $customerId = isset($context->customer->id) ? (int) $context->customer->id : 0;
+        $cartId = isset($context->cart->id) ? (int) $context->cart->id : 0;
+
+        $specificPrice = SpecificPrice::getSpecificPrice(
+            (int) $idProduct,
+            (int) $context->shop->id,
+            (int) $context->currency->id,
+            $countryId,
+            $groupId,
+            1,
+            (int) $idProductAttribute,
+            $customerId,
+            $cartId,
+            1
+        );
+
+        if (!$specificPrice || (float) $specificPrice['reduction'] <= 0) {
+            return null;
+        }
+
+        if ($specificPrice['reduction_type'] === 'percentage') {
+            return [
+                'type' => 'percentage',
+                'label' => '-' . Tools::ps_round((float) $specificPrice['reduction'] * 100, 2) . '%',
+            ];
+        }
+
+        $amount = (float) $specificPrice['reduction'];
+        $sourceCurrencyId = (int) $specificPrice['id_currency'];
+        if (!$sourceCurrencyId) {
+            $sourceCurrencyId = (int) Configuration::get('PS_CURRENCY_DEFAULT');
+        }
+        if ($sourceCurrencyId !== (int) $context->currency->id) {
+            $amount = Tools::convertPriceFull(
+                $amount,
+                Currency::getCurrencyInstance($sourceCurrencyId),
+                $context->currency
+            );
+        }
+
+        return [
+            'type' => 'amount',
+            'label' => '-' . Tools::displayPrice($amount, $context->currency),
+        ];
     }
 
     public function hookActionProductUpdate($params)
