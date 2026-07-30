@@ -25,13 +25,18 @@
 {block name='product_flags'}
     <ul class="product-flags js-product-flags">
         {foreach from=$product.flags item=flag}
-            {* EG Stickers replaces native discount values below; keep independent flags such as on-sale. *}
+            {* EG Stickers renders the contextual classic/numeric discount flags below. *}
             {if Module::isEnabled('egstickers') && in_array($flag.type, ['discount', 'discount-percentage', 'discount-amount'])}
                 {continue}
             {/if}
             {if Module::isEnabled('egstickers')}
                 {hook h='displayNativeStickers' flag=$flag.type}
-                {assign var="nativeFlag" value=EgStickersFlags::NativeFlag($flag.type)}
+                {assign var="nativeFlagType" value=$flag.type}
+                {* All native discount variants are controlled by the single Reduction switch. *}
+                {if in_array($flag.type, ['discount-percentage', 'discount-amount'])}
+                    {assign var="nativeFlagType" value='discount'}
+                {/if}
+                {assign var="nativeFlag" value=EgStickersFlags::NativeFlag($nativeFlagType)}
             {/if}
             {if isset($nativeFlag) &&  !empty($nativeFlag)}
                 {if $nativeFlag.active}
