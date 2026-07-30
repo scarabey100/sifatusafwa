@@ -86,7 +86,7 @@ ul.product-flags li.product-flag.ss-signet {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%);
     pointer-events: none;
 }
-.js-product-list ul.product-flags li.product-flag.ss-signet {
+#js-product-list ul.product-flags li.product-flag.ss-signet {
     right: -7px;
 }
 
