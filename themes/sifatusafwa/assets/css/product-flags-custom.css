@@ -70,7 +70,7 @@ ul.product-flags li.product-flag.ss-ribbon.sticker_bottom {
 ul.product-flags li.product-flag.ss-signet {
     position: absolute;
     top: 0;
-    right: -7px;
+    right: 7px;
     left: auto;
     z-index: 3;
     padding: 12px 9px 16px !important;
@@ -85,6 +85,9 @@ ul.product-flags li.product-flag.ss-signet {
     background-color: var(--orange-1);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%);
     pointer-events: none;
+}
+.js-product-list ul.product-flags li.product-flag.ss-signet {
+    right: -7px;
 }
 
 ul.product-flags li.product-flag.ss-signet > span {
