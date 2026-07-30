@@ -174,7 +174,7 @@ class EgStickers extends Module
         $idProductAttribute = isset($params['id_product_attribute'])
             ? (int) $params['id_product_attribute']
             : 0;
-        
+
         // Fetch all stickers
         $stickers = Db::getInstance()->executeS('
             SELECT s.*, sl.name, ps.id_product 
@@ -188,11 +188,36 @@ class EgStickers extends Module
             AND s.active = 1
         ');
 
-        $discount = $this->getCurrentDiscount($id_product, $idProductAttribute);
+        $discount = null;
+        $classicDiscount = null;
+        $classicDiscountFlag = EgStickersFlags::NativeFlag('discount');
+        $discountFlag = EgStickersFlags::NativeFlag('specific-price-discount');
+        $showClassicDiscount = !empty($classicDiscountFlag) && (bool) $classicDiscountFlag['active'];
+        $showNumericDiscount = !empty($discountFlag) && (bool) $discountFlag['active'];
+
+        if ($showClassicDiscount || $showNumericDiscount) {
+            $currentDiscount = $this->getCurrentDiscount($id_product, $idProductAttribute);
+
+            if ($currentDiscount && $showClassicDiscount) {
+                $classicDiscount = [
+                    'label' => !empty($classicDiscountFlag['parallel_value'])
+                        ? $classicDiscountFlag['parallel_value']
+                        : $this->l('Special offer'),
+                    'color' => $classicDiscountFlag['color'],
+                    'sticker_position' => (int) $classicDiscountFlag['sticker_position'],
+                ];
+            }
+
+            if ($currentDiscount && $showNumericDiscount) {
+                $discount = $currentDiscount;
+                $discount['color'] = $discountFlag['color'];
+            }
+        }
 
         // Assign variables to the template
         $this->context->smarty->assign([
             'stickers' => $stickers,
+            'classicDiscount' => $classicDiscount,
             'discount' => $discount,
         ]);
 
