@@ -18,6 +18,7 @@ class AdminEgStickersConfigController extends ModuleAdminController
         ['id' => 'new', 'name' => 'New product'],
         ['id' => 'on-sale', 'name' => 'On sale'],
         ['id' => 'discount', 'name' => 'Reduction',],
+        ['id' => 'specific-price-discount', 'name' => '% Discount (Specific price)'],
         ['id' => 'online_only', 'name' => 'Available only online'],
         ['id' => 'out_of_stock', 'name' => 'Out of stock'],
     ];
