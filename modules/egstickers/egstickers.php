@@ -10,6 +10,15 @@ class EgStickers extends Module
      */
     public $module;
 
+    /**
+     * Tracks a native discount flag rendered immediately before displayProductFlags.
+     * Some listing templates render their own native flags instead of using the
+     * theme partial, so the module must avoid adding the classic label twice.
+     *
+     * @var bool
+     */
+    private $nativeDiscountRendered = false;
+    
     public function __construct()
     {
         $this->module = $this; // Assign the current instance to the module property
@@ -188,6 +197,9 @@ class EgStickers extends Module
             AND s.active = 1
         ');
 
+        $nativeDiscountAlreadyRendered = $this->nativeDiscountRendered;
+        $this->nativeDiscountRendered = false;
+
         $discount = null;
         $classicDiscount = null;
         $classicDiscountFlag = EgStickersFlags::NativeFlag('discount');
@@ -198,7 +210,7 @@ class EgStickers extends Module
         if ($showClassicDiscount || $showNumericDiscount) {
             $currentDiscount = $this->getCurrentDiscount($id_product, $idProductAttribute);
 
-            if ($currentDiscount && $showClassicDiscount) {
+            if ($currentDiscount && $showClassicDiscount && !$nativeDiscountAlreadyRendered) {
                 $classicDiscount = [
                     'label' => !empty($classicDiscountFlag['parallel_value'])
                         ? $classicDiscountFlag['parallel_value']
@@ -330,6 +342,10 @@ class EgStickers extends Module
     }
 
     public function hookDisplayNativeStickers($params)
-    { 
+    {
+        $discountFlags = ['discount', 'discount-percentage', 'discount-amount'];
+        if (isset($params['flag']) && in_array($params['flag'], $discountFlags)) {
+            $this->nativeDiscountRendered = true;
+        }
     }
 }
