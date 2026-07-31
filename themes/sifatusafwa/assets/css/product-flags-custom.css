@@ -8,7 +8,8 @@
 }
 
 ul.product-flags {
-    top: 14px;
+    /* Top-positioned labels start at the upper edge of the image frame. */
+    top: 0;
     overflow: visible;
 }
 
@@ -86,6 +87,7 @@ ul.product-flags li.product-flag.ss-signet {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 9px), 0 100%);
     pointer-events: none;
 }
+
 #js-product-list ul.product-flags li.product-flag.ss-signet {
     right: -7px;
 }
@@ -123,10 +125,6 @@ ul.product-flags li.product-flag.ss-signet > span {
 }
 
 @media (max-width: 480px) {
-    ul.product-flags {
-        top: 10px;
-    }
-
     ul.product-flags li.product-flag.ss-ribbon {
         padding: 3px 10px !important;
         font-size: 11px !important;
@@ -141,5 +139,80 @@ ul.product-flags li.product-flag.ss-signet > span {
     [dir="rtl"] ul.product-flags li.product-flag.ss-signet {
         right: auto;
         left: 10px;
+    }
+}
+
+/*
+ * Compatibility for product-list/search templates that render native flags
+ * with the legacy markup and do not add the ss-ribbon class. EG Stickers
+ * markup is excluded because it is styled by the rules above.
+ */
+ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) {
+    position: relative;
+    top: auto;
+    left: -7px;
+    z-index: 2;
+    padding: 4px 0 !important;
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .02em;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    pointer-events: none;
+}
+
+ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) > span {
+    display: block;
+    padding-inline: 12px;
+    color: #fff;
+    transform: translateY(1px);
+}
+
+ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) > svg {
+    display: none;
+}
+
+ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon)::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 7px;
+    height: 5px;
+    background: inherit;
+    filter: brightness(.5);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.product-miniature ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon)::before {
+    left: 7px;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) {
+    right: -7px;
+    left: auto;
+}
+
+[dir="rtl"] ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon)::before {
+    right: 0;
+    left: auto;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+[dir="rtl"] .product-miniature ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon)::before {
+    right: 7px;
+    left: auto;
+}
+
+@media (max-width: 480px) {
+    ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) {
+        padding-block: 3px !important;
+        font-size: 11px !important;
+    }
+
+    ul.product-flags li.product-flag.sticker_top:not([class*="eg-"]):not(.ss-ribbon) > span {
+        padding-inline: 10px;
     }
 }
