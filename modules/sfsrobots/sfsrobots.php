@@ -19,6 +19,12 @@ class SfsRobots extends Module
             '?id_product_attribute=',
             '&id_product_attribute=',
         ],
+        'Extra Catalog & Ajax Parameters' => [
+            '?resultsPerPage=',
+            '&resultsPerPage=',
+            '?content_only=',
+            '&content_only=',
+        ],
     ];
 
     public function __construct()
