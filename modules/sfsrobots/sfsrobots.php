@@ -60,6 +60,12 @@ class SfsRobots extends Module
             return;
         }
 
+        // Keep compatibility with PrestaShop versions which expose the rendered
+        // robots.txt content to this hook instead of its structured source data.
+        if (!is_string($params['rb_data'])) {
+            return;
+        }
+
         foreach (self::RULE_GROUPS as $label => $rules) {
             $missingRules = [];
 
