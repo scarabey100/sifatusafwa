@@ -99,6 +99,9 @@ class SfsRobots extends Module
      */
     private function addRulesToRobotsData(array &$robotsData)
     {
+        if (!isset($robotsData['GB']) || !is_array($robotsData['GB'])) {
+            $robotsData['GB'] = [];
+        }
 
         foreach (self::RULE_GROUPS as $rules) {
             foreach ($rules as $rule) {
