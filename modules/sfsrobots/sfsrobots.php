@@ -6,7 +6,25 @@ if (!defined('_PS_VERSION_')) {
 
 class SfsRobots extends Module
 {
-
+    /**
+     * Keep blocking the former English slugs after the Arabic routes were localized.
+     */
+    private const LEGACY_ARABIC_FILES = [
+        'password-recovery',
+        'guest-tracking',
+        'my-account',
+        'identity',
+        'addresses',
+        'order-follow',
+        'login',
+        'order',
+        'cart',
+        'address',
+        'order-confirmation',
+        'credit-slip',
+        'discount',
+        'search',
+    ];
 
     private const RULE_GROUPS = [
         'Faceted Search & Filters (ps_facetedsearch)' => [
