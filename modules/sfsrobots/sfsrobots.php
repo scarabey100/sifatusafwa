@@ -78,6 +78,14 @@ class SfsRobots extends Module
                     . "\n";
             }
         }
+
+        foreach (self::LEGACY_ARABIC_FILES as $file) {
+            $directive = 'Disallow: /*ar/' . $file;
+
+            if (!preg_match('/^' . preg_quote($directive, '/') . '\r?$/m', $params['rb_data'])) {
+                $params['rb_data'] = rtrim($params['rb_data']) . "\n" . $directive . "\n";
+            }
+        }
     }
 
     /**
