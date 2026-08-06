@@ -13,6 +13,19 @@ ul.product-flags {
     overflow: visible;
 }
 
+/* Magic Zoom main images have a runtime-dependent width on product pages. */
+#product .product__media .page-content {
+    position: relative;
+}
+
+#product .product__media .page-content > ul.product-flags.eg-image-bound {
+    top: var(--eg-image-top) !important;
+    right: auto !important;
+    left: var(--eg-image-left) !important;
+    width: var(--eg-image-width);
+    height: var(--eg-image-height);
+}
+
 ul.product-flags li.product-flag.ss-ribbon {
     position: relative;
     top: auto;
