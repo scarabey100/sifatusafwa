@@ -110,4 +110,8 @@
         window.setTimeout(scheduleAlignment, 1000);
     });
 
+    window.addEventListener('load', function () {
+        bindPrestaShopUpdate();
+        scheduleAlignment();
+    });
 }());
