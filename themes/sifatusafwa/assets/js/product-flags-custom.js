@@ -103,7 +103,11 @@
         scheduleAlignment();
         observeMagicZoom();
         bindPrestaShopUpdate();
-        
+
+        // Magic Zoom can finish measuring after DOMContentLoaded.
+        window.setTimeout(bindPrestaShopUpdate, 250);
+        window.setTimeout(scheduleAlignment, 250);
+        window.setTimeout(scheduleAlignment, 1000);
     });
 
 }());
