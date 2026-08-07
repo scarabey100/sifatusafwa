@@ -44,5 +44,16 @@
         flags.style.setProperty('--eg-image-height', imageRect.height + 'px');
     }
 
+    function scheduleAlignment() {
+        if (frameId !== null) {
+            window.cancelAnimationFrame(frameId);
+        }
 
+        frameId = window.requestAnimationFrame(function () {
+            frameId = null;
+            alignProductFlags();
+        });
+    }
+
+    
 }());
