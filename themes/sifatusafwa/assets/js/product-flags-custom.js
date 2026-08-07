@@ -84,4 +84,19 @@
         });
     }
 
+    function bindPrestaShopUpdate() {
+        if (prestashopBound || !window.prestashop || typeof window.prestashop.on !== 'function') {
+            return;
+        }
+
+        prestashopBound = true;
+        window.prestashop.on('updatedProduct', function () {
+            window.setTimeout(function () {
+                observeMagicZoom();
+                scheduleAlignment();
+            }, 0);
+            window.setTimeout(scheduleAlignment, 250);
+        });
+    }
+    
 }());
