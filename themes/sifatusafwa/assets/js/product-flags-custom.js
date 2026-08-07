@@ -61,6 +61,10 @@
             return;
         }
 
+        if (magicObserver) {
+            magicObserver.disconnect();
+        }
+
         magicObserver = new MutationObserver(function (mutations) {
             var shouldAlign = mutations.some(function (mutation) {
                 return mutation.type === 'childList'
@@ -70,6 +74,13 @@
             if (shouldAlign) {
                 scheduleAlignment();
             }
+        });
+
+        magicObserver.observe(pageContent, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['class']
         });
     }
 
