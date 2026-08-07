@@ -114,4 +114,5 @@
         bindPrestaShopUpdate();
         scheduleAlignment();
     });
+    window.addEventListener('resize', scheduleAlignment);
 }());
