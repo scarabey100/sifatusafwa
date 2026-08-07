@@ -55,5 +55,22 @@
         });
     }
 
-    
+    function observeMagicZoom() {
+        var pageContent = document.querySelector('#product .product__media .page-content');
+        if (!pageContent || typeof MutationObserver === 'undefined') {
+            return;
+        }
+
+        magicObserver = new MutationObserver(function (mutations) {
+            var shouldAlign = mutations.some(function (mutation) {
+                return mutation.type === 'childList'
+                    || (mutation.target.classList && mutation.target.classList.contains('magic-slide'));
+            });
+
+            if (shouldAlign) {
+                scheduleAlignment();
+            }
+        });
+    }
+
 }());
