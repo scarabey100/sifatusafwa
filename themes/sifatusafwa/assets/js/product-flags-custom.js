@@ -98,5 +98,12 @@
             window.setTimeout(scheduleAlignment, 250);
         });
     }
-    
+
+    document.addEventListener('DOMContentLoaded', function () {
+        scheduleAlignment();
+        observeMagicZoom();
+        bindPrestaShopUpdate();
+        
+    });
+
 }());
