@@ -82,6 +82,8 @@
 
 {block name='javascript_head'}
   {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
+  {* Keep product-page flags aligned with Magic Zoom's variable-size main image. *}
+  <script type="text/javascript" src="{$urls.theme_assets}js/product-flags-custom.js" defer></script>
 {/block}
 
 {block name='hook_header'}
