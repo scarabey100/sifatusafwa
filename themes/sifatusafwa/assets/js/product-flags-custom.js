@@ -4,8 +4,45 @@
     var frameId = null;
     var magicObserver = null;
     var prestashopBound = false;
+    var productFlags = null;
+    var flagsPlaceholder = null;
 
-    function resetProductFlags(flags) {
+    function getProductFlags(pageContent) {
+        if (!pageContent) {
+            return null;
+        }
+
+        var currentFlags = pageContent.querySelector(':scope > .product-flags');
+
+        // PrestaShop may replace the flags markup together with the combination.
+        if (currentFlags && currentFlags !== productFlags) {
+            productFlags = currentFlags;
+            flagsPlaceholder = null;
+        } else if (!productFlags) {
+            productFlags = pageContent.querySelector('.product-flags');
+        }
+
+        if (productFlags && !flagsPlaceholder) {
+            flagsPlaceholder = document.createComment('EG Stickers original position');
+            productFlags.parentNode.insertBefore(flagsPlaceholder, productFlags);
+        }
+
+        return productFlags;
+    }
+
+    function restoreProductFlags(flags, pageContent) {
+        if (!flags || !pageContent || flags.parentNode === pageContent) {
+            return;
+        }
+
+        if (flagsPlaceholder && flagsPlaceholder.parentNode === pageContent) {
+            pageContent.insertBefore(flags, flagsPlaceholder.nextSibling);
+        } else {
+            pageContent.insertBefore(flags, pageContent.firstChild);
+        }
+    }
+
+    function resetProductFlags(flags, pageContent) {
         if (!flags) {
             return;
         }
@@ -15,31 +52,38 @@
         flags.style.removeProperty('--eg-image-top');
         flags.style.removeProperty('--eg-image-width');
         flags.style.removeProperty('--eg-image-height');
+        restoreProductFlags(flags, pageContent);
     }
 
     function alignProductFlags() {
         var pageContent = document.querySelector('#product .product__media .page-content');
-        var flags = pageContent && pageContent.querySelector(':scope > .product-flags');
+        var flags = getProductFlags(pageContent);
         var image = pageContent && pageContent.querySelector('.magic-slide.mt-active a.MagicZoom');
 
         if (!pageContent || !flags || !image) {
-            resetProductFlags(flags);
+            resetProductFlags(flags, pageContent);
             return;
         }
 
-        var containerRect = pageContent.getBoundingClientRect();
         var imageRect = image.getBoundingClientRect();
 
         // A failed/not-yet-loaded Magic Zoom image can report a 2x2px anchor.
         // Keep the original container-based positioning until a real image exists.
         if (imageRect.width < 50 || imageRect.height < 50) {
-            resetProductFlags(flags);
+            resetProductFlags(flags, pageContent);
             return;
         }
 
+        // Keep the flags in the same coordinate system as the Magic Zoom image.
+        // Magic Zoom can replace its anchor after a combination/image update, so
+        // this is intentionally repeated on every scheduled alignment.
+        if (flags.parentNode !== image) {
+            image.insertBefore(flags, image.firstChild);
+        }
+
         flags.classList.add('eg-image-bound');
-        flags.style.setProperty('--eg-image-left', (imageRect.left - containerRect.left) + 'px');
-        flags.style.setProperty('--eg-image-top', (imageRect.top - containerRect.top) + 'px');
+        flags.style.setProperty('--eg-image-left', '0px');
+        flags.style.setProperty('--eg-image-top', '0px');
         flags.style.setProperty('--eg-image-width', imageRect.width + 'px');
         flags.style.setProperty('--eg-image-height', imageRect.height + 'px');
     }
