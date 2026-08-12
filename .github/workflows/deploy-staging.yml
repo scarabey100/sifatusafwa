@@ -1,0 +1,42 @@
+name: Deploy staging
+
+# Port of the GitLab `deploy-staging` job. One file per target: GitLab evaluated
+# `only:` when building the pipeline, so a non-staging pipeline never contained
+# this job at all. A single workflow with `if:` would instead render a skipped
+# job on every run.
+#
+# Runs on the self-hosted runner `sifatusafwa-staging` on sifatusafwa.lxd, as the
+# gitlab-runner user — the identity /etc/sudoers.d/gitlab-runner already grants
+# NOPASSWD on this one script, so no new sudo rule was needed.
+#
+# No checkout step: deploy-staging.sh operates on /var/www/html directly and
+# fetches there itself, exactly as it did under GitLab Runner. The workspace is
+# never used, so nothing is cloned onto the box twice.
+
+on:
+  push:
+    branches: [staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false      # never kill a deploy mid-flight
+
+jobs:
+  deploy:
+    name: Deploy to staging
+    runs-on: [self-hosted, sifatusafwa-staging]
+    timeout-minutes: 15          # a normal run is ~14s; GitHub's default is 360 min
+    environment:
+      name: staging
+      url: https://sifatusafwa.s2.belvgdev.com
+
+    steps:
+      - name: Run deploy script
+        run: |
+          # pipefail is not on by default in the `bash -e` GitHub uses for run:
+          set -o pipefail
+          sudo /usr/local/bin/deploy-staging.sh
