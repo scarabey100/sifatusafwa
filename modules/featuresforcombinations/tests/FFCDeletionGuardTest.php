@@ -41,3 +41,11 @@ function assertSame($expected, $actual, $message)
     }
 }
 
+function runDeletion()
+{
+    Db::$instance = new Db();
+    $ffc = new FFC(307);
+    $ffc->deleteCombinationsFeatures(12);
+
+    return Db::$instance;
+}
