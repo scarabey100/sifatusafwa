@@ -60,4 +60,10 @@ assertSame(
 $moduleSource = file_get_contents(dirname(__DIR__) . '/featuresforcombinations.php');
 $guardPosition = strpos($moduleSource, 'if (!array_key_exists($id_product_attribute, $ffc_form))');
 $deletePosition = strpos($moduleSource, '$ffc->deleteCombinationsFeatures($id_product_attribute);');
+assertSame(
+    true,
+    $guardPosition !== false && $deletePosition !== false && $guardPosition < $deletePosition,
+    'Incomplete forms must be ignored before destructive association rebuilding.'
+);
 
+echo "FFC deletion guard tests passed.\n";
