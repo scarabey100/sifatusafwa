@@ -290,6 +290,14 @@ class Featuresforcombinations extends Module
 
         foreach ($product_attribute_ids as $product_attribute) {
             $id_product_attribute = $product_attribute['id_product_attribute'];
+
+            // Product saves and duplication workflows may submit only part of
+            // the combinations form. An absent key means "not submitted", not
+            // "delete all features for this combination".
+            if (!array_key_exists($id_product_attribute, $ffc_form)) {
+                continue;
+            }
+
             $ffc->deleteCombinationsFeatures($id_product_attribute);
             if (array_key_exists($id_product_attribute, $ffc_form)) {
                 foreach ($ffc_form[$id_product_attribute] as $feature) {
