@@ -49,3 +49,15 @@ function runDeletion()
 
     return Db::$instance;
 }
+
+$deletion = runDeletion();
+assertSame(
+    [['featuresforcombinations', '`id_product` = 307 AND `id_product_attribute` = 12']],
+    $deletion->deletes,
+    'FFC cleanup must remove only its own association.'
+);
+
+$moduleSource = file_get_contents(dirname(__DIR__) . '/featuresforcombinations.php');
+$guardPosition = strpos($moduleSource, 'if (!array_key_exists($id_product_attribute, $ffc_form))');
+$deletePosition = strpos($moduleSource, '$ffc->deleteCombinationsFeatures($id_product_attribute);');
+
