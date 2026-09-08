@@ -135,5 +135,40 @@ class AthosFeed extends Module
         return array(array('id'=>'yes','value'=>1,'label'=>$this->l('Yes')), array('id'=>'no','value'=>0,'label'=>$this->l('No')));
     }
 
-    
+    public function hookDisplayHeader()
+    {
+        if (!$this->frontendAllowed()) {
+            return;
+        }
+        $url = (string) AthosConfig::get(AthosConfig::SNAP_SCRIPT_URL);
+        if (filter_var($url, FILTER_VALIDATE_URL) && strpos($url, 'https://') === 0) {
+            $this->context->controller->registerJavascript('module-athosfeed-snap', $url, array('server'=>'remote', 'position'=>'bottom', 'priority'=>200));
+            $this->context->controller->registerJavascript('module-athosfeed-adapter', 'modules/' . $this->name . '/views/js/adapter.js', array('position'=>'bottom', 'priority'=>201));
+            Media::addJsDef(array('athosFeedConfig' => json_decode((string) AthosConfig::get(AthosConfig::SNAP_PUBLIC_CONFIG, null, '{}'), true) ?: array()));
+        }
+    }
+
+    public function hookDisplayFooterProduct()
+    {
+        return $this->renderZone((string) AthosConfig::get(AthosConfig::PRODUCT_ZONE), 'product');
+    }
+
+    public function hookDisplayShoppingCartFooter()
+    {
+        return $this->renderZone((string) AthosConfig::get(AthosConfig::CART_ZONE), 'cart');
+    }
+
+    private function renderZone($zoneId, $placement)
+    {
+        if (!$this->frontendAllowed() || $zoneId === '') {
+            return '';
+        }
+        $this->context->smarty->assign(array('athos_zone_id'=>htmlspecialchars($zoneId, ENT_QUOTES, 'UTF-8'), 'athos_placement'=>$placement));
+        return $this->display(__FILE__, 'views/templates/hook/zone.tpl');
+    }
+
+    private function frontendAllowed()
+    {
+        return AthosConfig::get(AthosConfig::MODE) === 'test' && (bool) AthosConfig::get(AthosConfig::FRONTEND_ENABLED);
+    }
 }
