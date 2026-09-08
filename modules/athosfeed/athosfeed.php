@@ -50,5 +50,37 @@ class AthosFeed extends Module
         return parent::uninstall();
     }
 
+    public function getContent()
+    {
+        $message = '';
+        if (Tools::isSubmit('submitAthosFeed')) {
+            $mode = Tools::getValue('ATHOS_MODE');
+            if (!in_array($mode, array('disabled', 'test', 'production'), true)) {
+                $message .= $this->displayError($this->l('Invalid mode.'));
+            } else {
+                $batch = max(1, min(1000, (int) Tools::getValue('ATHOS_BATCH_SIZE')));
+                AthosConfig::set(AthosConfig::MODE, $mode);
+                AthosConfig::set(AthosConfig::BATCH_SIZE, $batch);
+                foreach (array(AthosConfig::CURRENCY_ID => 'ATHOS_CURRENCY_ID', AthosConfig::COUNTRY_ID => 'ATHOS_COUNTRY_ID', AthosConfig::GROUP_ID => 'ATHOS_GROUP_ID') as $key => $input) {
+                    AthosConfig::set($key, (int) Tools::getValue($input));
+                }
+                foreach (array(AthosConfig::INCLUDE_INACTIVE, AthosConfig::INCLUDE_OUT_OF_STOCK, AthosConfig::FRONTEND_ENABLED, AthosConfig::SEARCH_ENABLED, AthosConfig::CATEGORY_ENABLED) as $key) {
+                    AthosConfig::set($key, (int) (bool) Tools::getValue('ATHOS_' . $key));
+                }
+                foreach (array(AthosConfig::ALLOWED_IPS, AthosConfig::SNAP_SCRIPT_URL, AthosConfig::SNAP_PUBLIC_CONFIG, AthosConfig::ACCOUNT_ID, AthosConfig::INDEX_ID, AthosConfig::PRODUCT_ZONE, AthosConfig::CART_ZONE) as $key) {
+                    AthosConfig::set($key, trim((string) Tools::getValue('ATHOS_' . $key)));
+                }
+                if (Tools::getValue('ATHOS_REGENERATE_ACCESS')) {
+                    AthosConfig::set(AthosConfig::ACCESS_TOKEN, AthosConfig::randomToken());
+                }
+                if (Tools::getValue('ATHOS_REGENERATE_CRON')) {
+                    AthosConfig::set(AthosConfig::CRON_TOKEN, AthosConfig::randomToken());
+                }
+                $message .= $this->displayConfirmation($this->l('Settings saved. Long exports must be run via CLI or protected cron.'));
+            }
+        }
+        return $message . $this->renderConfiguration();
+    }
+
     
 }
