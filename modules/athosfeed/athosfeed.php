@@ -82,5 +82,42 @@ class AthosFeed extends Module
         return $message . $this->renderConfiguration();
     }
 
+    private function renderConfiguration()
+    {
+        $status = json_decode((string) AthosConfig::get(AthosConfig::STATUS, null, '{}'), true);
+        $fields = array(
+            array('type' => 'select', 'label' => $this->l('Mode'), 'name' => 'ATHOS_MODE', 'options' => array('query' => array(array('id'=>'disabled','name'=>'Disabled'),array('id'=>'test','name'=>'Test'),array('id'=>'production','name'=>'Production')), 'id'=>'id', 'name'=>'name')),
+            array('type' => 'text', 'label' => $this->l('Batch size'), 'name' => 'ATHOS_BATCH_SIZE'),
+            array('type' => 'text', 'label' => $this->l('Currency ID'), 'name' => 'ATHOS_CURRENCY_ID'),
+            array('type' => 'text', 'label' => $this->l('Country ID'), 'name' => 'ATHOS_COUNTRY_ID'),
+            array('type' => 'text', 'label' => $this->l('Customer group ID'), 'name' => 'ATHOS_GROUP_ID'),
+            array('type' => 'switch', 'label' => $this->l('Include inactive'), 'name' => 'ATHOS_INCLUDE_INACTIVE', 'values' => $this->yesNo()),
+            array('type' => 'switch', 'label' => $this->l('Include out of stock'), 'name' => 'ATHOS_INCLUDE_OUT_OF_STOCK', 'values' => $this->yesNo()),
+            array('type' => 'text', 'label' => $this->l('Allowed IPs (comma separated)'), 'name' => 'ATHOS_ALLOWED_IPS'),
+            array('type' => 'switch', 'label' => $this->l('Enable isolated frontend adapter'), 'name' => 'ATHOS_FRONTEND_ENABLED', 'values' => $this->yesNo()),
+            array('type' => 'text', 'label' => $this->l('Snap SDK script URL'), 'name' => 'ATHOS_SNAP_SCRIPT_URL'),
+            array('type' => 'textarea', 'label' => $this->l('Snap public JSON configuration'), 'name' => 'ATHOS_SNAP_PUBLIC_CONFIG'),
+            array('type' => 'text', 'label' => $this->l('Athos account identifier (public)'), 'name' => 'ATHOS_ACCOUNT_ID'),
+            array('type' => 'text', 'label' => $this->l('Athos index identifier (public)'), 'name' => 'ATHOS_INDEX_ID'),
+            array('type' => 'switch', 'label' => $this->l('Search integration point'), 'name' => 'ATHOS_SEARCH_ENABLED', 'values' => $this->yesNo()),
+            array('type' => 'switch', 'label' => $this->l('Category integration point'), 'name' => 'ATHOS_CATEGORY_ENABLED', 'values' => $this->yesNo()),
+            array('type' => 'text', 'label' => $this->l('Product recommendation zone'), 'name' => 'ATHOS_PRODUCT_ZONE'),
+            array('type' => 'text', 'label' => $this->l('Cart recommendation zone'), 'name' => 'ATHOS_CART_ZONE'),
+            array('type' => 'switch', 'label' => $this->l('Regenerate feed access token'), 'name' => 'ATHOS_REGENERATE_ACCESS', 'values' => $this->yesNo()),
+            array('type' => 'switch', 'label' => $this->l('Regenerate cron token'), 'name' => 'ATHOS_REGENERATE_CRON', 'values' => $this->yesNo()),
+        );
+        $helper = new HelperForm();
+        $helper->module = $this;
+        $helper->token = Tools::getAdminTokenLite('AdminModules');
+        $helper->currentIndex = AdminController::$currentIndex . '&configure=' . $this->name;
+        $helper->submit_action = 'submitAthosFeed';
+        $helper->fields_value = $this->formValues();
+        $summary = '<div class="alert alert-info"><strong>' . $this->l('Feed endpoint:') . '</strong> '
+            . Tools::safeOutput($this->context->link->getModuleLink($this->name, 'feed')) . '<br>'
+            . $this->l('Credentials are masked. Copy tokens from the database/secret manager when configuring Athos; they are never rendered here.') . '<br>'
+            . '<strong>' . $this->l('Last export:') . '</strong> ' . Tools::safeOutput($status ? json_encode($status) : $this->l('not available')) . '</div>';
+        return $summary . $helper->generateForm(array(array('form' => array('legend'=>array('title'=>$this->l('Athos feed and test-mode frontend')), 'input'=>$fields, 'submit'=>array('title'=>$this->l('Save'))))));
+    }
+
     
 }
