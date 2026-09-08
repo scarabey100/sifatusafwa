@@ -119,5 +119,21 @@ class AthosFeed extends Module
         return $summary . $helper->generateForm(array(array('form' => array('legend'=>array('title'=>$this->l('Athos feed and test-mode frontend')), 'input'=>$fields, 'submit'=>array('title'=>$this->l('Save'))))));
     }
 
+    private function formValues()
+    {
+        $values = array('ATHOS_MODE'=>AthosConfig::get(AthosConfig::MODE, null, 'disabled'), 'ATHOS_BATCH_SIZE'=>AthosConfig::get(AthosConfig::BATCH_SIZE, null, 100));
+        foreach (array(AthosConfig::CURRENCY_ID, AthosConfig::COUNTRY_ID, AthosConfig::GROUP_ID, AthosConfig::INCLUDE_INACTIVE, AthosConfig::INCLUDE_OUT_OF_STOCK, AthosConfig::ALLOWED_IPS, AthosConfig::FRONTEND_ENABLED, AthosConfig::SNAP_SCRIPT_URL, AthosConfig::SNAP_PUBLIC_CONFIG, AthosConfig::ACCOUNT_ID, AthosConfig::INDEX_ID, AthosConfig::SEARCH_ENABLED, AthosConfig::CATEGORY_ENABLED, AthosConfig::PRODUCT_ZONE, AthosConfig::CART_ZONE) as $key) {
+            $values['ATHOS_' . $key] = AthosConfig::get($key);
+        }
+        $values['ATHOS_REGENERATE_ACCESS'] = 0;
+        $values['ATHOS_REGENERATE_CRON'] = 0;
+        return $values;
+    }
+
+    private function yesNo()
+    {
+        return array(array('id'=>'yes','value'=>1,'label'=>$this->l('Yes')), array('id'=>'no','value'=>0,'label'=>$this->l('No')));
+    }
+
     
 }
