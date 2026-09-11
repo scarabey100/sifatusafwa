@@ -14,7 +14,7 @@ class AthosFeed extends Module
     {
         $this->name = 'athosfeed';
         $this->tab = 'administration';
-        $this->version = '0.2.0';
+        $this->version = AthosConfig::MODULE_VERSION;
         $this->author = 'Sifatusafwa';
         $this->bootstrap = true;
         parent::__construct();
@@ -29,6 +29,7 @@ class AthosFeed extends Module
             && $this->registerHook(array('displayHeader', 'displayFooterProduct', 'displayShoppingCartFooter'))
             && AthosConfig::set(AthosConfig::MODE, 'disabled')
             && AthosConfig::set(AthosConfig::BATCH_SIZE, 100)
+            && AthosConfig::set(AthosConfig::MINIMUM_RECORDS, 10)
             && AthosConfig::set(AthosConfig::CURRENCY_ID, (int) Configuration::get('PS_CURRENCY_DEFAULT'))
             && AthosConfig::set(AthosConfig::COUNTRY_ID, (int) Configuration::get('PS_COUNTRY_DEFAULT'))
             && AthosConfig::set(AthosConfig::GROUP_ID, (int) Configuration::get('PS_UNIDENTIFIED_GROUP'))
@@ -61,6 +62,7 @@ class AthosFeed extends Module
                 $batch = max(1, min(1000, (int) Tools::getValue('ATHOS_BATCH_SIZE')));
                 AthosConfig::set(AthosConfig::MODE, $mode);
                 AthosConfig::set(AthosConfig::BATCH_SIZE, $batch);
+                AthosConfig::set(AthosConfig::MINIMUM_RECORDS, max(1, (int) Tools::getValue('ATHOS_MINIMUM_RECORDS')));
                 foreach (array(AthosConfig::CURRENCY_ID => 'ATHOS_CURRENCY_ID', AthosConfig::COUNTRY_ID => 'ATHOS_COUNTRY_ID', AthosConfig::GROUP_ID => 'ATHOS_GROUP_ID') as $key => $input) {
                     AthosConfig::set($key, (int) Tools::getValue($input));
                 }
@@ -88,6 +90,7 @@ class AthosFeed extends Module
         $fields = array(
             array('type' => 'select', 'label' => $this->l('Mode'), 'name' => 'ATHOS_MODE', 'options' => array('query' => array(array('id'=>'disabled','name'=>'Disabled'),array('id'=>'test','name'=>'Test'),array('id'=>'production','name'=>'Production')), 'id'=>'id', 'name'=>'name')),
             array('type' => 'text', 'label' => $this->l('Batch size'), 'name' => 'ATHOS_BATCH_SIZE'),
+            array('type' => 'text', 'label' => $this->l('Minimum valid records'), 'name' => 'ATHOS_MINIMUM_RECORDS', 'desc' => $this->l('Use 1 for a small development catalog; keep 10 or more in production.')),
             array('type' => 'text', 'label' => $this->l('Currency ID'), 'name' => 'ATHOS_CURRENCY_ID'),
             array('type' => 'text', 'label' => $this->l('Country ID'), 'name' => 'ATHOS_COUNTRY_ID'),
             array('type' => 'text', 'label' => $this->l('Customer group ID'), 'name' => 'ATHOS_GROUP_ID'),
@@ -121,7 +124,11 @@ class AthosFeed extends Module
 
     private function formValues()
     {
-        $values = array('ATHOS_MODE'=>AthosConfig::get(AthosConfig::MODE, null, 'disabled'), 'ATHOS_BATCH_SIZE'=>AthosConfig::get(AthosConfig::BATCH_SIZE, null, 100));
+        $values = array(
+            'ATHOS_MODE'=>AthosConfig::get(AthosConfig::MODE, null, 'disabled'),
+            'ATHOS_BATCH_SIZE'=>AthosConfig::get(AthosConfig::BATCH_SIZE, null, 100),
+            'ATHOS_MINIMUM_RECORDS'=>AthosConfig::get(AthosConfig::MINIMUM_RECORDS, null, 10),
+        );
         foreach (array(AthosConfig::CURRENCY_ID, AthosConfig::COUNTRY_ID, AthosConfig::GROUP_ID, AthosConfig::INCLUDE_INACTIVE, AthosConfig::INCLUDE_OUT_OF_STOCK, AthosConfig::ALLOWED_IPS, AthosConfig::FRONTEND_ENABLED, AthosConfig::SNAP_SCRIPT_URL, AthosConfig::SNAP_PUBLIC_CONFIG, AthosConfig::ACCOUNT_ID, AthosConfig::INDEX_ID, AthosConfig::SEARCH_ENABLED, AthosConfig::CATEGORY_ENABLED, AthosConfig::PRODUCT_ZONE, AthosConfig::CART_ZONE) as $key) {
             $values['ATHOS_' . $key] = AthosConfig::get($key);
         }
