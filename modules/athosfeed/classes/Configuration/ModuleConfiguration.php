@@ -4,9 +4,11 @@ namespace AthosFeed\Configuration;
 
 final class ModuleConfiguration
 {
+    const MODULE_VERSION = '0.2.1';
     const PREFIX = 'ATHOS_FEED_';
     const MODE = 'MODE';
     const BATCH_SIZE = 'BATCH_SIZE';
+    const MINIMUM_RECORDS = 'MINIMUM_RECORDS';
     const CURRENCY_ID = 'CURRENCY_ID';
     const COUNTRY_ID = 'COUNTRY_ID';
     const GROUP_ID = 'GROUP_ID';
@@ -53,7 +55,7 @@ final class ModuleConfiguration
 
     public static function names()
     {
-        return array(self::MODE, self::BATCH_SIZE, self::CURRENCY_ID, self::COUNTRY_ID, self::GROUP_ID,
+        return array(self::MODE, self::BATCH_SIZE, self::MINIMUM_RECORDS, self::CURRENCY_ID, self::COUNTRY_ID, self::GROUP_ID,
             self::INCLUDE_INACTIVE, self::INCLUDE_OUT_OF_STOCK, self::ACCESS_TOKEN, self::CRON_TOKEN,
             self::ALLOWED_IPS, self::FRONTEND_ENABLED, self::SNAP_SCRIPT_URL, self::SNAP_PUBLIC_CONFIG, self::ACCOUNT_ID, self::INDEX_ID,
             self::SEARCH_ENABLED, self::CATEGORY_ENABLED, self::PRODUCT_ZONE, self::CART_ZONE, self::STATUS);
