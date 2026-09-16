@@ -4,7 +4,7 @@ namespace AthosFeed\Configuration;
 
 final class ModuleConfiguration
 {
-    const MODULE_VERSION = '0.2.1';
+    const MODULE_VERSION = '0.2.3';
     const PREFIX = 'ATHOS_FEED_';
     const MODE = 'MODE';
     const BATCH_SIZE = 'BATCH_SIZE';
