@@ -36,8 +36,9 @@ class ExportManager
         $final = $this->feedPath($shopId, $languageId);
         $temporary = $directory . '/.' . basename($final) . '.' . $executionId . '.tmp';
         $handle = null;
+        $pricingCart = null;
         try {
-            $this->configureContext($shopId, $languageId, $options);
+            $pricingCart = $this->configureContext($shopId, $languageId, $options);
             $handle = fopen($temporary, 'xb');
             if (!$handle) {
                 throw new \RuntimeException('Cannot create temporary feed file');
@@ -86,7 +87,10 @@ class ExportManager
             fclose($handle);
             $handle = null;
 
-            $validator->validateFile($temporary, isset($options['minimum_records']) ? (int) $options['minimum_records'] : 10);
+            $minimumRecords = isset($options['minimum_records'])
+                ? (int) $options['minimum_records']
+                : (int) ModuleConfiguration::get(ModuleConfiguration::MINIMUM_RECORDS, $shopId, 10);
+            $validator->validateFile($temporary, max(1, $minimumRecords));
             if (!rename($temporary, $final)) {
                 throw new \RuntimeException('Atomic feed publication failed');
             }
@@ -108,6 +112,7 @@ class ExportManager
             $logger->error('Export failed: {error}', array('error' => $exception->getMessage()));
             throw $exception;
         } finally {
+            $this->removePricingCart($pricingCart, $logger);
             flock($lock, LOCK_UN);
             fclose($lock);
         }
@@ -156,6 +161,41 @@ class ExportManager
         }
         $context->customer->id_default_group = (int) $groupId;
         $context->customer->id = 0;
-        $context->cart = null;
+
+        // PrestaShop 8 requires a real cart ID when prices are calculated
+        // outside a Back Office employee context. Persist one empty anonymous
+        // cart for this export and remove it in export()'s finally block.
+        $context->cart = new \Cart();
+        $context->cart->id_shop = (int) $shopId;
+        $context->cart->id_shop_group = (int) $context->shop->id_shop_group;
+        $context->cart->id_lang = (int) $languageId;
+        $context->cart->id_currency = (int) $currencyId;
+        $context->cart->id_customer = 0;
+        $context->cart->id_guest = 0;
+        $context->cart->id_address_delivery = 0;
+        $context->cart->id_address_invoice = 0;
+        $context->cart->secure_key = md5(uniqid((string) mt_rand(), true));
+        if (!$context->cart->add() || !(int) $context->cart->id) {
+            throw new \RuntimeException('Unable to create the temporary pricing cart');
+        }
+
+        return $context->cart;
+    }
+
+    private function removePricingCart($cart, FeedLogger $logger)
+    {
+        if (!$cart instanceof \Cart || !(int) $cart->id) {
+            return;
+        }
+        try {
+            if (!$cart->delete()) {
+                $logger->error('Temporary pricing cart {cart_id} could not be removed', array('cart_id' => (int) $cart->id));
+            }
+        } catch (\Throwable $exception) {
+            $logger->error('Temporary pricing cart {cart_id} cleanup failed: {error}', array(
+                'cart_id' => (int) $cart->id,
+                'error' => $exception->getMessage(),
+            ));
+        }
     }
 }
