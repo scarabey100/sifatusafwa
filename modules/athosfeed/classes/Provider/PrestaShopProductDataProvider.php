@@ -120,7 +120,27 @@ class PrestaShopProductDataProvider implements ProductDataProviderInterface
 
     private function price($productId, $combinationId, $withReduction)
     {
-        return (float) \Product::getPriceStatic((int) $productId, true, (int) $combinationId, 6, null, false, (bool) $withReduction);
+        $specificPrice = null;
+
+        return (float) \Product::getPriceStatic(
+            (int) $productId,
+            true,
+            (int) $combinationId,
+            6,
+            null,
+            false,
+            (bool) $withReduction,
+            1,
+            false,
+            0,
+            (int) $this->context->cart->id,
+            0,
+            $specificPrice,
+            true,
+            true,
+            $this->context,
+            false
+        );
     }
 
     private function isAvailable(\Product $product, $quantity)
