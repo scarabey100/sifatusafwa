@@ -290,30 +290,36 @@ class Featuresforcombinations extends Module
 
         foreach ($product_attribute_ids as $product_attribute) {
             $id_product_attribute = $product_attribute['id_product_attribute'];
-            $ffc->deleteCombinationsFeatures($id_product_attribute);
-            if (array_key_exists($id_product_attribute, $ffc_form)) {
-                foreach ($ffc_form[$id_product_attribute] as $feature) {
-                    if (!empty($feature['id_feature_value'])) {
-                        $ffc->addCombinationsFeaturesToDB(
-                            $id_product_attribute,
-                            $feature['id_feature'],
-                            $feature['id_feature_value']
-                        );
-                    } elseif ($defaultValue = $this->checkFeatures($languages, $feature['custom_value'], $feature['id_feature'])) {
-                        $idValue = $ffc->addCombinationsFeaturesToDB(
-                            $id_product_attribute,
-                            $feature['id_feature'],
-                            0,
-                            1
-                        );
-                        foreach ($languages as $language) {
-                            $valueToAdd = (isset($feature['custom_value'][$language['id_lang']])
-                                && !empty($feature['custom_value'][$language['id_lang']]))
-                                ? $feature['custom_value'][$language['id_lang']]
-                                : $defaultValue;
 
-                            $ffc->addFeaturesCustomToDB($idValue, (int) $language['id_lang'], $valueToAdd);
-                        }
+            // Product saves and duplication workflows may submit only part of
+            // the combinations form. An absent key means "not submitted", not
+            // "delete all features for this combination".
+            if (!array_key_exists($id_product_attribute, $ffc_form)) {
+                continue;
+            }
+
+            $ffc->deleteCombinationsFeatures($id_product_attribute);
+            foreach ($ffc_form[$id_product_attribute] as $feature) {
+                if (!empty($feature['id_feature_value'])) {
+                    $ffc->addCombinationsFeaturesToDB(
+                        $id_product_attribute,
+                        $feature['id_feature'],
+                        $feature['id_feature_value']
+                    );
+                } elseif ($defaultValue = $this->checkFeatures($languages, $feature['custom_value'], $feature['id_feature'])) {
+                    $idValue = $ffc->addCombinationsFeaturesToDB(
+                        $id_product_attribute,
+                        $feature['id_feature'],
+                        0,
+                        1
+                    );
+                    foreach ($languages as $language) {
+                        $valueToAdd = (isset($feature['custom_value'][$language['id_lang']])
+                            && !empty($feature['custom_value'][$language['id_lang']]))
+                            ? $feature['custom_value'][$language['id_lang']]
+                            : $defaultValue;
+
+                        $ffc->addFeaturesCustomToDB($idValue, (int) $language['id_lang'], $valueToAdd);
                     }
                 }
             }

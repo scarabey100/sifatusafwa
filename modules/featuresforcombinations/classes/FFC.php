@@ -240,27 +240,10 @@ class FFC extends Product
 
     public function deleteCombinationsFeatures($id_product_attribute)
     {
-        // @see AdminProductsController::deleteFeatures
-        $features = Db::getInstance()->executeS(
-            'SELECT ffc.*, fv.*
-            FROM `' . _DB_PREFIX_ . 'featuresforcombinations` as ffc
-            LEFT JOIN `' . _DB_PREFIX_ . 'feature_value` as fv ON (fv.`id_feature_value` = ffc.`id_feature_value`)
-            WHERE ffc.`id_product` = ' . (int) $this->id . '
-                AND ffc.`id_product_attribute` = ' . (int) $id_product_attribute
-        );
-
-        foreach ($features as $tab) {
-            if ($tab['custom']) {
-                Db::getInstance()->delete(
-                    'feature_value',
-                    '`id_feature_value` = ' . (int) $tab['id_feature_value']
-                );
-                Db::getInstance()->delete(
-                    'feature_value_lang',
-                    '`id_feature_value` = ' . (int) $tab['id_feature_value']
-                );
-            }
-        }
+        // This module owns the association, not the shared PrestaShop feature
+        // value. In particular, custom values can also be referenced by
+        // feature_product. Removing a combination association must therefore
+        // never delete feature_value or feature_value_lang data.
 
         Db::getInstance()->delete(
             'featuresforcombinations',
